@@ -1,0 +1,29 @@
+OX_584763780({
+  "ads":{
+    "chain":1,
+    "medium":"w",
+    "record_tmpl":"https://uk-ads.openx.net/{medium}/1.0/{rtype}?ts={txn_state}",
+    "pixels":"https://eu-u.openx.net/w/1.0/pd?plm=1&ph=50ab0170-10fc-4aec-b816-8e01043433e7",
+    "oxt": 139.612,
+    "adunits" : [
+      {
+        "auid":"538100922",
+        "chain_timeout":"",
+        "chain":[
+          {
+            "is_fallback":1,
+            "ad_id":"0",
+            "adv_acct_id":"",
+            "width":"728",
+            "height":"90",
+            "html":"<script type=\"text/javascript\"><!--\ngoogle_ad_client = \"ca-pub-8241049497608997\";\n/* zwrotny - YB - pierwszy - 728x90 */\ngoogle_ad_slot = \"3050648720/1671730160\";\ngoogle_ad_width = 728;\ngoogle_ad_height = 90;\ngoogle_page_url = \"http://myfin.by/\";\n//-->\n</script>\n<script type=\"text/javascript\"\nsrc=\"//pagead2.googlesyndication.com/pagead/show_ads.js\">\n</script>",
+            "target":"_blank",
+            "ts":"1fHJpZD1lZTgzZDhhNy00NjJhLTQ1ODUtOTQyYi00MjMyY2U4Y2VkMTJ8cnQ9MTUwNTIyNzQxMHxhdWlkPTUzODEwMDkyMnxhdW09RE1JRC5XRUJ8YXVwZj1kaXNwbGF5fHNpZD01MzcyMTc0MTd8cHViPTEzNDA5N3xwYz1HQlB8cmFpZD1kY2E1ZTc5ZC05YTk0LTQ2YTItYmZmNS0yMTY2ZGQzZDU1ZTV8cnM9MXx1cj0zNlRLdXJsZDNn",
+            "type":"html",
+            "ad_url":"<script type=\"text/javascript\"><!--\ngoogle_ad_client = \"ca-pub-8241049497608997\";\n/* zwrotny - YB - pierwszy - 728x90 */\ngoogle_ad_slot = \"3050648720/1671730160\";\ngoogle_ad_width = 728;\ngoogle_ad_height = 90;\ngoogle_page_url = \"http://myfin.by/\";\n//-->\n</script>\n<script type=\"text/javascript\"\nsrc=\"//pagead2.googlesyndication.com/pagead/show_ads.js\">\n</script>"
+          }
+        ]
+      }
+    ]
+  }
+});

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!-- saved from url=(0164)https://tpc.googlesyndication.com/sadbundle/$csp%3Der3%26dns%3Doff$/15873843024858753216/240x400.html#t=673692851704788615&p=https%3A%2F%2Ftpc.googlesyndication.com -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./exitapi-impl.js.Без названия" type="text/javascript"></script><script src="./addata.js.Без названия" type="text/javascript"></script><meta content="width=240,height=400" name="ad.size"><title>240x400</title><script src="./createjs_2015.11.26_54e1c3722102182bb133912ad4442e19_min.js.Без названия"></script><script src="./240x400.js.Без названия"></script><script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+	
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib._240x400();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+</script></head><body onclick="ExitApi.exit();" onload="init();" style="background-color:#D4D4D4;margin:0px;; cursor:pointer">
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+	<canvas height="400" id="canvas" style="background-color:#FFFFFF" width="240"></canvas>
+
+
+</body></html>

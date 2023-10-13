@@ -1,0 +1,34 @@
+@font-face {
+    font-family: MyFin;
+    font-display: swap;
+    src: url(../../fonts/MyFin.woff2) format('woff2'), url(../../fonts/MyFin.ttf) format('truetype'), url(../../fonts/MyFin.woff) format('woff');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal
+}
+
+@font-face {
+    font-family: roboto-light;
+    font-display: swap;
+    src: local(roboto-light), url(../../fonts/roboto-light.woff2) format("woff2"), url(../../fonts/roboto-light.eot?#iefix) format("embedded-opentype"), url(../../fonts/roboto-light.woff) format("woff"), url(../../fonts/roboto-light.ttf) format("truetype"), url(../../fonts/roboto-light.svg#roboto-light) format("svg")
+}
+
+.roboto-light {
+    font-family: roboto-light, Arial, Helvetica, sans-serif
+}
+
+@font-face {
+    font-family: roboto-regular;
+    font-display: swap;
+    src: local(roboto-regular), url(../../fonts/roboto-regular.woff2) format("woff2"), url(../../fonts/roboto-regular.eot?#iefix) format("embedded-opentype"), url(../../fonts/roboto-regular.woff) format("woff"), url(../../fonts/roboto-regular.ttf) format("truetype"), url(../../fonts/roboto-regular.svg#roboto-regular) format("svg")
+}
+
+.roboto-regular {
+    font-family: roboto-regular, Arial, Helvetica, sans-serif
+}
+
+@font-face {
+    font-family: roboto-bold;
+    font-display: swap;
+    src: local(roboto-bold), url(../../fonts/roboto-bold.woff2) format("woff2"), url(../../fonts/roboto-bold.eot?#iefix) format("embedded-opentype"), url(../../fonts/roboto-bold.woff) format("woff"), url(../../fonts/roboto-bold.ttf) format("truetype"), url(../../fonts/roboto-bold.svg#roboto-bold) format("svg")
+}

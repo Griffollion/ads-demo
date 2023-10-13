@@ -1,0 +1,37 @@
+.best-courses_button {
+    background: #FFDE00;
+    color: #000;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: 4px;
+    height: 30px;
+    line-height: 30px;
+ 
+    font-weight: 200;
+    font-size: 14px;
+    width: 100%;
+    padding: 0;
+}
+
+.credit-calc.noui-style.card_calc {
+    position: relative;
+}
+.superpower__wrapper {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+.superpower__bg {
+    background: #fff;
+    min-height: 400px;
+}
+
+.superpower__img {
+    width: 100%;
+    height: auto;
+}

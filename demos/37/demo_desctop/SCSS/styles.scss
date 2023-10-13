@@ -1,0 +1,100 @@
+.z-index-up {
+  z-index: 101 !important;
+  position: relative;
+}
+
+.mikki-on-rope {
+  position: fixed;
+  left: 100px;
+  z-index: 100;
+  transform: translateY(-1000px);
+  transition: transform 2s;
+  &.animated {
+    transform: translateY(0);
+    transition: transform 2s;
+  }
+  &__wrapper {
+    position: relative;
+
+  }
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+    .mikki-on-rope__text-img {
+      position: relative;
+      top: 130px;
+      left: -30px;
+      transform: scale(0);
+      transition: transform .4s;
+    }
+    &:hover {
+      .mikki-on-rope__text-img {
+        transform: scale(1);
+        transition: transform .4s;
+      }
+    }
+  }
+
+  &__img-gift {
+    position: relative;
+    top: -64px;
+    left: 31px;
+    z-index: 2;
+    width: 158px;
+    height: 158px;
+    transform: scale(0.8);
+    display: block;
+  }
+
+  &__close {
+    position: absolute;
+    top: 130px;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0, .4);
+    border: none;
+    box-shadow: none;
+    outline: none !important;
+    z-index: 5;
+    &:before, &:after {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    width: 2px;
+    height: 15px;
+    left: 12px;
+    top: 5px;
+    border-radius: 2px;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+  .mikki-on-rope {
+  &__container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: relative;
+    z-index: 2;
+      .mikki-on-rope__text-img {
+        transform: scale(1);
+        }
+    }
+  }
+}
+
+
+

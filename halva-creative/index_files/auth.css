@@ -1,0 +1,151 @@
+/* Height hack for float wrappers */
+/* TODO часть иконок заменена на наши стили. При добавлении новых способов авторизации на сайт. Наобходить задать стили для новых иконок */
+.services {
+	overflow: auto;
+}
+
+.auth-icon {
+	display: flex;
+	width: 32px;
+	height: 32px;
+	position: relative;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+
+.auth-icon::before {
+	font-family: 'MyFin';
+	color: #fff;
+	position: relative;
+	z-index: 2;
+	font-size: 16px;
+}
+
+.auth-icon::after{
+	content: '';
+	position: absolute;
+	z-index: 1;
+	width: 100%;
+	height: 100%;
+	border-radius: 4px;
+	transition: all .3s;
+}
+
+.auth-icon.google::before,
+.auth-icon.google_oauth::before {
+	content: '\e937';
+}
+
+.auth-icon.google::after,
+.auth-icon.google_oauth::after {
+	background-color: #d42700;
+}
+
+.auth-icon.twitter {
+	background-position: 0 -68px;
+}
+
+.auth-icon.yandex::before,
+.auth-icon.yandex_oauth::before {
+	content: '\e93a';
+}
+
+.auth-icon.yandex::after,
+.auth-icon.yandex_oauth::after {
+	background-color: #f2c200
+}
+
+
+.auth-icon.vkontakte {
+	background-position: 0 -136px;
+}
+
+.auth-icon.facebook::before {
+	content: '\e935';
+}
+
+.auth-icon.facebook::after {
+	background-color: #005ab0;
+}
+
+.auth-icon.mailru {
+	background-position: 0 -204px;
+}
+
+.auth-icon.moikrug {
+	background-position: 0 -238px;
+}
+
+.auth-icon.odnoklassniki::before {
+	content: '\e938';
+}
+
+.auth-icon.odnoklassniki::after {
+	background-color: #ff9301;
+}
+
+.auth-icon.linkedin {
+	background-position: 0 -306px;
+}
+
+.auth-icon.github {
+	background-position: 0 -340px;
+}
+
+.auth-icon.live {
+	background-position: 0 -372px;
+}
+
+.auth-icon.yahoo {
+	background-position: 0 -406px;
+}
+
+.auth-icon.steam {
+	background-position: 0 -440px;
+}
+
+.auth-icon.dropbox {
+	background-position: 0 -472px;
+}
+
+.auth-icon.wargaming {
+	background-position: 0 -503px;
+}
+
+.auth-icon.eve {
+	background-position: 0 -538px;
+}
+
+
+.auth-link:hover .auth-icon::after,
+.auth-link:focus .auth-icon::after {
+	filter: brightness(120%);
+}
+
+.auth-services {
+	margin: 0 0 1em;
+	list-style: none;
+	/* Height hack for float wrappers */
+	overflow: auto;
+}
+
+.auth-service {
+	float: left;
+	margin: 0 1em 0 0;
+}
+
+.auth-services .auth-service .auth-link {
+	display: block;
+	/*padding: 0 0.4em;*/
+}
+
+.auth-service .auth-link .auth-icon {
+	margin: 0 auto;
+}
+
+.auth-service .auth-link .auth-title {
+	display: block;
+	margin-top: 0.4em;
+	text-align: center;
+}

@@ -1,0 +1,5 @@
+#banner-hover:hover {
+    cursor: pointer;
+    position: relative;
+    z-index: 999;
+}

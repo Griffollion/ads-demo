@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../assets/icons/icon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../fractal/css/default.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/styles/theme.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Рейтинг чего-либо | RUM Components Guide</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../../.." class="Header-title" data-pjax>RUM Components Guide</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-b80bab8dfabf9897010ce151749feac1">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/star-rating" title="Component preview">
+            Рейтинг чего-либо
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-b80bab8dfabf9897010ce151749feac1">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/star-rating"
+                sandbox="allow-same-origin allow-scripts allow-forms"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-b80bab8dfabf9897010ce151749feac1">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-b80bab8dfabf9897010ce151749feac1-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-b80bab8dfabf9897010ce151749feac1-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-b80bab8dfabf9897010ce151749feac1-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-b80bab8dfabf9897010ce151749feac1-panel-assets">Assets</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-b80bab8dfabf9897010ce151749feac1-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-b80bab8dfabf9897010ce151749feac1-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-b80bab8dfabf9897010ce151749feac1-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating star-rating--4"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__text"</span>&gt;</span>4<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__stars"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-b80bab8dfabf9897010ce151749feac1-panel-view">
+    <code class="Code Code--lang-html">
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating star-rating--{{rating}}"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__text"</span>&gt;</span>{{rating}}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__stars"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-b80bab8dfabf9897010ce151749feac1-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre>{
+  <span class="hljs-attr">"rating"</span>: <span class="hljs-string">"4"</span>
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-b80bab8dfabf9897010ce151749feac1-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-be6f622a8c8e0ead73b9de9d3fae1b17">star-rating.css</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-be6f622a8c8e0ead73b9de9d3fae1b17" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre><span class="hljs-selector-class">.star-rating</span> {
+    <span class="hljs-attribute">display</span>: -webkit-box;
+    <span class="hljs-attribute">display</span>: -ms-flexbox;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">-webkit-box-align</span>: center;
+    <span class="hljs-attribute">-ms-flex-align</span>: center;
+    <span class="hljs-attribute">align-items</span>: center;
+  }
+  
+  <span class="hljs-selector-class">.star-rating__text</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">5px</span>;
+    <span class="hljs-attribute">font-family</span>: roboto-bold;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating__stars</span> {
+    <span class="hljs-attribute">display</span>: -webkit-box;
+    <span class="hljs-attribute">display</span>: -ms-flexbox;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">-webkit-box-align</span>: center;
+    <span class="hljs-attribute">-ms-flex-align</span>: center;
+    <span class="hljs-attribute">align-items</span>: center;
+  }
+  
+  <span class="hljs-selector-class">.star-rating__star</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">3px</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--big</span> <span class="hljs-selector-class">.star-rating__star</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e906'</span>;
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Flaticon'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:last-child</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--1</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--1</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e905'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--2</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span>, <span class="hljs-selector-class">.star-rating--2</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--2</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--2</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e905'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span>, <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span>, <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e905'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(4)</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(4)</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e905'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(4)</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(5)</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(4)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(5)</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e905'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--gray-border</span> <span class="hljs-selector-class">.star-rating__star</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#CCCCCC</span>;
+    <span class="hljs-attribute">cursor</span>: pointer;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--fs-30</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--fs-30</span> <span class="hljs-selector-class">.star-rating__star</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+  }
+  </pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/star-rating/star-rating.css"><span>/components/raw/star-rating/star-rating.css</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src\components\star-rating\star-rating.css</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">3 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-b80bab8dfabf9897010ce151749feac1-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@star-rating</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/star-rating"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/star-rating"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">src\components\star-rating\star-rating.html</span>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-b80bab8dfabf9897010ce151749feac1-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p>Компонент рейтинга чего либо</p>
+
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">components</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="checkbox-btn" data-pjax>
+                <span>Checkbox Btn</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="feedback-block" data-pjax>
+                <span>Feedback Block</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="review-author" data-pjax>
+                <span>Review Author</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="review-info" data-pjax>
+                <span>Review Info</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Star Rating</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <h3 class="Tree-title">documentation</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/tokens" data-pjax>
+                <span>Основные стили проекта</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../fractal/js/mandelbrot.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

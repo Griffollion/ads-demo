@@ -1,0 +1,183 @@
+.personal-page.personal-page_idea .personal-page__bank-title {
+    background-color: #0fb6a0;
+    background-image: url(img/idea__header-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 2;
+}
+.personal-page .personal-page__bank-title-logo.personal-page__bank-title-logo_idea{
+    left: 30%;
+    position: relative;
+}
+.personal-page .personal-page__bank-title-text.personal-page__bank-title-text_idea{
+    color: #2b2a29;
+    font-family: roboto-light;
+}
+.personal-page.personal-page_idea .personal-page__contacts {
+    background-color: #1f99d8;
+    position: relative;
+}
+.personal-page.personal-page_idea .personal-page__contacts .fa {
+    color: #ffffff;
+    margin-right: 5px;
+    font-size: 18px;
+}
+.personal-page.personal-page_idea .personal-page__phones {
+    color: #ffffff;
+    font-size: 18px;
+}
+.personal-page.personal-page_idea .personal-page__phones span {
+    font-size: 22px;
+}
+.personal-page.personal-page_idea .personal-page__site {
+    color: #ffffff;
+    font-size: 18px;
+    padding-left: 35px;
+    display: inline-block;
+}
+.personal-page.personal-page_idea .personal-page__phones.personal-page__operators {
+    margin-left: 35px;
+}
+
+/*В общий добавить*/
+.personal-page__m-operators {
+    height: 20px !important;
+    width: auto;
+    padding-right: 5px;
+    display: inline-block !important;
+    margin-bottom: 7px;
+}
+/*В общий добавить*/
+
+.personal-page__personal-style.personal-page__personal-style_idea {
+    background-color: #1f99d8;
+    height: 10px;
+}
+/*Заявка на кредит*/
+.personal-page__creative.personal-page__request-block {
+    display: flex;
+    align-items: stretch;
+}
+.personal-page__request-wrapper.personal-page__request-wrapper_idea {
+    max-width: 295px;
+    padding: 20px;
+}
+.personal-page__request-wrapper.personal-page__request-wrapper_idea .form-control {
+    border: 1px solid #1f99d8;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.personal-page__request-wrapper.personal-page__request-wrapper_idea .input-group-addon {
+    background-color: #1f99d8;
+    border: 1px solid #1f99d8;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.personal-page__request-wrapper.personal-page__request-wrapper_idea .fa {
+    color: #ffffff;
+}
+.personal-page__request-wrapper.personal-page__request-wrapper_idea .btn.btn-primary.btn_submit.btn_big.mass_request_bt {
+    background-image: -moz-linear-gradient( 90deg, rgb(9,148,209) 0%, rgb(73,192,244) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(9,148,209) 0%, rgb(73,192,244) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(9,148,209) 0%, rgb(73,192,244) 100%);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    padding: 11px 19px 12px;
+    font-size: 18px;
+}
+.personal-page__request-wrapper.personal-page__request-wrapper_idea .btn.btn-primary.btn_submit.btn_big.mass_request_bt:hover {
+    background-image: -moz-linear-gradient( 90deg, rgb(9,148,239) 0%, rgb(73,192,255) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(9,148,239) 0%, rgb(73,192,255) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(9,148,239) 0%, rgb(73,192,255) 100%);
+}
+.personal-page__request-wrapper.personal-page__request-wrapper_idea .btn.btn-primary.btn_submit.btn_big.mass_request_bt:active {
+    background-image: -moz-linear-gradient( 90deg, rgb(9,128,180) 0%, rgb(73,192,235) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(9,128,180) 0%, rgb(73,192,235) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(9,128,180) 0%, rgb(73,192,235) 100%);
+}
+.personal-page__request-wrapper.personal-page__request-wrapper_idea .credit-request .form-group_submit {
+    padding: 20px 20px 0 20px;
+    background: #ffffff;
+}
+/*Заявка на кредит*/
+
+/*Партнер в меню*/
+.personal-page__menu-partner.personal-page__menu-partner_idea a::before {
+    background: url(./img/mini-icon_idea.png) no-repeat !important;
+}
+.personal-page__menu-partner_idea {
+    background-color: #0099d9;
+}
+.personal-page__menu-partner_idea a {
+    color: #ffffff !important;
+}
+.personal-page__menu-partner_idea span{
+    color: #013e5b;
+    text-transform: uppercase;
+    display: block;
+    font-size: 11px;
+    font-weight: bold;
+}
+/*Партнер в меню*/
+@media(max-width: 1150px) {
+    .personal-page .personal-page__bank-title-logo.personal-page__bank-title-logo_idea{
+        left: 20%;
+    }
+}
+@media(max-width: 970px) {
+    .personal-page .personal-page__bank-title-logo.personal-page__bank-title-logo_idea{
+        left: 7%;
+    }
+}
+@media(max-width: 863px) {
+    .personal-page .personal-page__bank-title-logo.personal-page__bank-title-logo_idea{
+        left: 0;
+    }
+    .personal-page.personal-page_idea .personal-page__site {
+        padding: 0;
+        display: block;
+    }
+
+}
+@media(max-width: 768px) {
+    .personal-page .personal-page__bank-title-text.personal-page__bank-title-text_idea{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+    .personal-page.personal-page_idea .personal-page__site,
+    .personal-page.personal-page_idea .personal-page__phones {
+        padding: 0;
+        font-size: 16px;
+        display: block;
+    }	
+	.personal-page.personal-page_idea .personal-page__phones {
+        display: inline-block;
+        margin-bottom: 10px;
+        padding-right: 5px;
+    }
+
+	.personal-page .personal-page__border-block_idea {
+        background-color: #1f99d8;
+        padding: 15px;
+        border-top: 3px solid #0a79b3;
+    }
+	.personal-page .personal-page__border-block_idea tbody tr:hover {
+        background: transparent;
+    }
+	.personal-page .personal-page__border-block_idea *{
+        color: #ffffff;
+    }
+}
+@media(max-width: 660px) {
+    .personal-page .personal-page__bank-title-text.personal-page__bank-title-text_idea {
+        margin-top: 10px;
+        font-size: 16px;
+    }
+    .personal-page.personal-page_idea .personal-page__phones.personal-page__operators {
+        margin-left: 0;
+        display: block;
+        margin-bottom: 10px;
+    }
+}

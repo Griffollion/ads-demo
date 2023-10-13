@@ -1,0 +1,30 @@
+.container.branding {
+    position: relative;
+}
+.seo_wrap.branding {
+    background: url('/images/branding/domovita/bg.jpg') no-repeat top center;
+    padding-top: 45px;
+}
+.branding_head {
+    text-align: center;
+}
+.branding_head a{
+    display: inline-block;
+}
+.branding_head img{
+    position: relative;
+    width: 1201px;
+    left: -1px;
+}
+.branding_link {
+    width: 50%;
+    position: absolute;
+    height: 500px;
+    top: 0;
+}
+.branding_link.branding_left {
+    left: 0;
+}
+.branding_link.branding_right {
+    right: 0;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!-- saved from url=(0017)https://myfin.by/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  <title>bib_kvartira_240x400</title> <!-- write your code here -->   <script src="./createjs-2015.11.26.min.js.Без названия"></script> <script src="./bib_kvartira_240x400.js.Без названия"></script> <script>
+var canvas, stage, exportRoot;
+function init() {
+	// --- write your JS code here ---
+	
+	canvas = document.getElementById("canvas");
+	images = images||{};
+
+	var loader = new createjs.LoadQueue(false,null,true);
+	loader.addEventListener("fileload", handleFileLoad);
+	loader.addEventListener("complete", handleComplete);
+	loader.loadManifest(lib.properties.manifest);
+}
+
+function handleFileLoad(evt) {
+	if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+}
+
+function handleComplete(evt) {
+	exportRoot = new lib.bib_kvartira_240x400();
+
+	stage = new createjs.Stage(canvas);
+	stage.addChild(exportRoot);
+	stage.update();
+
+	createjs.Ticker.setFPS(lib.properties.fps);
+	createjs.Ticker.addEventListener("tick", stage);
+}
+
+</script>  <!-- write your code here -->  </head> <body onload="init();" style="background-color:#D4D4D4;margin:0px;" marginwidth="0" marginheight="0"> 	<a href="https://ads.adfox.ru/239538/goLink?hash=6d0dfa24554acbd2&amp;rqs=o8KPGgkAAAAV5LdZzYu8MgyspZ-znR_P&amp;pr=mtktfnj&amp;p5=euyjr&amp;rand=czgsnnh&amp;p1=buoxq&amp;p2=fgou@https://www.belinvestbank.by/private-clients/lending/kredity_na_finansirovanie_nedvizhimosti_25.php" target="_blank"><canvas id="canvas" width="240" height="400" style="background-color:#FFFFFF"></canvas></a>  </body></html>

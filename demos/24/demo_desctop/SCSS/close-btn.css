@@ -1,0 +1,37 @@
+.balls-stretch__close-btn {
+  position: absolute;
+  right: 32px;
+  bottom: 95px;
+  width: 40px;
+  height: 40px;
+  opacity: 1;
+  z-index: 999;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  outline: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.balls-stretch__close-btn:hover {
+  opacity: 1;
+}
+
+.balls-stretch__close-btn:before, .balls-stretch__close-btn:after {
+  position: absolute;
+  left: 19px;
+  top: 8px;
+  content: ' ';
+  height: 25px;
+  width: 2px;
+  background-color: #000;
+}
+
+.balls-stretch__close-btn:before {
+  transform: rotate(45deg);
+}
+
+.balls-stretch__close-btn:after {
+  transform: rotate(-45deg);
+}

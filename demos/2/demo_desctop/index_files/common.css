@@ -1,0 +1,13 @@
+.news.news--custom-share-hidden .custom-share {
+    display: none;
+}
+
+.news .news-content-social-wrapp {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.news.news--custom-share-hidden  .news-content-social-wrapp {
+    opacity: 1;
+    pointer-events: auto;
+}

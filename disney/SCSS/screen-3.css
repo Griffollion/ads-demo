@@ -1,0 +1,353 @@
+.disney-screen-3 {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(200%);
+  background-color: #fff;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: transparent;
+}
+.disney-screen-3__default-screen {
+  width: 100%;
+  height: 100%;
+  background: url(../img/disney-card.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top left;
+}
+.disney-screen-3__default-screen-link {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
+.disney-screen-3__infoblock {
+  background-color: #efeae0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 52%;
+}
+.disney-screen-3__infoblock.in-camera {
+  height: auto;
+  background-color: transparent;
+  height: 230px;
+  z-index: 3;
+}
+.disney-screen-3__infoblock-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.disney-screen-3__infoblock-back:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -245px;
+  width: 100%;
+  height: 100%;
+  background-color: #E1253D;
+}
+.disney-screen-3__infoblock-back img {
+  height: 100%;
+  width: auto;
+  position: relative;
+  left: -65px;
+}
+.disney-screen-3__infoblock-wrapper {
+  position: relative;
+  height: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.disney-screen-3__duga {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(-100%);
+  width: 100%;
+}
+.disney-screen-3__duga img {
+  width: calc(100% + 4px);
+  position: relative;
+  top: 1px;
+  left: -2px;
+}
+.disney-screen-3__infoblock-partners {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.disney-screen-3__infoblock-img-1 {
+  height: 122px;
+  width: auto;
+}
+.disney-screen-3__infoblock-img-2 {
+  height: auto;
+  width: 90px;
+  position: relative;
+  bottom: -33px;
+  left: -25px;
+}
+.disney-screen-3__infoblock-texts {
+  text-align: right;
+  position: relative;
+  z-index: 2;
+}
+.disney-screen-3__infoblock-btn {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  background: #c91139;
+  height: 44px;
+  padding: 0 15px;
+  border-radius: 30px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.disney-screen-3__infoblock-btn.disney-screen-3__infoblock-btn--white {
+  background-color: #fff;
+  color: #000;
+}
+.disney-screen-3__infoblock-text-1 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #696969;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  text-align: right;
+}
+.disney-screen-3__infoblock-text-1.text-white {
+  color: #fff;
+}
+.disney-screen-3__infoblock-text-2 {
+  font-size: 14px;
+  color: #696969;
+  text-align: right;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+.disney-screen-3__infoblock-text-2.text-white {
+  color: #fff;
+}
+.disney-screen-3__camera {
+  display: none;
+  height: 100%;
+  position: relative;
+}
+.disney-screen-3__camera.visible {
+  display: block;
+}
+.disney-screen-3.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: transform 1s;
+}
+.disney-screen-3 #ears {
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  z-index: 20;
+}
+.disney-screen-3 #ears img {
+  width: 90vw;
+  height: auto;
+}
+.disney-screen-3 #nose {
+  position: absolute;
+  top: 110px;
+  left: 66px;
+  z-index: 20;
+}
+.disney-screen-3 #nose img {
+  width: 16vw;
+  height: auto;
+}
+.disney-screen-3__help-block {
+  position: absolute;
+  top: 181px;
+  left: 67px;
+  z-index: 20;
+}
+.disney-screen-3__help-block-wrapper {
+  position: relative;
+}
+.disney-screen-3__help-block-arrows {
+  height: 30px;
+  width: 30px;
+  position: absolute;
+  top: -21px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.disney-screen-3__help-block-text {
+  width: 150px;
+}
+.disney-screen-3 #video {
+  z-index: 1;
+  width: auto;
+  height: 100%;
+  transform: scale(-1, 1);
+}
+.disney-screen-3 #canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  opacity: 0;
+}
+.disney-screen-3 #canvas.visible {
+  opacity: 1;
+}
+.disney-screen-3 #image_for_share {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  z-index: -1;
+}
+.disney-screen-3__buttons-container {
+  position: absolute;
+  left: 10px;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.disney-screen-3 .disney-btn__text {
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  color: #fff;
+  z-index: 1000;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 0 12px black;
+}
+.disney-screen-3 .disney-btn__text.disney-btn--invisible {
+  transform: scale(0);
+}
+.disney-screen-3 .disney-btn__text.disney-btn--invisible.animated {
+  transform: scale(1);
+  transition: transform .4s;
+}
+.disney-screen-3 .disney-btn__text.disney-btn--invisible.inv {
+  transform: scale(0);
+  transition: transform .4s;
+}
+.disney-screen-3 .disney-btn {
+  display: flex;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #fff;
+  font-size: 40px;
+  padding: 0;
+  line-height: 1;
+  margin: 0 0 15px 0;
+}
+.disney-screen-3 .disney-btn:last-child {
+  margin-bottom: 0;
+}
+.disney-screen-3 .disney-btn img {
+  width: 30px;
+  height: 30px;
+}
+.disney-screen-3 .disney-btn.ic-vk {
+  background-color: #5a749a;
+}
+.disney-screen-3 .disney-btn.ic-fb {
+  background-color: #3a518b;
+}
+.disney-screen-3 .disney-btn.fa-instagram {
+  font-size: 30px;
+  background: #6326ca;
+  background: -moz-linear-gradient(top, #6326ca 0%, #af1784 33%, #ef5531 66%, #f8d26d 100%);
+  background: -webkit-linear-gradient(top, #6326ca 0%, #af1784 33%, #ef5531 66%, #f8d26d 100%);
+  background: linear-gradient(to bottom, #6326ca 0%, #af1784 33%, #ef5531 66%, #f8d26d 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6326ca', endColorstr='#f8d26d',GradientType=0 );
+}
+.disney-screen-3 .disney-btn.disney-btn--invisible {
+  transform: scale(0);
+}
+.disney-screen-3 .disney-btn.disney-btn--invisible.animated {
+  transform: scale(1);
+  transition: transform .4s;
+}
+.disney-screen-3 .disney-btn.disney-btn--invisible.inv {
+  transform: scale(0);
+  transition: transform .4s;
+}
+.disney-screen-3 #snap {
+  position: absolute;
+  left: 10px;
+  top: 40%;
+  background-color: #e1253d;
+}
+.disney-screen-3 #snap.animated {
+  transform: scale(1);
+  transition: transform .4s;
+}
+.disney-screen-3 #snap.inv {
+  transform: scale(0);
+  transition: transform .4s;
+}
+.disney-screen-3 #reset {
+  position: absolute;
+  right: 10px;
+  top: 20%;
+  margin-top: 20px;
+  background-color: #e1253d;
+}
+.disney-screen-3 #reset.animated {
+  transform: scale(1);
+  transition: transform .4s;
+}
+.disney-screen-3 #reset.inv {
+  transform: scale(0);
+  transition: transform .4s;
+}
+
+@media screen and (max-width: 335px) {
+  .disney-screen-3__infoblock-text-1 {
+    font-size: 14px;
+  }
+
+  .disney-screen-3__buttons-container, .disney-screen-3 #reset {
+    top: 10%;
+  }
+
+  .disney-screen-3 #reset {
+    margin-top: 41px;
+  }
+
+  .disney-screen-3__infoblock-back {
+    top: 35px;
+  }
+}

@@ -1,0 +1,1 @@
+!function(e,n,t,o,r,c,i){e[o]=e[o]||{},c=n.createElement(t),i=n.getElementsByTagName(t)[0],c.async=1,c.src="//get.5visions.com"+r,i.parentNode.insertBefore(c,i)}(window,document,"script","_Ani5","/framework/e8c81b23556.js");

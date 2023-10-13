@@ -1,0 +1,6084 @@
+#rating-grid th, .more-table th {
+    vertical-align: middle !important
+}
+
+.conditions-list li:before, .wiki_alphabet li:before {
+    content: "" !important
+}
+
+.wiki p.title {
+    font-weight: 700;
+    color: #222;
+    font-size: 16px;
+    margin: 15px 0 10px
+}
+
+.search_block p.title .total {
+    font-size: 11px;
+    color: #999;
+    margin: 0
+}
+
+.search_block p.title .total span {
+    font-size: 12px;
+    color: #333
+}
+
+.wiki_search {
+    zoom: 1;
+    padding: 10px 90px 10px 10px;
+    margin: 4px 0 10px;
+    position: relative;
+    background-color: #b9d0dd;
+    background: -webkit-linear-gradient(top, #e1ebf1 0, #b9d0dd 100%);
+    background: -moz-linear-gradient(top, #e1ebf1 0, #b9d0dd 100%);
+    background: -ms-linear-gradient(top, #e1ebf1 0, #b9d0dd 100%);
+    background: -o-linear-gradient(top, #e1ebf1 0, #b9d0dd 100%);
+    background: linear-gradient(to bottom, #e1ebf1 0, #b9d0dd 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#e1ebf1, endColorstr=#b9d0dd);
+    -webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, .45);
+    -moz-box-shadow: 0 2px 2px rgba(0, 0, 0, .45);
+    -o-box-shadow: 0 2px 2px rgba(0, 0, 0, .45);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .45)
+}
+
+.wiki_search input[type=submit] {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+    width: 60px;
+    -webkit-transition: background .3s ease 0;
+    -khtml-transition: background .3s ease 0;
+    -moz-transition: background .3s ease 0;
+    -ms-transition: background .3s ease 0;
+    -o-transition: background .3s ease 0;
+    transition: background .3s ease 0;
+    font-weight: 400;
+    text-transform: none;
+    padding: 3px 10px;
+    border: 1px solid #2f79ed;
+    box-shadow: inset 0 1px 1px #6da1f6;
+    background: #498af3;
+    cursor: pointer;
+    color: #fff
+}
+
+.wiki_alphabet {
+    padding: 0 10px
+}
+
+.wiki_alphabet ul {
+    display: table;
+    width: 100%;
+    padding-bottom: 5px;
+    margin-bottom: 0 !important
+}
+
+.wiki_alphabet li {
+    list-style: none;
+    color: #ccc;
+    text-transform: uppercase;
+    float: left;
+    padding-right: .7%;
+    font-size: 14px
+}
+
+.search_text {
+    background-color: #fff;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 14px;
+    border: 1px solid #bdc3c7;
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 36px;
+    -webkit-transition: color .3s ease, border .3s ease;
+    -khtml-transition: color .3s ease, border .3s ease;
+    -moz-transition: color .3s ease, border .3s ease;
+    -ms-transition: color .3s ease, border .3s ease;
+    -o-transition: color .3s ease, border .3s ease;
+    transition: color .3s ease, border .3s ease;
+    width: 100%;
+    line-height: 23px;
+    color: #333;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .37);
+    -moz-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .37);
+    -o-box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .37);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .37)
+}
+
+.description {
+    line-height: 20px
+}
+
+.list_terms .item_term, .wiki_categories .item {
+    display: block;
+    float: left;
+    width: 48%;
+    margin: 0 1%
+}
+
+@media (max-width: 667px) {
+    .list_terms .item_term, .wiki_categories .item {
+        width: 100%;
+        margin: 0
+    }
+}
+
+.list_terms .item_term .name, .wiki_categories .item .title {
+    font-weight: 700;
+    font-size: 14px;
+    color: #325476;
+    margin-bottom: 3px;
+    display: inline-block
+}
+
+.wiki_categories .item .space {
+    white-space: nowrap
+}
+
+.wiki .seporator {
+    margin: 5px 0;
+    clear: both;
+    float: none
+}
+
+.block {
+    display: none
+}
+
+.block.visible {
+    display: block
+}
+
+.prev_photo {
+    width: 25%;
+    float: left;
+    margin-right: 5%
+}
+
+.prev_photo img {
+    width: 100%
+}
+
+.prev_info {
+    width: 70%;
+    float: left
+}
+
+.right {
+    float: right
+}
+
+@media (max-width: 400px) {
+    .prev_info, .prev_photo {
+        width: 100%
+    }
+}
+
+.sb_block_bottom {
+    list-style: none;
+    padding: 0
+}
+
+.sb_block_bottom .sb_panel {
+    display: inline-block;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px
+}
+
+.sb_block_bottom .sb_panel_li {
+    float: left;
+    display: block;
+    text-decoration: none;
+    width: 48%;
+    height: 50px;
+    padding: 5px 2%;
+    border: 1px solid #e1e1e1;
+    margin: 3px 1% 0;
+    line-height: 1.3em;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.conditions-list li:before, .conditions-list ul {
+    padding: 0 !important
+}
+
+.sb_block_bottom .sb_panel_li:hover {
+    border: 1px solid #c1c1c1;
+    background-color: #f8f8f8
+}
+
+.sb_block_bottom .sb_panel_li img {
+    width: 55px;
+    margin-right: 10px;
+    float: left
+}
+
+.sb_block_bottom .sb_panel_li span {
+    font-weight: 400;
+    display: block;
+    color: #a1a1a1;
+    font-size: 14px
+}
+
+div.greyrating {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAMAAADHVLbdAAAA1VBMVEX3jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx4CXZUYAAAAR3RSTlMAAgMGCAkLDQ4SExQWGR4kJi4zNDU/R2ZsbXB4en2AhIeLjJWXmJ2goaWmp6mqq661t7q8vr/DycrMztLU1dzh6uvu9Pb5/ndBQXUAAACESURBVAgdBcGJIsIAAADQ1xa10kErRybWKDqYs5NJ/P8neQ+gDwAc/3UBwMPHMwC0iuirA6B2MrtylsdHcL752a0eIwez5fd+mwin7xVA+Sk/JMgWdVB5nYTgeg3eshIQr8BLD3B6pzloubkE3CZpMSqGF3PA4jdrqKf7TyC4b4PmuMo/yacMIssOgW0AAAAASUVORK5CYII=) repeat-x;
+    width: 75px;
+    height: 16px;
+    float: left;
+    overflow: hidden;
+    margin-right: 5px
+}
+
+div.mainrating {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAOCAMAAADHVLbdAAAAmVBMVEX3jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx73jx7XYYdwAAAAMnRSTlMAAQIDBAYKDBMUFhkeJS8zNTY+Rmdud3h7h42WmJqgoqWnqqu2uMvU1dzv8/T2+fv9/v2EsTUAAABqSURBVAgdVcGFFoJQFEXBbWAjdqGCiN3n/z9O5PqWOMPXhD+DV5einTYUBNLTx2n1UknboEFmdrzJuR7G1FL9JB54sZxlhUw5lJmXyA1l+pipzAiTSOf1RVphTvdFk3b42JOrRx0+/LgKb7shESRBUGprAAAAAElFTkSuQmCC) repeat-x;
+    height: 16px
+}
+
+div.mainrating span {
+    position: relative;
+    left: 81px;
+    top: -3px
+}
+
+.bank_selection_card, .bank_selection_credit, .bank_selection_vklad {
+    position: absolute;
+    top: 2px;
+    right: 2px
+}
+
+#metallslider, .deposit_menu {
+    position: relative
+}
+
+.deposit_menu .subMenu {
+    cursor: pointer !important
+}
+
+.deposit_menu .subMenu span {
+    color: #14509c !important
+}
+
+.deposit_menu .subMenu.active span {
+    color: #fff !important
+}
+
+.deposit_menu .subMenu:hover span {
+    background: #f78f1e !important;
+    opacity: .7 !important;
+    color: #fff !important
+}
+
+.subMenu.arrow:hover:after {
+    border-top: 8px solid #fff
+}
+
+.subMenu.arrow:after {
+    border-top: 8px solid #14509c;
+    top: 16px;
+    right: 4px
+}
+
+.subMenu.arrow.active:after {
+    border-top: 8px solid #fff
+}
+
+@media (max-width: 768px) {
+    .bank_selection_block {
+        position: relative
+    }
+}
+
+.credit-rates h3 {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1
+}
+
+#banki_poisk_menu hr, .iwcontent hr {
+    margin: 3px 0
+}
+
+.mapdata {
+    display: none
+}
+
+.checkbox-left, .jq-checkbox + label {
+    display: inline-block
+}
+
+.iwcontent {
+    text-align: center
+}
+
+#banki_poisk_menu h3 {
+    font-size: 14px;
+    margin: 4px 0
+}
+
+.checkbox-left {
+    margin-right: 8px;
+    line-height: 1
+}
+
+.product_detail_option {
+    margin: 15px 0
+}
+
+.product_detail_option h3 {
+    text-align: center;
+    margin-bottom: 10px
+}
+
+.conditions-list ul, .credit_product_h3 {
+    margin: 0 !important
+}
+
+.credit_product_h3 {
+    font-size: 24px !important;
+    line-height: 1.45833333 !important;
+    text-transform: uppercase;
+    letter-spacing: 3px
+}
+
+#map .ymaps-2-1-47-b-cluster-content__header, #map .ymaps-2-1-47-balloon-content__header {
+    font-size: 100% !important;
+    font-weight: 400 !important
+}
+
+.product_detail_card_img {
+    max-width: 200px;
+    margin: 25px auto 10px;
+    border-radius: 7px;
+    overflow: hidden
+}
+
+#metallslider, .comparetable {
+    overflow-x: auto
+}
+
+.list_card_img_block {
+    width: 130px;
+    margin: 0 auto
+}
+
+.list_card_img_block img {
+    max-width: 80px;
+    border-radius: 7px;
+    margin: 0 auto 6px
+}
+
+.credit-compare_i input {
+    border: none;
+    background: 0 0
+}
+
+.form-horizontal .form-group.modal-footer {
+    margin: 0;
+    padding: 10px 0 20px;
+    text-align: center
+}
+
+.col0, .col4, .col5, .col6, .col7, .col8 {
+    display: none
+}
+
+.metallslider li {
+    float: left;
+    width: 60px;
+    text-align: center
+}
+
+#metallslider {
+    width: 100%;
+    height: 40px;
+    overflow-y: hidden
+}
+
+.metallslider {
+    position: absolute;
+    width: 545px
+}
+
+.metall_title {
+    margin-bottom: 8px !important;
+    float: left
+}
+
+.metall_datapick {
+    display: inline-block
+}
+
+#map .ymaps-2-1-47-b-cluster-carousel__nav_type_next, #map .ymaps-2-1-47-b-cluster-carousel__nav_type_prev, #map .ymaps-2-1-47-copyright__text, #map .ymaps-2-1-47-map-copyrights-promo {
+    display: none !important
+}
+
+#metallslider span.ui-slider-handle {
+    height: 26px;
+    margin-left: -5em;
+    top: -3px;
+    width: 180px;
+    border: 3px solid #f78f1e;
+    background: 0 0;
+    cursor: pointer
+}
+
+.address_otdel_type {
+    margin-top: 10px
+}
+
+.address_otdel_type label {
+    position: relative;
+    top: 8px;
+    margin-right: 15px
+}
+
+#map .ymaps-2-1-47-panel-pane {
+    bottom: 120px !important;
+    right: 60px !important;
+    left: auto !important;
+    width: 205px !important;
+    padding: 30px 25px 25px !important
+}
+
+#map .ymaps-2-1-47-balloon {
+    border-top: 3px solid red !important
+}
+
+#map .ymaps-2-1-47-balloon__content ymaps {
+    overflow-y: auto !important;
+    height: auto !important
+}
+
+#map .ymaps-2-1-47-copyrights-pane {
+    bottom: 0 !important
+}
+
+#map .ymaps-2-1-47-b-cluster-carousel__pager {
+    border-top: 3px solid #ccc !important;
+    position: relative !important;
+    bottom: 0 !important
+}
+
+#map .ymaps-2-1-47-b-cluster-content {
+    margin: 0 4px 0 0 !important
+}
+
+#map .link-more, #map .map-descr .b-tel {
+    margin-bottom: 10px
+}
+
+#map .ymaps-2-1-47-b-cluster-carousel {
+    border-bottom: 0 solid #fff
+}
+
+#map .ymaps-2-1-47-b-cluster-carousel_pager_numeric .ymaps-2-1-47-b-cluster-carousel__pager-item_current_yes:before {
+    background: #fff
+}
+
+#map .ymaps-2-1-47-balloon__close-button {
+    width: 20px !important;
+    height: 20px !important
+}
+
+#map .ymaps-2-1-47-b-cluster-carousel__pager-item {
+    font-weight: 700 !important
+}
+
+#map .link-more {
+    display: block
+}
+
+@media (max-width: 767px) {
+    .iwcontent {
+        width: 150px
+    }
+
+    #metallslider {
+        height: 60px
+    }
+
+    #map .ymaps-2-1-47-panel-pane {
+        bottom: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        padding: 0 !important
+    }
+
+    .ymaps-2-1-47-copyright__agreement, .ymaps-2-1-47-islets_gotoymaps {
+        display: none !important
+    }
+}
+
+#inf_page_bl .clearfix, #inf_page_bl .clearfix:before {
+    display: inline !important
+}
+
+#rating-grid .ratingCount {
+    font-size: 12px !important
+}
+
+#rating-grid th {
+    font-size: 14px !important
+}
+
+#rating-grid .greyrating {
+    float: none !important
+}
+
+.pdLeft30 {
+    padding-left: 30px
+}
+
+#inf_page_bl_rightmenu {
+    width: 25%;
+    float: right;
+    background: #ebf6fb;
+    padding-left: 5px;
+    margin-left: 10px
+}
+
+#inf_page_bl_rightmenu a {
+    font-size: 12px;
+    line-height: 1.33333333;
+    margin-top: 0;
+    margin-bottom: 8px
+}
+
+#inf_page_bl .clearfix:after {
+    clear: none !important
+}
+
+#inf_page_bl_val {
+    float: left
+}
+
+#inf_page_bl_val_value {
+    float: left;
+    background-color: #f78f1e;
+    color: #fff;
+    font-size: 40px;
+    font-family: Arial;
+    padding-top: 10px;
+    padding-left: 7px;
+    padding-right: 7px
+}
+
+#inf_page_bl_val_dop {
+    float: left;
+    padding-top: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #989898
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-page {
+    position: relative !important;
+    float: left !important;
+    padding: 8px 13px !important;
+    text-decoration: none !important;
+    color: #14509c !important;
+    background-color: transparent !important;
+    border: 1px solid transparent !important;
+    margin-left: -1px !important;
+    -webkit-border-radius: 2px !important;
+    border-radius: 2px !important;
+    font-size: 18px !important;
+    font-weight: 400 !important
+}
+
+.gsc-results .gsc-cursor-box .gsc-cursor-current-page {
+    z-index: 2 !important;
+    color: #333 !important;
+    background-color: transparent !important;
+    border-color: #C2CED4 !important;
+    cursor: default !important;
+    font-weight: 400 !important
+}
+
+.gsc-results .gsc-cursor-box {
+    text-align: center !important
+}
+
+.gsc-results .gsc-cursor {
+    display: inline-block !important
+}
+
+.gsc-input-box {
+    height: auto !important
+}
+
+.gsc-input-box table {
+    margin-bottom: 0 !important
+}
+
+.gsc-input-box td {
+    padding: 8px 11px !important
+}
+
+.gsst_a .gscb_a {
+    position: relative !important;
+    top: 4px !important
+}
+
+.gsc-above-wrapper-area table {
+    padding: 0 !important;
+    margin-bottom: 0 !important
+}
+
+.gsc-above-wrapper-area td, .gsc-input, td.gsc-search-button {
+    padding: 0 !important
+}
+
+input.gsc-search-button-v2 {
+    width: auto !important;
+    height: auto !important;
+    padding: 13px 27px !important;
+    margin-top: 4px !important
+}
+
+.departmentBt {
+    margin-bottom: 20px;
+    display: inline-block
+}
+
+.departmentBtBlock {
+    text-align: center
+}
+
+.otdelServices {
+    padding-left: 15px
+}
+
+.input_calc {
+    width: 60%;
+    font-size: 16px;
+    float: left
+}
+
+.converterContent {
+    background-color: #EFEDD5;
+    padding: 20px;
+    min-height: 220px
+}
+
+.calc .popular, .ins_block {
+    min-height: 135px
+}
+
+.converterLink {
+    margin-bottom: 20px;
+    margin-right: 10%;
+    text-align: right;
+    padding-top: 5px;
+    display: block
+}
+
+.converterNBRBLink {
+    padding-left: 5px;
+    top: 6px
+}
+
+.converterContent .record {
+    position: relative
+}
+
+.department .credit-rates td, .department .credit-rates th {
+    font-size: 14px !important
+}
+
+.selectValute {
+    margin-top: 20px
+}
+
+.converterTab {
+    display: inline-block;
+    font-size: 16px;
+    padding: 5px 10px
+}
+
+.converterBankName {
+    cursor: pointer;
+    color: #024272;
+    border-bottom: 1px dashed #024272
+}
+
+.bankList {
+    height: 300px;
+    width: 175px;
+    overflow: auto;
+    font-size: 16px;
+    background: #eee;
+    padding: 10px;
+    position: absolute;
+    left: 190px;
+    display: none;
+    z-index: 999
+}
+
+.converterBankItem {
+    margin: 3px 0;
+    text-transform: initial;
+    font-size: 13px;
+    letter-spacing: 0;
+    cursor: pointer
+}
+
+.converterBankItem:hover {
+    background: #ccc
+}
+
+.converterBlock .h2 {
+    margin: 0 !important;
+    letter-spacing: 0 !important
+}
+
+.leasing .tab-content {
+    padding: 0 !important
+}
+
+.leasing.rates-table .rates-table-sort .table-head tr th, .leasing.rates-table .rates-table-sort tbody td, .zaimy.rates-table .rates-table-sort .table-head tr th, .zaimy.rates-table .rates-table-sort tbody td {
+    width: auto !important
+}
+
+.leasing.rates-table .rates-table-sort tbody td:first-child {
+    padding-left: 15px !important;
+    width: 30% !important
+}
+
+.lrating.rates-table .rates-table-sort tbody td:first-child {
+    padding-left: 15px !important;
+    width: auto !important
+}
+
+.zaimy.rates-table .rates-table-sort .table-acc_link td:first-child {
+    padding-left: 30px !important;
+    width: auto !important
+}
+
+.zaimy.rates-table .rates-table-sort .more-table td:first-child {
+    width: 40% !important
+}
+
+.zaimy .mfo_name {
+    position: relative;
+    z-index: 4
+}
+
+.leasing.rates-table .rates-table-sort tbody td img {
+    float: left;
+    height: 16px;
+    margin-top: 4px;
+    margin-right: 10px
+}
+
+.CollapsiblePanel, .CollapsiblePanelContent {
+    width: auto !important
+}
+
+.ins_block {
+    float: left;
+    width: 140px;
+    text-align: center;
+    margin: 5px 10px
+}
+
+.ins_block img {
+    width: 64px;
+    margin: 0 auto;
+    max-height: 64px
+}
+
+.ins_img {
+    height: 64px
+}
+
+div#comparetable table tr td.header div.container {
+    position: relative;
+    border: 1px solid #eee;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: none;
+    padding: 10px 0;
+    width: 195px;
+    min-width: 150px;
+    max-width: 200px
+}
+
+div#comparetable table tr td.header a.delete {
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+.b-deposit-about_special {
+    height: 15px;
+    white-space: nowrap;
+    position: relative
+}
+
+.b-deposits-item__options {
+    display: inline-block;
+    margin-left: 3px
+}
+
+.b-deposits-item__options ins, .b-deposits-item__options ins a, a.edit {
+    display: block
+}
+
+.b-deposits-item__options_top ins {
+    height: 14px;
+    margin-top: 1px;
+    overflow: hidden;
+    position: relative;
+    width: 14px
+}
+
+.b-deposits-item__options_top ins a {
+    position: absolute
+}
+
+.b-deposits-item__options ins a {
+    background: url(//myfin.by/css/images/deposits_sprite.png);
+    height: 600px;
+    width: 32px
+}
+
+.b-deposits-item_prise ins a {
+    left: -18px
+}
+
+.b-deposits-item_attention ins a {
+    top: -479px;
+    left: -18px
+}
+
+.b-deposits-item_attention ins a:hover {
+    top: -494px
+}
+
+.b-deposits-item_info ins {
+    margin-top: 1px;
+    overflow: hidden;
+    position: relative;
+    width: 12px;
+    height: 12px
+}
+
+a.edit, img.icon {
+    width: 16px;
+    height: 16px
+}
+
+.b-deposits-item_info ins a {
+    top: -7px
+}
+
+.b-deposits-item_info ins a:hover {
+    background-position: 0 -12px
+}
+
+.select .b-deposits-item_info ins a {
+    top: -19px
+}
+
+.select .b-deposits-item_attention ins a, .zajavka .b-deposits-item_attention ins a {
+    top: -494px
+}
+
+a.edit {
+    float: right
+}
+
+img.icon {
+    margin-right: 5px;
+    float: left
+}
+
+.b-popups__shadow, .i-popup__behind {
+    height: 100%;
+    width: 100%;
+    position: absolute
+}
+
+#user_add_paams {
+    left: 40px;
+    display: block;
+    top: 360px
+}
+
+.i-popup__behind {
+    border: 0;
+    z-index: -1
+}
+
+.b-popups__behind {
+    left: -7px;
+    padding: 7px 7px 6px;
+    top: -7px
+}
+
+.b-popups__wrap {
+    border-collapse: collapse;
+    font-size: 100%
+}
+
+div.container i {
+    font-size: .8em
+}
+
+.b-popups__shadow {
+    border-color: rgba(154, 154, 154, .4) rgba(154, 154, 154, .5) rgba(154, 154, 154, .6);
+    border-left: 1px solid rgba(154, 154, 154, .5);
+    border-right: 1px solid rgba(154, 154, 154, .5);
+    border-style: solid;
+    border-width: 1px;
+    font: 0/0 a;
+    left: -1px;
+    top: -1px;
+    z-index: 8;
+    -moz-box-shadow: 0 1px 7px #888;
+    -webkit-box-shadow: 0 1px 7px #888;
+    -o-box-shadow: 0 1px 7px #888;
+    -khtml-box-shadow: 0 1px 7px #888;
+    box-shadow: 0 1px 7px #888;
+    background: #FFF
+}
+
+.b-popups_theme_white .b-popups__content, div#comparetable table tr.odd {
+    background: #fff
+}
+
+.i-popup {
+    display: none;
+    position: absolute;
+    z-index: 999999
+}
+
+.b-popups__content {
+    margin: 0;
+    padding: 8px 10px;
+    position: relative;
+    z-index: 10
+}
+
+.b-popups__tooltip {
+    font-size: 100%
+}
+
+.b-popups_theme_white .b-popups__tail-i {
+    border-color: #fff transparent
+}
+
+.b-popups_position_left.b-popups_theme_white .b-popups__tail-i, .b-popups_position_right.b-popups_theme_white .b-popups__tail-i {
+    border-color: transparent #fff
+}
+
+.b-popups__tail {
+    font: 0/0 a;
+    position: absolute;
+    z-index: 9;
+    border-width: 7px
+}
+
+.b-popups__tail-i {
+    font: 0/0 a;
+    position: absolute;
+    border-width: 6px
+}
+
+.b-popups_position_down .b-popups__tail {
+    margin: -7px 0 0 19px;
+    border-color: #d2d2d2 transparent
+}
+
+.b-popups_position_down .b-popups__tail-i {
+    margin: 1px 0 0 -6px
+}
+
+.b-popups_position_down .b-popups__tail, .b-popups_position_down .b-popups__tail-i {
+    border-style: none solid solid
+}
+
+.b-popups_position_up .b-popups__tail {
+    top: 100%;
+    margin: 0 0 0 19px;
+    border-color: #d2d2d2 transparent
+}
+
+.b-popups_position_up .b-popups__tail-i {
+    margin: -7px 0 0 -6px
+}
+
+.b-popups_position_up .b-popups__tail, .b-popups_position_up .b-popups__tail-i {
+    border-style: solid solid none
+}
+
+.b-popups_position_left .b-popups__tail {
+    left: 100%;
+    margin: 19px 0 0;
+    border-color: transparent #c9c9c5
+}
+
+.b-popups_position_left .b-popups__tail-i {
+    margin: -6px 0 0 -7px
+}
+
+.b-popups_position_left .b-popups__tail, .b-popups_position_left .b-popups__tail-i {
+    border-style: solid none solid solid
+}
+
+.b-popups_position_right .b-popups__tail {
+    margin: 19px 0 0 -7px;
+    border-color: transparent #c9c9c5
+}
+
+.b-popups_position_right .b-popups__tail-i {
+    margin: -6px 0 0 1px
+}
+
+.b-popups_position_right .b-popups__tail, .b-popups_position_right .b-popups__tail-i {
+    border-style: solid solid solid none
+}
+
+.b-popups_tips .b-popups__content {
+    width: 330px
+}
+
+.b-popups_tips .b-popups__chart {
+    width: auto
+}
+
+.b-popups_dropdown_small .b-popups__content {
+    padding: 2em 1em 1em
+}
+
+div#comparetable table tr.even {
+    background: #F4F4F4
+}
+
+div#comparetable table tr.even td {
+    border-top: 1px solid #dcdcdb;
+    border-bottom: 1px solid #dcdcdb
+}
+
+.FixedTables .data .img {
+    margin: 0 auto
+}
+
+.FixedTables img.logo {
+    width: 150px;
+    margin: 0 auto 10px
+}
+
+.FixedTables tr td:not(.label) {
+    text-align: center;
+    vertical-align: top
+}
+
+div#comparetable {
+    overflow-x: auto
+}
+
+div#comparetable table tr td {
+    text-align: center;
+    border-right: 4px solid #FFF;
+    padding: 4px
+}
+
+.iframe_popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    z-index: 999999;
+    left: 0
+}
+
+.fa.fa-1 {
+    font-size: 1em
+}
+
+.fa.fa-2 {
+    font-size: 2em
+}
+
+.fa.fa-3 {
+    font-size: 4em
+}
+
+.fa.fa-4 {
+    font-size: 7em
+}
+
+.fa.fa-5 {
+    font-size: 12em
+}
+
+.fa.fa-6 {
+    font-size: 20em
+}
+
+.vg_map_filial {
+    width: 16px;
+    height: 16px;
+    background: url(/images/vg_map_filial.png) no-repeat;
+    float: right
+}
+
+.cr_srok_slider {
+    width: 100%;
+    background: #14509c !important
+}
+
+.ui-slider {
+    position: relative
+}
+
+.ui-slider .ui-slider-handle {
+    width: 12px;
+    height: 13px;
+    position: absolute;
+    top: -4px;
+    margin-left: -12px;
+    z-index: 14;
+    background: url(../images/slider_pl.png)
+}
+
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden
+}
+
+.bank_rating_table, .leasing_tab, .statiWrap {
+    overflow-x: auto
+}
+
+.ui-slider-horizontal {
+    height: 1px;
+    background: #14509c
+}
+
+#metallslider .ui-slider-horizontal {
+    height: 20px
+}
+
+.ui-slider-horizontal .ui-slider-handle {
+    top: -5px;
+    margin-left: -6px
+}
+
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%
+}
+
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0
+}
+
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0
+}
+
+.ui-widget-header {
+    background: #14509c;
+    height: 5px;
+    left: 0;
+    top: 0;
+    position: absolute
+}
+
+#form {
+    padding: 20px 40px 0;
+    margin-bottom: 20px
+}
+
+#range {
+    width: 50px
+}
+
+.news.detail table {
+    width: 99% !important;
+    overflow-x: auto
+}
+
+.detail_calc {
+    width: 100%;
+    text-align: center;
+    margin: 20px 0 10px;
+    display: none
+}
+
+.month.nal {
+    margin-top: 20px
+}
+
+#calculator .valute {
+    display: inline-block
+}
+
+#calculator .valute a, .bank-info-head .info .site, .share42-item {
+    display: block
+}
+
+#calculator .valute:hover a {
+    color: #fff
+}
+
+.cr_onl_red, .de_onl_red {
+    color: red;
+    font-size: 12px
+}
+
+.loginza img {
+    margin: 5px auto
+}
+
+.modal-dialog form {
+    margin-bottom: 0
+}
+
+.autoCompliteMap {
+    padding: 5px !important;
+    margin: 3px 0;
+    border: 1px solid transparent;
+    cursor: pointer
+}
+
+.autoCompliteMap:hover {
+    border: 1px solid #ccc;
+    background: #FFFEE9
+}
+
+.autoCompliteName {
+    font-size: 12px;
+    font-weight: 700
+}
+
+.autoCompliteAdress {
+    font-size: 11px;
+    padding-top: 5px;
+    color: #333
+}
+
+#inputSearchDropdown, #inputSearchDropdownM, #inputSearchDropdown_s {
+    overflow: auto;
+    max-height: 520px;
+    border: 1px solid #ddd
+}
+
+.search-sm.hamb_menu .input:focus {
+    background: #14509c
+}
+
+@media (max-width: 1040px) {
+    .sb_block_bottom .sb_panel_li {
+        width: 100%
+    }
+}
+
+.share42-item {
+    float: left;
+    position: relative
+}
+
+.share42-item:nth-child(1):before, .share42-item:nth-child(2):before, .share42-item:nth-child(3):before, .share42-item:nth-child(4):before {
+    position: absolute;
+    left: 0;
+    font-size: 32px;
+    color: #fff;
+    line-height: 1;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    z-index: 99
+}
+
+.share42-item:before {
+    font-family: sprite;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: none
+}
+
+.share42-item:nth-child(1):before {
+    background: #45668E;
+    content: "\E012"
+}
+
+.share42-item:nth-child(2):before {
+    background: #3B5998;
+    content: "\E005"
+}
+
+.share42-item:nth-child(3):before {
+    background: #55ACEE;
+    content: "\E011"
+}
+
+.share42-item:nth-child(4):before {
+    background: #ff851b;
+    font-family: FontAwesome;
+    content: "\f263";
+    font-size: 23px;
+    width: 32px;
+    height: 32px;
+    padding-top: 4px;
+    padding-left: 8px
+}
+
+.share42-item a {
+    position: relative;
+    z-index: 999;
+    background: 0 0 !important
+}
+
+.converter .date .icon.datepickerbutton, .datapick .date .icon.datepickerbutton, .menally .date .icon.datepickerbutton {
+    left: 0;
+    width: 105px
+}
+
+.datapick .date {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    top: -4px
+}
+
+.converter .date, .menally .date {
+    position: absolute;
+    top: 5px;
+    right: 20px
+}
+
+.bank_menu h1 {
+    width: 60%;
+    font-size: 26px;
+    line-height: 1.15;
+    float: left
+}
+
+.converter h1 {
+    margin-top: 0;
+    margin-right: 7px;
+    display: inline
+}
+
+.credit-tabs h1 {
+    margin-bottom: 15px
+}
+
+.rates-chart h2 {
+    margin-top: 0
+}
+
+.credit-head h2 {
+    margin-top: 16px
+}
+
+.block_mt_0 h2, .calc h2 {
+    margin-top: 0
+}
+
+.leasing h2 {
+    padding-left: 30px
+}
+
+.calc h2 {
+    margin-right: 0;
+    width: 135px;
+    color: #fff;
+    float: left
+}
+
+@media (max-width: 767px) {
+    .bank_menu h1 {
+        width: 100%;
+        font-size: 22px
+    }
+
+    #inf_page_bl_rightmenu {
+        display: none
+    }
+}
+
+@media (max-width: 1023px) {
+    .credit-tabs h1 {
+        margin-bottom: 20px
+    }
+}
+
+.ranking_bankov li:before {
+    list-style: none;
+    content: none !important
+}
+
+.ranking_bankov li {
+    display: inline-block !important
+}
+
+.ranking_bankov a {
+    padding: 5px !important;
+    margin: 5px !important;
+    border: 1px solid transparent !important
+}
+
+.ranking_bankov a:hover {
+    border: 1px solid #498AF3 !important
+}
+
+.statiWrap {
+    width: 100%
+}
+
+.info_page .statiWrap {
+    width: 73% !important
+}
+
+.acc_stati {
+    cursor: pointer;
+    background: #f78f1e;
+    border: 1px solid transparent;
+    margin: 5px 0
+}
+
+.acc_stati h3 {
+    font-size: 16px;
+    padding: 4px 15px;
+    margin: 0 !important;
+    color: #fff
+}
+
+.acc_stati.collapsed {
+    background: #F3F3F3;
+    border: 1px solid #ccc;
+    color: #000
+}
+
+.acc_stati.collapsed h3 {
+    color: #000
+}
+
+.acc_stati.collapsed:hover {
+    background: #fff
+}
+
+@media (max-width: 400px) {
+    .credit-table table td .n-credit {
+        font-size: 12px
+    }
+
+    .bankList {
+        left: 80px
+    }
+}
+
+.cr_m_but tbody {
+    padding: 0 !important
+}
+
+.poisk_check {
+    float: left
+}
+
+.department_map {
+    width: 100%;
+    height: 600px
+}
+
+@media (max-width: 767px) {
+    .info_page .statiWrap {
+        width: 100% !important
+    }
+
+    .department_map {
+        height: 400px
+    }
+
+    .converterContent {
+        width: 100%
+    }
+
+    .converterNBRBLink {
+        font-size: 12px
+    }
+
+    .converterLink {
+        margin-right: 0
+    }
+
+    .departmentBt {
+        margin-top: 10px
+    }
+
+    .poisk_check {
+        float: none
+    }
+
+    .poisk_submit {
+        margin-top: 15px;
+        width: 100%
+    }
+
+    .credit_type_menu {
+        padding-top: 37px;
+        position: relative
+    }
+
+    .bank_menu .credit_type_menu {
+        padding-top: 0 !important
+    }
+
+    .credit_type_menu .active {
+        position: absolute;
+        top: 0
+    }
+
+    .credit_type_menu .icon:before {
+        content: '';
+        border: 2px solid #fff;
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin: auto;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        -webkit-transform: rotate(225deg);
+        -moz-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        -o-transform: rotate(225deg);
+        transform: rotate(225deg);
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -o-transition: .3s;
+        transition: .3s;
+        border-right: none;
+        border-bottom: none;
+        right: 16px
+    }
+
+    .credit_type_menu .icon.collapsed:before {
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -ms-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg)
+    }
+
+    .bank_selection_card, .bank_selection_credit, .bank_selection_vklad {
+        position: relative
+    }
+
+    .bank_otdel {
+        margin-bottom: 10px
+    }
+}
+
+.deposit_all_calc .currency-list {
+    display: inline-block !important
+}
+
+.page_xs .rates-table.metally .rates-table-sort tbody td {
+    width: 110px;
+    white-space: nowrap
+}
+
+.page_xs .rates-table.metally .rates-table-sort .table-head tr th {
+    width: 110px
+}
+
+.rates-table.metally .rates-table-sort tbody td {
+    width: 110px;
+    white-space: nowrap
+}
+
+.rates-table.metally .rates-table-sort .table-head tr th {
+    width: 110px
+}
+
+.rates-table.metally .rates-table-sort tbody td:first-child {
+    width: 180px !important;
+    padding-left: 30px
+}
+
+.credit_type_menu .active.hidden-xs {
+    display: block !important
+}
+
+.g-wrap .menu-credit.credit_type_menu .active.hidden-xs {
+    display: inline-block !important
+}
+
+@media (max-width: 840px) {
+    .g-wrap .menu-credit li {
+        display: block;
+        width: 100%
+    }
+
+    .g-wrap .menu-credit.credit_type_menu .active.hidden-xs {
+        display: block
+    }
+
+    .g-wrap .menu-credit.bank-page {
+        width: 100%
+    }
+
+    .g-wrap .menu-credit li a, .g-wrap .menu-credit li span {
+        font-size: 14px;
+        font-family: roboto-medium, roboto-regular, Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+        position: relative;
+        -webkit-transition: background ease .15s;
+        -moz-transition: background ease .15s;
+        -o-transition: background ease .15s;
+        transition: background ease .15s;
+        padding: 8px 16px;
+        display: block;
+        border-bottom: none
+    }
+
+    .g-wrap .menu-credit li a:hover, .g-wrap .menu-credit li span:hover {
+        background: #f6f6d7
+    }
+
+    .g-wrap .menu-credit li.active > a, .g-wrap .menu-credit li.active > a:focus, .g-wrap .menu-credit li.active > a:hover, .g-wrap .menu-credit li.active > span, .g-wrap .menu-credit li.active > span:focus, .g-wrap .menu-credit li.active > span:hover {
+        background: #14509c;
+        border-bottom: none;
+        cursor: default;
+        opacity: 1;
+        color: #fff
+    }
+}
+
+.bank_lock_table td, .bank_lock_table th {
+    padding: 5px !important
+}
+
+.bank-credit-menu, .content_i.content_calc {
+    overflow: visible
+}
+
+@media (max-width: 515px) {
+    #frmCalc table tr td {
+        display: block;
+        padding: 3px 10px !important
+    }
+}
+
+@media (max-width: 370px) {
+    .ins_block {
+        width: 115px
+    }
+}
+
+.placemark_layout_bankomaty, .placemark_layout_infokiosky, .placemark_layout_otdelenija, .placemark_layout_poisk, .placemark_layout_red {
+    background: url(/images/map_ico/gy_map_icon_poisk.png);
+    width: 32px;
+    height: 47px;
+    background-size: 100%;
+    position: relative;
+    top: -47px;
+    left: -16px
+}
+
+.placemark_layout_red {
+    background: url(/images/map_ico/gy_map_icon_red.png);
+    background-size: 100%
+}
+
+.placemark_layout_bankomaty {
+    background: url(/images/map_ico/gy_map_icon_bankomaty.png);
+    background-size: 100%
+}
+
+.placemark_layout_infokiosky {
+    background: url(/images/map_ico/gy_map_icon_infokiosky.png);
+    background-size: 100%
+}
+
+#map .iconb:before {
+    top: 8px;
+    left: 8px
+}
+
+#map .placemark_layout_bankomaty_big .iconb:before, #map .placemark_layout_red_big .iconb:before {
+    top: 10px;
+    left: 10px
+}
+
+.placemark_layout_bankomaty_big, .placemark_layout_red_big {
+    background: url(/images/map_ico/gy_map_icon_red.png);
+    width: 36px;
+    height: 54px;
+    background-size: 100%;
+    position: relative;
+    top: -54px;
+    left: -18px
+}
+
+.placemark_layout_bankomaty_big {
+    background: url(/images/map_ico/gy_map_icon_bankomaty.png);
+    background-size: 100%
+}
+
+.page_xs .st-menu .social {
+    padding-top: 15px;
+    background: #ebf6fb
+}
+
+.calc .popular td {
+    padding: 0 11px 11px
+}
+
+.calc .popular tr:hover {
+    background: 0 0
+}
+
+.calc .popular table {
+    margin-bottom: 0
+}
+
+.calc .popular .row {
+    padding-top: 10px
+}
+
+.bank_menu_wrap .reviews-more {
+    margin: -14px -30px 0
+}
+
+@media (max-width: 767px) {
+    #rating-grid5-leasing th {
+        font-size: 12px
+    }
+
+    .bank_menu_wrap .reviews-more {
+        margin: -14px -15px 0
+    }
+
+    .bank_selection_card, .bank_selection_credit, .bank_selection_vklad {
+        top: 0;
+        right: 0
+    }
+}
+
+.page_xs .popular .arrow:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: -10px;
+    width: 0;
+    height: 0;
+    border-top: 3px solid transparent;
+    border-left: 5px solid #14509c;
+    border-bottom: 3px solid transparent;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+    z-index: 10
+}
+
+.page_xs .popular .arrow.collapsed:before {
+    -webkit-transform: rotate(0);
+    -moz-transform: rotate(0);
+    -ms-transform: rotate(0);
+    -o-transform: rotate(0);
+    transform: rotate(0)
+}
+
+.page_xs .popular .link {
+    position: relative;
+    margin-left: 12px;
+    color: #14509c
+}
+
+.deposit_menu .active a {
+    cursor: pointer !important
+}
+
+#chartdiv_usd {
+    width: auto !important;
+    height: auto !important;
+    display: block !important
+}
+
+.mobile_ads {
+    margin: 0 auto 10px;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    width: 100%
+}
+
+.mobile_ads img {
+    margin: 0 auto
+}
+
+.mobile_ads_wrap {
+    position: absolute;
+    left: 50%;
+    margin-left: -160px
+}
+
+.banner_margin {
+    margin-bottom: 10px
+}
+
+.main-credit-title {
+    float: left
+}
+
+.main-credit-tab a {
+    color: #fff
+}
+
+.main-credit-tab li {
+    float: left;
+    padding: 1px 8px
+}
+
+.main-credit-tab li:first-child {
+    border-left: none !important
+}
+
+.main-credit-tab li:last-child {
+    border-right-color: transparent !important
+}
+
+.main-credit-tab {
+    float: left;
+    margin: 0 !important
+}
+
+.dep_th {
+    border-bottom: 1px solid #f8c98a
+}
+
+.dep_rating .dash {
+    position: relative;
+    left: 27px;
+    top: -3px
+}
+
+.bank_lock_bt {
+    width: 100%;
+    margin-top: 25px
+}
+
+@media (max-width: 1024px) {
+    .bank_lock_bt {
+        width: auto;
+        margin-top: 0
+    }
+}
+
+.answer_data {
+    display: inline-block;
+    padding-left: 10px;
+    color: #000;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 1.66666667;
+    font-family: roboto-regular, Helvetica, Arial, sans-serif
+}
+
+.kr_t .title {
+    float: left;
+    margin-right: 15px
+}
+
+.kr_t .menu-tab .list-item {
+    display: inline-block !important
+}
+
+.mytable tr:first-child {
+    background-color: #9FC5E8
+}
+
+.mytable tr:nth-child(n+2) td:first-child {
+    background-color: #FDD966
+}
+
+.mytable td {
+    border: 1px solid grey
+}
+
+.birzha_time {
+    text-align: right
+}
+
+.birzha_torg {
+    background: #fff;
+    border: 1px solid transparent;
+    padding: 5px 0 5px 25px !important
+}
+
+.birzha_torg:hover {
+    border: 1px solid #eb8507
+}
+
+.birzha_info_head_avg, .birzha_info_head_open {
+    border-right: 1px solid #dad7bb
+}
+
+.birzha_table .rates-table-nbrb tr td:first-child {
+    padding-left: 30px;
+    width: 23%
+}
+
+.birzha_table .rates-table-nbrb tr td {
+    padding-left: 30px;
+    font-size: 17px
+}
+
+.birzha_table .rates-table-content {
+    padding-bottom: 0
+}
+
+.birzha_table th {
+    padding-left: 30px !important
+}
+
+.up {
+    color: #31ae18
+}
+
+.down {
+    color: #E62C2C
+}
+
+@media (max-width: 767px) {
+    .birzha_table .rates-table-nbrb tr td {
+        font-size: 14px;
+        padding-left: 15px
+    }
+
+    .birzha_table .rates-table-nbrb tr td:first-child {
+        padding-left: 15px
+    }
+
+    .birzha_time {
+        text-align: center;
+        font-size: 13px !important
+    }
+}
+
+.birzha_info {
+    background: #f7f6eb;
+    padding: 0 20px 20px
+}
+
+.birzha_info_title {
+    text-align: center;
+    font-weight: 700;
+    padding-top: 20px
+}
+
+.birzha_info_head_avg, .birzha_info_head_mm, .birzha_info_head_open {
+    padding: 20px 0 20px 20px
+}
+
+.birzha_info_rates {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center
+}
+
+.birzha_info_head_rates {
+    font-size: 24px;
+    font-weight: 700
+}
+
+.birzha_info_head_rates span {
+    font-weight: 400;
+    font-size: 16px
+}
+
+.birzha_info_head_wrap {
+    border-top: 1px solid #dad7bb;
+    border-bottom: 1px solid #dad7bb;
+    display: table;
+    width: 100%
+}
+
+.birzha_info_head_avg {
+    background: #f7f6eb;
+    position: relative
+}
+
+.birzha_info_head_avg_time {
+    position: absolute;
+    right: 9px;
+    top: 3px
+}
+
+.birzha_info_head_title {
+    font-weight: 700;
+    font-size: 18px
+}
+
+.birzha_head_t {
+    display: table-cell;
+    float: none
+}
+
+@media (max-width: 1023px) {
+    .birzha_info_head_mm, .birzha_info_head_open {
+        padding: 5px 0 5px 20px
+    }
+
+    .birzha_head_t {
+        display: table;
+        float: left;
+        width: 50%
+    }
+
+    .birzha_info_head_open {
+        border-right: none
+    }
+}
+
+@media (max-width: 600px) {
+    .birzha_head_t {
+        width: 100%
+    }
+}
+
+.birzha_all .table-head tr:first-child {
+    border-top: 1px solid #afc6e0
+}
+
+.birzha_all .rates-table-nbrb .table-head tr th {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-weight: 700
+}
+
+.rates-table .birzha_all {
+    padding-bottom: 0
+}
+
+.birzha_all .rates-table-nbrb tbody td {
+    vertical-align: middle;
+    font-size: 17px;
+    padding: 5px 8px
+}
+
+.birzha_all .iname_curr, .birzha_info .iname_curr {
+    vertical-align: top
+}
+
+.birzha_info_head_wrap .iname_curr {
+    vertical-align: top;
+    font-size: 24px;
+    font-weight: 700
+}
+
+.birzha_close_time {
+    padding: 12px 30px !important;
+    text-align: right
+}
+
+#torgi_bvfb {
+    min-height: 47px
+}
+
+.bankom_partner span {
+    position: relative;
+    top: 2px;
+    display: inline-block
+}
+
+.bankom_partner {
+    margin-top: 5px;
+    margin-bottom: 0;
+    margin-left: 15px
+}
+
+#map-modal .iconb:before {
+    top: 8px;
+    left: 8px
+}
+
+.map_error {
+    text-align: center;
+    font-size: 60px;
+    color: #CCC;
+    padding-top: 97px
+}
+
+@media (max-width: 767px) {
+    .birzha_table .rates-title {
+        width: 100%;
+        left: 20px;
+        margin-left: 0
+    }
+
+    .birzha_table .table-responsive {
+        margin-bottom: 0
+    }
+
+    .birzha_all .rates-table-nbrb tbody td {
+        font-size: 13px
+    }
+
+    .map_error {
+        font-size: 30px;
+        padding-top: 40px
+    }
+}
+
+.currency_main_menu {
+    width: 810px !important;
+    -moz-column-count: 4;
+    -webkit-column-count: 4;
+    column-count: 4
+}
+
+.currency_main_menu .item_2 {
+    padding-right: 7px
+}
+
+.currency_main_menu .main_curr_city, .currency_main_menu .main_curr_val {
+    padding-left: 30px
+}
+
+.currency_main_menu .crypto_curr_val {
+    padding-left: 0
+}
+
+@media (max-width: 1023px) {
+    .currency_main_menu {
+        width: auto !important;
+        -moz-column-count: 1;
+        -webkit-column-count: 1;
+        column-count: 1
+    }
+
+    .currency_main_menu .main_curr_city, .currency_main_menu .main_curr_val {
+        padding-left: 0
+    }
+
+    .currency_main_menu .item_2 {
+        padding-right: 0
+    }
+
+    .currency_main_menu .crypto_curr_val {
+        padding-left: 17px
+    }
+}
+
+.gray_date {
+    color: #b2b2b2 !important
+}
+
+.depart_map_table table td, .depart_map_table table th {
+    padding: 5px !important
+}
+
+.addres_title h1 {
+    display: inline-block;
+    padding-right: 15px
+}
+
+.bank_title h1 {
+    width: auto;
+    margin-right: 10px;
+    float: none;
+    display: inline
+}
+
+.bank_title {
+    width: 100%
+}
+
+.addres_title {
+    width: 100%;
+    padding-right: 200px
+}
+
+.addres_title .city_selector, .bank_title .city_selector {
+    position: relative;
+    display: inline-block
+}
+
+.bank_title .city_selector {
+    top: -2px
+}
+
+.addres_title .city_selector:before, .bank_title .city_selector:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0;
+    height: 0;
+    z-index: 10;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 6px solid #14509c;
+    top: 10px;
+    right: -12px
+}
+
+.addres_title .city_selector:hover:before, .bank_title .city_selector:hover:before {
+    border-top: 6px solid #e86809
+}
+
+.bsb_birzha_ban {
+    height: 90px
+}
+
+.bsb_birzha_ban iframe {
+    border: none
+}
+
+@media (max-width: 510px) {
+    .bsb_birzha_ban {
+        display: none
+    }
+}
+
+.map_history_img, .map_history_text {
+    display: table-cell
+}
+
+@media (max-width: 767px) {
+    .addres_title {
+        width: 100%;
+        padding-right: 0
+    }
+
+    .addres_title .bank_title, .addres_title .city_selector {
+        margin-bottom: 10px
+    }
+
+    .address .map {
+        height: 440px
+    }
+
+    .rates-table table tr.rates-old .info-block {
+        left: -128px;
+        top: -3px;
+        width: 194px
+    }
+
+    .rates-table table tr.rates-old .info-block .arrow {
+        top: 9px;
+        left: 188px;
+        -webkit-transform: rotate(90deg);
+        -moz-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
+        -o-transform: rotate(90deg);
+        transform: rotate(90deg)
+    }
+
+    .currency_date {
+        position: absolute;
+        top: 50px;
+        right: -75px;
+        color: #000
+    }
+
+    .currency_row_2 td .date-old {
+        color: #b2b2b2 !important
+    }
+
+    .currency_row_1 td {
+        padding-bottom: 0 !important
+    }
+
+    .currency_row_2 td {
+        padding-top: 3px !important;
+        border-bottom: 1px dotted #ccc;
+        color: #000 !important
+    }
+
+    .currency_row_2 td.address {
+        color: #898590 !important
+    }
+
+    .currency_row_2 td.date {
+        position: relative;
+        line-height: 1 !important
+    }
+
+    .rates-table .acc-body table .date-old:before {
+        bottom: -16px;
+        top: -2px;
+        left: 70px
+    }
+
+    .best_curr_mob_tb {
+        width: 100% !important
+    }
+}
+
+.all_bank_menu .banks-list li:hover, .bank_drop_menu.active.has-menu > span:hover {
+    color: #e86809
+}
+
+.rates-table .iconb a {
+    position: relative;
+    z-index: 9
+}
+
+.currCountOtdel {
+    font-size: 11px
+}
+
+.map_history {
+    margin-bottom: 10px
+}
+
+.map_history_img img {
+    width: 70%
+}
+
+.map_history_text {
+    vertical-align: middle;
+    font-size: 12px
+}
+
+.tab-content-credit {
+    padding: 0
+}
+
+.all_bank_menu {
+    margin: 10px 0;
+    list-style: none;
+    background-color: transparent;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    position: relative
+}
+
+.bank_drop_menu.active > span:before {
+    position: absolute;
+    right: 2px;
+    top: 9px
+}
+
+.bank_drop_menu.active.has-menu > span {
+    -webkit-transition: color .15s ease;
+    -moz-transition: color .15s ease;
+    -o-transition: color .15s ease;
+    transition: color .15s ease
+}
+
+.bank_drop_menu.has-menu .arrow {
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+    position: absolute;
+    top: 4px;
+    right: 0
+}
+
+#db .bank_drop_menu.active > span {
+    position: relative;
+    padding: 0 15px 0 0;
+    top: 0;
+    left: 24px;
+    z-index: 9
+}
+
+.bank_drop_menu.has-menu .arrow:before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 7px solid #000;
+    -webkit-transition: border-color .15s ease;
+    -moz-transition: border-color .15s ease;
+    -o-transition: border-color .15s ease;
+    transition: border-color .15s ease
+}
+
+.bank_drop_menu.active.has-menu > span:hover:before {
+    border-top-color: #e86809
+}
+
+.all_bank_menu .hidden-br-menu {
+    display: none;
+    position: absolute;
+    background: #fff;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(8, 46, 90, .5);
+    box-shadow: 0 4px 8px 0 rgba(8, 46, 90, .5);
+    z-index: 8;
+    top: -14px;
+    left: 10px;
+    padding-top: 30px
+}
+
+.bank_drop_menu.open-menu .hidden-br-menu {
+    display: block
+}
+
+.all_bank_menu .banks-list {
+    width: 550px;
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    padding: 0 13px !important
+}
+
+.all_bank_menu .banks-list li {
+    margin-right: 1%;
+    padding-left: 22px;
+    margin-bottom: 10px;
+    cursor: pointer
+}
+
+.subMenu ul {
+    display: none;
+    position: absolute !important;
+    z-index: 10;
+    padding: 10px 17px !important;
+    background: #fff;
+    width: 190px;
+    -webkit-box-shadow: 0 1px 15px 3px rgba(0, 0, 0, .3);
+    box-shadow: 0 1px 15px 3px rgba(0, 0, 0, .3)
+}
+
+.subMenu ul li:before {
+    content: "" !important
+}
+
+.subMenu:hover ul {
+    display: block
+}
+
+.bank_dep_calc {
+    margin-right: 25px;
+    position: relative;
+    top: 24px
+}
+
+.text-important {
+    text-align: left
+}
+
+.site_rating {
+    margin-top: 10px
+}
+
+.site_rating_bt {
+    cursor: pointer;
+    width: 100%;
+    color: #14509c
+}
+
+.site_rating_bt:hover {
+    color: #e86809
+}
+
+div.rating-cancel, div.star-rating {
+    float: left;
+    width: 17px;
+    height: 15px;
+    text-indent: -999em;
+    cursor: pointer;
+    display: block;
+    background: 0 0;
+    overflow: hidden
+}
+
+div.rating-cancel, div.rating-cancel a {
+    background: url(/images/delete.gif) 0 -16px no-repeat
+}
+
+div.star-rating, div.star-rating a {
+    background: url(/images/star.gif) no-repeat
+}
+
+div.rating-cancel a, div.star-rating a {
+    display: block;
+    width: 16px;
+    height: 100%;
+    background-position: 0 0;
+    border: 0
+}
+
+.push_block, .push_wrap {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    bottom: 0
+}
+
+div.star-rating-on a {
+    background-position: 0 -16px !important
+}
+
+div.star-rating-hover a {
+    background-position: 0 -32px
+}
+
+div.star-rating-readonly a {
+    cursor: default !important
+}
+
+div.star-rating {
+    background: 0 0 !important;
+    overflow: hidden !important
+}
+
+.credit_bt_group {
+    margin-top: 10px;
+    padding: 0 30px;
+    border-top: 1px solid #DFDED1
+}
+
+.credit_bt_group .btn-success {
+    float: right
+}
+
+.no_p {
+    padding: 0 !important
+}
+
+.push_bt {
+    background: #f89021;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-align: center;
+    padding: 4px 0;
+    margin-top: 13px;
+    font-size: 18px
+}
+
+.push_bt a {
+    color: #fff;
+    display: block
+}
+
+.push_wrap {
+    display: none;
+    background: #fff;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, .3)
+}
+
+.push_block {
+    height: 60px;
+    overflow: hidden
+}
+
+.push_block iframe {
+    border: none;
+    height: 60px
+}
+
+.push_content {
+    max-width: 1180px;
+    margin: 0 auto;
+    min-height: 60px
+}
+
+.push_close {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    width: 48px;
+    height: 48px;
+    z-index: 2;
+    cursor: pointer
+}
+
+.push_close:after, .push_close:before {
+    background-color: #ccc;
+    content: '';
+    display: block;
+    width: 22px;
+    height: 2px;
+    position: absolute;
+    top: 22px;
+    left: -3px
+}
+
+.g-wrap .menu-credit li, .holiday-calc h2 {
+    position: relative
+}
+
+.push_close:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg)
+}
+
+.push_close:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+.push_logo {
+    text-align: center;
+    height: 60px;
+    padding: 10px 0
+}
+
+.push_logo img {
+    height: 100%
+}
+
+.push_text {
+    height: 60px;
+    text-align: center;
+    color: #333;
+    padding-top: 17px;
+    font-size: 17px
+}
+
+.bank_social_item {
+    padding-bottom: 8px
+}
+
+.bank_social_item .fa {
+    font-size: 28px
+}
+
+.bank_social_item .fa-vk {
+    color: #5e82a8
+}
+
+.bank_social_item .fa-facebook-official {
+    color: #3A5795
+}
+
+.bank_social_item .fa-odnoklassniki-square {
+    color: #f2720c
+}
+
+.bank_social_item .fa-twitter-square {
+    color: #1da1f2
+}
+
+.bank_social_item .fa-youtube-square {
+    color: #cc181e
+}
+
+.bank_social_item .fa-instagram {
+    color: #6a432f
+}
+
+#Stage_bsb_logo {
+    right: -1.5% !important
+}
+
+#Stage_makler {
+    font-size: 20px !important
+}
+
+.charts_stati {
+    margin: 0 -30px
+}
+
+.charts_stati .content_i {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important
+}
+
+.img_ban {
+    padding: 10px 0
+}
+
+#mass-form-modal .g-sidebar_i, #mass_bt-form-modal .g-sidebar_i {
+    margin-bottom: 0
+}
+
+#mass-form-modal .input-group, #mass_bt-form-modal .input-group {
+    width: 100%
+}
+
+@media (min-width: 1024px) {
+    #mass-form-modal .modal-dialog, #mass_bt-form-modal .modal-dialog {
+        width: 350px
+    }
+}
+
+.myfin_mobile.buzz {
+    padding-right: 0 !important;
+    padding-top: 3px
+}
+
+.menu-credit .subMenu.arrow:after {
+    border-top: 8px solid #14509c;
+    top: 9px;
+    right: 0
+}
+
+.menu-credit .subMenu.arrow.active:hover:after, .menu-credit .subMenu.arrow:hover:after {
+    border-top: 8px solid #e86809
+}
+
+.menu-credit .subMenu.arrow.active:after {
+    border-top: 8px solid #000
+}
+
+@media (max-width: 840px) {
+    .menu-credit .subMenu.arrow:after {
+        border-top: 8px solid #fff;
+        top: 14px;
+        right: 9px
+    }
+
+    .menu-credit .subMenu.arrow.active:after {
+        border-top: 8px solid #fff
+    }
+}
+
+.menu-credit .subMenu ul {
+    top: 34px
+}
+
+@media (max-width: 1023px) {
+    .menu-credit .subMenu ul {
+        top: 24px
+    }
+}
+
+.menu-credit .subMenu li {
+    margin-bottom: 0 !important
+}
+
+.menu-credit .subMenu li a {
+    border-bottom: none !important;
+    color: #14509c !important;
+    padding-left: 0 !important
+}
+
+.menu-credit .subMenu li a:hover, .menu-credit .subMenu:hover, .menu-credit .subMenu:hover > a {
+    color: #e86809 !important
+}
+
+.credit-table .n-bank {
+    padding: 2px 0;
+    margin-left: 23px
+}
+
+.credit-table .n-bank .iconb:before {
+    top: -2px
+}
+
+.curr_halva_block {
+    cursor: pointer;
+    margin-bottom: 10px
+}
+
+.pointer {
+    cursor: pointer
+}
+
+.curr_block {
+    display: inline-block;
+    vertical-align: top
+}
+
+.a-rates .a-btn, .a-rates > td, .converterContent .unit, .converterNBRBLink, .insync_btn span, .menu-table td {
+    vertical-align: middle
+}
+
+.bank_lock_table .end_curr, .bank_lock_table .first_curr, .best-rates .end_curr, .best-rates .first_curr, .birzha_info .end_curr, .birzha_info .first_curr, .birzha_info_head_wrap .end_curr, .birzha_info_head_wrap .first_curr, .bord-bot .end_curr, .bord-bot .first_curr, .credit-conditions .end_curr, .credit-conditions .first_curr, .credit-list .end_curr, .credit-list .first_curr, .credit-rates .end_curr, .credit-rates .first_curr, .credit-table .end_curr, .credit-table .first_curr, .depart_map_table .end_curr, .depart_map_table .first_curr, .head-cur .end_curr, .head-cur .first_curr, .rates-table .end_curr, .rates-table .first_curr {
+    display: block
+}
+
+.bank_lock_table .end_curr, .best-rates .end_curr, .credit-conditions .end_curr, .credit-rates .end_curr, .credit-table .end_curr, .depart_map_table .end_curr, .head-cur .end_curr, .rates-table .end_curr {
+    font-size: 9px
+}
+
+.birzha_info_head_wrap .first_curr {
+    font-size: 24px;
+    font-weight: 700
+}
+
+.birzha_info .end_curr {
+    font-size: 11px
+}
+
+.bank-info-head .best-rates th, .converter .best-rates th {
+    padding-top: 3px !important
+}
+
+.credit-calc-info .sum .end_curr, .credit-overpay .amount .end_curr, .credit-overpay .overpay .end_curr, .credit-overpay .sum .end_curr {
+    font-size: 10px
+}
+
+.credit-head .btn.card_bt {
+    float: none;
+    max-width: 155px;
+    margin: 0 auto 11px;
+    display: block
+}
+
+@media (max-width: 767px) {
+    .credit-calc-body .calc .menu-tab .list-item {
+        display: inline-block
+    }
+}
+
+.card-desc, .t-card {
+    font-weight: 700
+}
+
+ul.card-desc li {
+    margin-bottom: 0 !important
+}
+
+.credit-block .item .ttl-card {
+    min-height: 182px;
+    text-align: center
+}
+
+.credit-block .item .ttl-card img {
+    max-height: 128px
+}
+
+.card-title .h2, .card-title h2 {
+    margin-top: 5px
+}
+
+.card-det .btn {
+    float: left;
+    margin-bottom: 25px
+}
+
+.card-2 {
+    float: left
+}
+
+.card-2 .product_detail_card_img {
+    margin: 0 15px 15px 0;
+    width: 155px
+}
+
+.card-2 + .credit-list .list-item .item {
+    font-size: 16px;
+    margin-bottom: 0
+}
+
+.card-2 + .credit-list .list-item {
+    margin-bottom: 0
+}
+
+.card-2 + .credit-list a {
+    font-size: 18px;
+    font-weight: 700;
+    display: block
+}
+
+.catalog .on-map {
+    margin-top: 16px
+}
+
+.catalog .search-sm {
+    margin-bottom: 10px
+}
+
+.catalog h4 {
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 700
+}
+
+.content_i.address.catalog {
+    padding-bottom: 20px
+}
+
+.catalog ul li {
+    margin: 0 !important
+}
+
+.shops-block {
+    padding-bottom: 0
+}
+
+.shops-block .item .ttl {
+    height: 70px;
+    text-align: center;
+    padding: 14px 5px
+}
+
+.shops-block .item .descr a {
+    font-size: 14px;
+    display: block;
+    overflow: hidden;
+    height: 34px
+}
+
+.shops-block .item .ttl img {
+    max-height: 100%;
+    margin: 0 auto
+}
+
+.card-sh, .shops-block > .row > div {
+    margin-bottom: 10px
+}
+
+.holiday-calc {
+    background-color: #293a57;
+    margin-bottom: 30px;
+    margin-top: 20px
+}
+
+.holiday-calc .b-calc {
+    padding: 0;
+    box-shadow: none
+}
+
+.holiday-calc .b-calc:nth-child(2) {
+    border-left: 1px solid #3f4e66;
+    border-right: 1px solid #3f4e66
+}
+
+.holiday-calc .body {
+    padding-left: 0
+}
+
+.holiday-calc .form-group {
+    height: 180px;
+    padding: 15px
+}
+
+.holiday-calc h2 {
+    width: auto;
+    z-index: 2;
+    margin-bottom: 10px
+}
+
+.holiday-calc .form-control, .holiday-calc input, .holiday-calc input + .form-input-sl {
+    width: 130px;
+    cursor: pointer
+}
+
+.holiday-calc .form-group .amount {
+    width: 100%
+}
+
+.calc .ic-calendar:before {
+    font-size: 125px;
+    color: #3F4E66;
+    position: absolute;
+    bottom: -24px;
+    left: -19px;
+    line-height: 1
+}
+
+.holiday-calc .btn {
+    margin-top: 18px
+}
+
+.holiday-calc-result {
+    position: relative;
+    top: 20px;
+    background-color: #fff;
+    margin-left: 40px;
+    margin-right: 20px;
+    padding: 20px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .2)
+}
+
+.holiday-calc-result h3 {
+    margin-top: 0
+}
+
+.holiday-calc-result span {
+    color: #e86809;
+    font-weight: 700;
+    font-size: 20px
+}
+
+.credit-request .cr-info {
+    padding-top: 0;
+    display: block;
+    text-align: left !important;
+    margin-left: 46px
+}
+
+.rass_card .list-item {
+    margin: 0 !important;
+    padding-right: 15px !important
+}
+
+@media (max-width: 1279px) {
+    .calc .ic-calendar:before {
+        right: 10px;
+        left: auto
+    }
+
+    .calc .ic-palm {
+        background-position: right 60px
+    }
+}
+
+@media (max-width: 1023px) {
+    .catalog > .row > div:nth-child(2n+1) {
+        clear: both
+    }
+
+    .holiday-calc .btn {
+        margin-left: 10px
+    }
+
+    .holiday-calc .b-calc:nth-child(2) {
+        border: none
+    }
+
+    .calc .ic-palm {
+        background-position: right 30px
+    }
+
+    .holiday-calc-result {
+        top: 30px;
+        margin-left: 10px;
+        margin-right: 10px
+    }
+
+    .holiday-calc .form-group {
+        height: auto
+    }
+}
+
+@media (max-width: 767px) {
+    .catalog .on-map {
+        text-align: left;
+        margin-top: 0;
+        margin-bottom: 10px
+    }
+
+    .holiday-calc .body {
+        display: block
+    }
+}
+
+@media (max-width: 414px) {
+    .card-2 + .credit-list {
+        clear: both;
+        margin-bottom: 30px
+    }
+
+    .card-det .card-2 .btn {
+        margin-bottom: 15px
+    }
+}
+
+.red_link {
+    color: red;
+    margin-left: 25px
+}
+
+#inputSearchRassr {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+    max-height: 154px;
+    overflow: auto;
+    z-index: 999
+}
+
+#inputSearchRassr a {
+    display: block;
+    padding: 3px 8px
+}
+
+.rass_shop img {
+    margin: 0 auto
+}
+
+@media (max-width: 767px) {
+    .opinions .media-body-old.tit {
+        border-bottom: none
+    }
+
+    .special_block {
+        border-bottom: 1px solid #F0D9C1
+    }
+}
+
+.exchange-menu-block .border-block {
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+.exchange-menu-block .menu-block {
+    background: #EFEDD5
+}
+
+.exchange-menu-block .best-rates .table-responsive, .exchange-menu-block .best-rates table {
+    margin-bottom: 0
+}
+
+.exchange-menu-block .best-rates table thead {
+    border-bottom: none
+}
+
+.exchange-menu-block .best-rates table th {
+    font-size: 18px;
+    padding-bottom: 0
+}
+
+.exchange-menu-block .best-rates table td {
+    padding-top: 0;
+    padding-bottom: 0
+}
+
+.exchange-menu-block .best-rates table td .first_curr {
+    font-size: 20px;
+    color: #000
+}
+
+.exchange-menu-block .best-rates table tr > :first-child {
+    padding-left: 0
+}
+
+.credit-menu-block .b-calc:not(:last-child) {
+    margin-bottom: 1px
+}
+
+.credit-menu-block .opinions {
+    margin-bottom: 0;
+    padding-bottom: 0
+}
+
+.menu-table a {
+    font-size: 15px
+}
+
+.menu-table tbody > tr:not(:last-child) {
+    border-bottom: 1px solid #EFEDD5
+}
+
+.menu-table tbody tr > td:first-child {
+    border-right: 1px solid #EFEDD5
+}
+
+.menu-table td {
+    padding: 10px !important;
+    width: 50%
+}
+
+.m_m_calc_r {
+    padding: 0 6px 0 0;
+    left: 1px
+}
+
+.m_m_calc_l {
+    border-right: 1px solid #fff;
+    padding: 0 0 0 4px;
+    left: 1px
+}
+
+.m_m_calc_l .form-group, .m_m_calc_r .form-group {
+    padding: 10px 5px 3px !important;
+    text-align: center;
+    min-height: 45px
+}
+
+.bank_rating_table .rates-table-sort tbody td:first-child {
+    width: auto
+}
+
+.bank_rating_table .rates-table-sort .tel {
+    font-weight: 900
+}
+
+.bank_rating_table .rates-table-sort td {
+    padding-top: 15px;
+    padding-bottom: 15px
+}
+
+.bank_rating_table .rates-table-sort td .fa {
+    font-size: 16px;
+    color: #000
+}
+
+.bank-info-head .iconph:before {
+    top: 0
+}
+
+@media (max-width: 767px) {
+    .bank_rating_table .rates-table-sort .tel {
+        font-size: 15px
+    }
+
+    .bank_rating_table .b_n {
+        font-size: 18px;
+        font-weight: 700
+    }
+
+    .bank_rating_table .rates-table-sort .tel {
+        font-weight: 400
+    }
+}
+
+.bank_rating_table .tel {
+    background-position: 0 0;
+    padding-left: 20px;
+    margin: 6px 0;
+    line-height: 16px
+}
+
+.bank_rating_table .iconph.live:before {
+    background-position: 0 -48px
+}
+
+.bank_rating_table .iconph.mts:before {
+    background-position: 0 -32px
+}
+
+.bank_rating_table .iconph.vel:before {
+    background-position: 0 -16px
+}
+
+.bank_rating_table .icon {
+    position: relative;
+    top: 3px
+}
+
+.b_rating h2, .rates-table-content h2 {
+    padding: 10px 0 10px 30px;
+    margin: 0;
+    font-size: 18px
+}
+
+.hor-nav .left_bt {
+    float: left;
+    margin-left: 10px
+}
+
+.fa-byn {
+    color: #14509C;
+    font-size: 14px
+}
+
+@media (min-width: 768px) {
+    .bank_menu .collapse {
+        display: block;
+        visibility: visible
+    }
+}
+
+@media (max-width: 767px) {
+    .bank_dep_calc {
+        top: 0
+    }
+
+    .credit-info .logo {
+        display: inline-block;
+        margin-right: 0;
+        min-height: 30px;
+        margin-bottom: 0
+    }
+
+    .credit-info .bank_menu {
+        position: relative;
+        display: block;
+        padding-bottom: 0;
+        padding-top: 5px
+    }
+
+    .credit-info .menu-btn {
+        display: inline-block;
+        position: absolute;
+        top: -10px;
+        right: 0;
+        padding: 0;
+        font-size: 30px;
+        background-color: transparent
+    }
+
+    .bank_menu .menu-btn.collapsed i:before {
+        content: "\f142"
+    }
+
+    .bank_menu .menu-btn i:before {
+        content: "\f00d"
+    }
+
+    .bank_menu .bank_selection_credit {
+        margin-bottom: 25px
+    }
+
+    .bank_menu .collapse .menu-credit {
+        background-color: #fff;
+        margin-bottom: 25px
+    }
+
+    .bank_menu .bank_title {
+        display: inline-block;
+        margin-top: 5px;
+        margin-bottom: 10px
+    }
+
+    .bank_menu .opinion {
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 0
+    }
+
+    .bank_menu .opinion a {
+        font-size: 18px
+    }
+
+    .bank_menu .opinion h2 {
+        float: none;
+        width: auto
+    }
+
+    .bank_menu .menu-table {
+        margin: 0
+    }
+
+    .bank_menu .menu-table td {
+        padding: 8px !important
+    }
+
+    .bank_menu .best-rates td {
+        padding: 4px 12px !important
+    }
+
+    .bank_menu .border-block {
+        background-color: #EFEDD5;
+        padding: 15px 15px 0
+    }
+
+    .bank_menu .border-block .h2 {
+        color: #14509c
+    }
+
+    .bank_menu .best-rates {
+        margin-bottom: 0;
+        padding-bottom: 0
+    }
+
+    .bank_menu .calc .form-group {
+        padding: 10px 5px 3px !important;
+        text-align: center;
+        min-height: 45px
+    }
+
+    .bank_menu .best-rates table tr > :first-child {
+        font-size: 12px
+    }
+
+    .bank_menu .best-rates a {
+        font-size: 16px
+    }
+
+    .bank-info-head .info-item {
+        padding-left: 0
+    }
+
+    .bank-info-head .info-item .icon {
+        color: #e1e1e1;
+        font-size: 16px;
+        padding-top: 3px
+    }
+
+    .bank-info-head .bank_social {
+        padding-bottom: 0
+    }
+
+    .bank-info-head .bank_social .ttl {
+        font-size: 16px;
+        margin-bottom: 5px
+    }
+
+    .bank-info-head .bank_social a {
+        margin-right: 5px
+    }
+
+    .bank-info-head h2 {
+        margin-top: 0 !important
+    }
+
+    .content_i.bank-products {
+        padding-top: 0;
+        padding-bottom: 0
+    }
+
+    .bank-about-offer .item_i {
+        border-bottom: 1px solid #ebebeb;
+        margin-left: -15px;
+        margin-right: -15px;
+        margin-bottom: 0;
+        padding: 15px 18px;
+        position: relative
+    }
+
+    .bank-about-offer .item_i .h2 {
+        margin-bottom: 0
+    }
+
+    .bank-about-offer .btn-collapse {
+        position: absolute;
+        right: 15px;
+        top: 3px;
+        width: 50%
+    }
+
+    .bank-about {
+        padding-top: 7px;
+        padding-bottom: 7px
+    }
+
+    .btn-collapse {
+        outline: 0;
+        font-size: 24px;
+        text-align: right;
+        background: 0 0;
+        border: none
+    }
+
+    .bank-about .ttl, .btn-collapse .title, .prod-item a, .prod-val .value strong {
+        font-size: 16px
+    }
+
+    .bank-about .info-item, .prod-item, .prod-ttl-block {
+        border-bottom: 1px solid #ebebeb
+    }
+
+    .btn-collapse i {
+        color: #666;
+        -o-transition: transform .1s linear;
+        -ms-transition: transform .1s linear;
+        -moz-transition: transform .1s linear;
+        -webkit-transition: transform .1s linear;
+        transition: transform .1s linear
+    }
+
+    .btn-collapse.collapsed i {
+        -o-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+        -moz-transform: rotate(180deg);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg)
+    }
+
+    .bank-about-offer .products {
+        margin-top: 15px
+    }
+
+    .bank-about .info-item {
+        position: relative;
+        margin-right: -15px;
+        margin-left: -15px;
+        border-top: 1px solid #ebebeb
+    }
+
+    .bank-about .info-item .btn-collapse {
+        width: 100%;
+        padding: 15px;
+        text-align: left;
+        position: relative
+    }
+
+    .btn-collapse .title {
+        font-weight: 400
+    }
+
+    .prod-item .currency, .prod-ttl-block .ttl {
+        font-weight: 800;
+        font-size: 16px
+    }
+
+    .bank-about .info-item .btn-collapse i {
+        position: absolute;
+        right: 15px;
+        top: 25px
+    }
+
+    .bank-about .info-item .collapse-info {
+        padding: 0 15px
+    }
+
+    .prod-ttl-block {
+        background-color: #fbfbfb;
+        margin: 0 -30px;
+        padding: 25px 30px 15px
+    }
+
+    .prod-item {
+        padding: 20px 15px 25px;
+        margin: 0 -15px
+    }
+
+    .prod-item > div {
+        padding-left: 0;
+        padding-right: 0
+    }
+
+    .prod-item .currency {
+        color: #999
+    }
+
+    .prod-item .btn-primary {
+        width: 100%
+    }
+
+    .prod-item .prod-val {
+        margin: 15px 0
+    }
+
+    .prod-val > div {
+        padding: 0 5px 0 0
+    }
+
+    .prod-val .value {
+        font-weight: 500
+    }
+
+    .prod-val .subttl {
+        display: block;
+        font-size: 11px;
+        color: #999
+    }
+}
+
+.credit-calc-title h2 {
+    margin: 0
+}
+
+.credit-calc-title.kr_t h2 {
+    margin: 0 10px 0 0;
+    float: left
+}
+
+.info-accord h2 {
+    margin-top: 0
+}
+
+.mobile_ads_bt {
+    position: absolute;
+    margin-top: 4px;
+    top: 13px;
+    left: 65%;
+    width: 113px
+}
+
+.dep_mod_date {
+    text-align: right;
+    color: #7b7b7b;
+    font-size: 12px
+}
+
+table caption {
+    text-align: left
+}
+
+.rass_main_cat {
+    padding: 20px
+}
+
+.rass_main_cat .search-sm, .top_cat .search-sm {
+    margin-bottom: 10px
+}
+
+.address-nav.top_cat {
+    margin-bottom: 0
+}
+
+@media (max-width: 767px) {
+    .rass_main_cat {
+        padding: 10px
+    }
+}
+
+@media (max-width: 1023px) {
+    .g-wrap .menu-credit.shop-page {
+        top: 0;
+        width: 100%
+    }
+}
+
+.rates-table .shop_t .rates-table-sort tbody td:first-child {
+    position: static !important
+}
+
+.shop_address h2 {
+    margin: 0;
+    padding: 0
+}
+
+.bank-info-head .big-rates-table table {
+    max-width: 100%
+}
+
+.bank-info-head .big-rates-table table caption {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: roboto-bold, Helvetica, Arial, sans-serif
+}
+
+.big-rates-table tbody tr > td {
+    font-size: 16px !important;
+    width: 19% !important
+}
+
+.big-rates-table tbody > tr:first-child > td {
+    padding-top: 10px
+}
+
+.big-rates-table tbody > tr > td:first-child {
+    padding-right: 10px;
+    width: 200px !important
+}
+
+.big-rates-table tbody > tr > td:last-child {
+    font-size: 14px;
+    color: #8c8c8c
+}
+
+.a-rates .text, .converter .best-rates td:last-child {
+    color: #000
+}
+
+.bank-info-head .big-rates-table table tr > td:first-child {
+    font-family: roboto-bold, Helvetica, Arial, sans-serif
+}
+
+.bank-info-head .best-rates tr th:not(:first-child), .bank-info-head .big-rates-table tr th {
+    color: #000;
+    font-size: 14px !important;
+    padding-bottom: 10px;
+    text-transform: none;
+    font-family: roboto-regular, Helvetica, Arial, sans-serif;
+    letter-spacing: 0
+}
+
+.date_product {
+    text-align: right;
+    padding: 10px
+}
+
+.metally .grid-view {
+    padding: 0
+}
+
+.td.final {
+    width: 210px
+}
+
+caption {
+    font-size: 18px;
+    line-height: 1.45833333;
+    margin: 5px 0 5px 15px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: roboto-bold, Helvetica, Arial, sans-serif
+}
+
+caption .h2, caption .h3, caption .h4, caption .h5, caption h2, caption h3, caption h4, caption h5 {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-size: 18px !important;
+    line-height: 1.45833333 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 3px !important
+}
+
+.close_ad_wp .ad_open .wp .text, .open_ad .bottom_text span:first-child, .open_ad .top_text, .open_ad button {
+    text-transform: uppercase
+}
+
+.best-rates caption, .credit-rates caption {
+    margin-left: 0
+}
+
+.converter.sidebar .converter-body {
+    padding: 0 10px
+}
+
+.converter.sidebar .calc-conv {
+    width: 100%;
+    padding-left: 0
+}
+
+.converter.sidebar .converter-body .calc-conv {
+    border: none
+}
+
+.converter.sidebar .title {
+    font-size: 18px
+}
+
+.converter.sidebar .btn-arr-converter {
+    display: none
+}
+
+.converter.sidebar .item {
+    font-size: 12px
+}
+
+.converter.sidebar .form-converter .form-group input {
+    width: 193px
+}
+
+@media (max-width: 1210px) {
+    .converter.sidebar .form-converter .form-group input {
+        width: 135px
+    }
+}
+
+@media (max-width: 915px) {
+    .converter.sidebar .form-converter .form-group input {
+        width: 115px
+    }
+}
+
+@media (max-width: 900px) {
+    .converter.sidebar .form-converter .form-group input {
+        width: 90px
+    }
+}
+
+.calc_color {
+    background: #EFEDD5
+}
+
+.wh_color {
+    background: #FFF !important
+}
+
+.bank-info-head.calc_color {
+    padding: 0 30px
+}
+
+.converter .bank-info-head .best-rates {
+    margin-top: 10px
+}
+
+.ex_t sup {
+    font-size: 9px
+}
+
+.success-message {
+    padding: 10px;
+    background-color: rgba(65, 146, 0, .12);
+    border: 1px solid #419200;
+    margin-bottom: 20px
+}
+
+.success-message p {
+    margin: 0
+}
+
+@media (max-width: 767px) {
+    .control-group .banks_control {
+        display: block
+    }
+}
+
+.dep_ico_bank {
+    float: left;
+    margin-right: 5px
+}
+
+.a-rates {
+    background-color: #fffdc5 !important
+}
+
+.a-rates > td:first-child {
+    padding-left: 15px !important
+}
+
+.a-rates > td {
+    border-top: 1px solid #afc6e0
+}
+
+.a-rates .a-btn, .a-rates .a-btn:hover {
+    color: #fff;
+    border-color: transparent;
+    background-color: #f0284b
+}
+
+.a-rates > .a-logo img {
+    height: 30px
+}
+
+.a-rates > td:nth-child(4) {
+    padding-right: 0 !important
+}
+
+.a-rates .a-btn {
+    display: inline-block;
+    border-radius: 20px;
+    height: 30px;
+    padding: 9px 15px;
+    outline: 0;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 10px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
+    white-space: nowrap;
+    transition: .2s;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(240, 40, 75, .3)
+}
+
+.b_search_city, .credit-table h2 {
+    text-transform: uppercase;
+    letter-spacing: 3px
+}
+
+.a-rates .a-btn:hover {
+    box-shadow: 0 2px 5px rgba(240, 40, 75, .4)
+}
+
+@media (max-width: 767px) {
+    .a-rates > td:first-child {
+        padding-left: 5px !important
+    }
+}
+
+.center_b_300 {
+    width: 300px;
+    margin: 0 auto 5px
+}
+
+.menu_bt_hover {
+    background: url(/images/idea-bank-credit11.gif) left top no-repeat;
+    width: 190px;
+    height: 38px;
+    display: block;
+    margin-top: 4px;
+    cursor: pointer;
+    border-radius: 5px
+}
+
+.r-contact .r-item {
+    color: #000;
+    padding: 5px 0 0;
+    line-height: 1.4
+}
+
+.r-contact .r-item .tel {
+    font-size: 16px;
+    padding-left: 20px;
+    font-family: roboto-regular, Helvetica, Arial, sans-serif;
+    background-position: 0 0;
+    margin: 4px 0;
+    line-height: 16px
+}
+
+.r-contact .r-item.fa-map-marker {
+    padding-left: 15px
+}
+
+.r-contact .r-item:before {
+    font-family: FontAwesome;
+    position: absolute;
+    left: 0;
+    color: #e1e1e1
+}
+
+@media only screen and (max-width: 768px) {
+    .r-contact .r-item {
+        line-height: 1.5
+    }
+}
+
+.r-contact .r-item .iconph.live:before {
+    background-position: 0 -48px
+}
+
+.r-contact .r-item .iconph.mts:before {
+    background-position: 0 -32px
+}
+
+.r-contact .r-item .iconph.vel:before {
+    background-position: 0 -16px
+}
+
+.r-cat-name {
+    font-size: 16px;
+    font-weight: 400;
+    color: #14509c;
+    cursor: pointer
+}
+
+.r-cat-name i {
+    margin-right: 8px
+}
+
+.open .r-cat-name i:before {
+    content: "\f068"
+}
+
+.r-sub-cat {
+    border: none !important;
+    box-shadow: none !important;
+    width: 100%;
+    z-index: 1
+}
+
+.r-sub-cat > li > a {
+    white-space: normal;
+    padding: 0;
+    color: #14509c
+}
+
+.r-sub-cat > li > a:hover {
+    background-color: transparent;
+    color: #e86809
+}
+
+.slider_container {
+    margin-bottom: 10px;
+    padding: 0 30px
+}
+
+.links-slider {
+    border-left: 1px solid #ebebeb;
+    border-right: 1px solid #ebebeb
+}
+
+.links-slider .slick-arrow:before {
+    color: #999;
+    font-family: FontAwesome
+}
+
+.credit-table h2, .links-slider .ttl {
+    font-family: roboto-bold, Helvetica, Arial, sans-serif
+}
+
+.links-slider .slick-prev:before {
+    content: "\f053"
+}
+
+.links-slider .slick-next:before {
+    content: "\f054"
+}
+
+.links-slider .ttl {
+    font-size: 16px;
+    display: block;
+    line-height: normal
+}
+
+.links-slider .subttl {
+    color: #999;
+    display: block
+}
+
+.links-slider .item:focus {
+    outline: 0
+}
+
+.links-slider .slick-track {
+    display: flex
+}
+
+.links-slider .item {
+    position: relative;
+    height: auto;
+    display: flex
+}
+
+.links-slider .item a {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    position: static;
+    border-right: 1px solid #ebebeb;
+    padding: 20px
+}
+
+.inner .content_i.slider_container {
+    padding: 0 30px;
+    min-height: 80px
+}
+
+.hor-nav.fixed .menu_bt_hover, .hor-nav.fixed .menu_bt_hover_inside {
+    display: none
+}
+
+.bot_fix_img, .bot_fix_text {
+    display: inline-block
+}
+
+.dep_link_otdel {
+    margin-top: 15px
+}
+
+.dep_link_otdel caption {
+    margin-left: 0
+}
+
+.btn_more, .credit-table tbody .btn_more {
+    border: 1px solid #999;
+    color: #999;
+    padding-left: 29px;
+    padding-right: 29px
+}
+
+.btn_more:focus {
+    color: #999
+}
+
+.btn_more:hover, .credit-table tbody .btn_more:hover {
+    border-color: #333;
+    color: #333
+}
+
+@media only screen and (max-width: 1023px) {
+    .credit-table tbody .btn_more {
+        padding-left: 22px;
+        padding-right: 22px
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .credit-table tbody .btn_more, .prod-item .btn_more {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .credit-table tbody .btn_more {
+        padding-left: 7px !important;
+        padding-right: 7px !important
+    }
+}
+
+.alpha_button {
+    height: 50px;
+    background: #ffed00;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 99
+}
+
+.bot_fix_text {
+    color: #000;
+    margin-left: 5px;
+    position: relative;
+    top: -6px
+}
+
+.bot_fix_text p {
+    margin-bottom: 0;
+    font-weight: 700
+}
+
+.bot_fix_text_t {
+    font-size: 17px
+}
+
+.bot_fix_text_pre {
+    font-size: 12px
+}
+
+.alpha_button a {
+    color: #000;
+    display: block
+}
+
+.alpha_content {
+    font-size: 14px;
+    color: #fff;
+    position: relative;
+    top: -26px;
+    display: inline-block;
+    text-align: left
+}
+
+.credit-table h2 {
+    font-size: 18px;
+    line-height: 1.45833333;
+    margin: 5px 0 5px 15px
+}
+
+.m-cont-table .tr {
+    border-bottom: 1px solid #ccc !important
+}
+
+.m-cont-table td {
+    padding: 0
+}
+
+.b_search_city {
+    font-weight: 700;
+    font-size: 22px
+}
+
+.address-nav .addr-search.b_search {
+    width: 50%
+}
+
+.credit_list_product_info {
+    font-size: 10px;
+    color: #3f3f3f;
+    text-align: left;
+    padding: 0 5px
+}
+
+.credit_list_product_date {
+    padding: 2px 5px;
+    text-align: left
+}
+
+@media (max-width: 1023px) {
+    .address-nav .addr-search.b_search {
+        width: 100%
+    }
+
+    .b_search_city {
+        margin-bottom: 20px;
+        display: inline-block
+    }
+
+    .bankom_partner {
+        margin: 0
+    }
+}
+
+.more-table th {
+    color: #8c8c8c !important;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    padding: 5px 11px 5px 0 !important;
+    min-height: 38px !important
+}
+
+.more-table th:first-child {
+    padding-left: 5px !important
+}
+
+.rates-table .more-table .table-head {
+    background: 0 0 !important
+}
+
+.th_bank_name {
+    padding: 7px 5px !important;
+    display: block
+}
+
+.rates-table .more-table .table-head tr:last-child {
+    border-bottom: 1px solid #F8C98A !important
+}
+
+.nbrb_torg_title_history {
+    top: 2px
+}
+
+.links-slider .item:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 55px;
+    width: 55px;
+    z-index: -1;
+    background: url(../images/icons_sprite.png) no-repeat
+}
+
+.info-window:after, .info-window:before {
+    content: ''
+}
+
+.links-slider .cur_i:after {
+    background-position: 6px -55px
+}
+
+.links-slider .credit_i:after {
+    background-position: 6px -110px
+}
+
+.links-slider .prop_credit_i:after {
+    background-position: 6px -165px
+}
+
+.links-slider .a_credit_i:after {
+    background-position: 6px -220px;
+    bottom: -5px
+}
+
+.links-slider .byn_dep_i:after {
+    background-position: 6px -275px
+}
+
+.links-slider .usd_dep_i:after {
+    background-position: 6px -330px
+}
+
+.links-slider .cr_card_i:after {
+    background-position: 6px -385px;
+    bottom: -5px
+}
+
+.links-slider .banks_i:after {
+    background-position: 6px -440px
+}
+
+.links-slider .ras_i:after {
+    background-position: 6px 0;
+    bottom: -2px
+}
+
+.bank_serch input {
+    width: 100%;
+    border-right: none;
+    border-left: none;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 10px;
+    background: #f2f9fd
+}
+
+.insync_btn img {
+    display: inline;
+    margin-right: 5px
+}
+
+.insync_btn {
+    padding: 5px !important;
+    cursor: pointer
+}
+
+.insync_btn span {
+    background-color: #fff;
+    border: 1px solid #e54853;
+    display: block;
+    color: #e54853;
+    font-weight: 700;
+    border-radius: 20px;
+    padding-right: 5px;
+    font-size: 13px
+}
+
+.insync_btn:hover span {
+    color: #e54853
+}
+
+#insync {
+    display: none
+}
+
+.converterContent {
+    width: 98%
+}
+
+.converterContent .deleteValute {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+    top: 8px;
+    background: url(/images/delete_conv.png) top left no-repeat
+}
+
+.converterContent .deleteValute:hover {
+    background: url(/images/delete_conv.png) bottom left no-repeat
+}
+
+.converterContent .unit {
+    display: inline;
+    font-weight: 700;
+    float: left;
+    line-height: 34px;
+    margin-right: 10px;
+    min-width: 30px
+}
+
+.converterContent .record {
+    margin-bottom: 10px
+}
+
+.converterContent .input_calc {
+    width: 50%
+}
+
+.converterNBRBLink {
+    font-size: 12px;
+    line-height: 34px;
+    position: static;
+    display: inline-block
+}
+
+@media (max-width: 450px) {
+    .converterNBRBLink {
+        line-height: normal;
+        display: block;
+        padding-left: 0;
+        clear: both;
+        text-align: right;
+        float: right;
+        margin-right: 34px
+    }
+
+    .converterContent .input_calc {
+        width: calc(75% - 34px)
+    }
+
+    .converterContent .unit {
+        width: 25%;
+        margin: 0
+    }
+}
+
+.info-link, .info-window-block {
+    display: inline-block
+}
+
+.info-btn {
+    font-size: 14px;
+    padding: 0 5px;
+    border-radius: 100%;
+    border-width: 1px;
+    width: auto !important;
+    font-weight: 700;
+    background: #fff
+}
+
+.info-window-block {
+    position: relative
+}
+
+.info-window {
+    padding: 10px;
+    position: absolute;
+    top: 32px;
+    left: -8px;
+    width: 275px
+}
+
+.info-window p {
+    font-size: 12px;
+    font-family: roboto-regular, Helvetica, Arial, sans-serif
+}
+
+.info-window:before {
+    position: absolute;
+    left: 9px;
+    top: -22px;
+    border: 11px solid transparent;
+    border-bottom: 11px solid #d9d9d9
+}
+
+.info-window:after {
+    position: absolute;
+    left: 10px;
+    top: -20px;
+    border: 10px solid transparent;
+    border-bottom: 10px solid #fff
+}
+
+.ml-10 {
+    margin-left: 10px
+}
+
+.btn.small {
+    font-size: 12px;
+    padding: 6px 10px
+}
+
+.conditions-table .btn.small {
+    width: auto
+}
+
+@media (max-width: 767px) {
+    .conditions-table .btn.small {
+        display: block;
+        margin-left: 0;
+        margin-top: 5px;
+        white-space: normal
+    }
+}
+
+.certificate_need_t td {
+    font-family: roboto-regular, Helvetica, Arial, sans-serif !important;
+    padding: 0 0 6px !important;
+    font-size: 12px
+}
+
+.certificate_need_t td:first-child {
+    width: 60px
+}
+
+.conditions-table .btn_more:hover {
+    border-color: #14509c;
+    color: #14509c
+}
+
+.info_pre_link {
+    min-width: 26px;
+    display: inline-block
+}
+
+.maps_w_time {
+    min-width: 145px
+}
+
+.maps_adress {
+    min-width: 170px
+}
+
+.crypto_ico {
+    max-width: 40px !important;
+    margin-right: 10px;
+    float: left
+}
+
+.crypto_iname {
+    font-size: 14px;
+    font-weight: 500;
+    color: #999
+}
+
+.chart-cr-block {
+    width: 100%;
+    height: 400px
+}
+
+.btn-chart, .btn-chart-tab {
+    border: 1px solid #ddd;
+    border-bottom: 0;
+    color: #000
+}
+
+.btn-chart:hover {
+    color: #000
+}
+
+.btn-chart-tab.active, .btn-chart.active {
+    border: 1px solid #f78f1e;
+    margin-bottom: -1px !important;
+    border-bottom-color: #fff;
+    border-radius: 0;
+    position: relative;
+    font-weight: 500
+}
+
+.chart-tabs li {
+    cursor: pointer;
+    list-style: none;
+    margin: 0 0 0 -1px !important;
+    padding: 5px 10px
+}
+
+.dana_h {
+    color: #999;
+    padding-left: 20px;
+    margin-left: 24px;
+    font-size: 12px;
+    background: url(/images/dana_holding_16x16_ico.png) left no-repeat
+}
+
+.content_i.interview-cont {
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0
+}
+
+.interview-cont .breadcrumb-simple {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0
+}
+
+.interview-cont .inner {
+    padding: 20px 30px;
+    background: url(/images/skoring/interview_bg.jpg) top right no-repeat;
+    background-size: cover
+}
+
+.interview-cont .inner h1, .interview-cont .inner h3, .interview-cont .inner p {
+    color: #fff
+}
+
+.row-flex {
+    display: flex;
+    flex-flow: row wrap
+}
+
+.col-flex {
+    display: flex;
+    flex-direction: column
+}
+
+.test-block .first_col {
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 20px;
+    background-color: #eb3228
+}
+
+.test-block .second_col {
+    padding: 30px;
+    color: #fff;
+    background-color: rgba(33, 33, 33, .8)
+}
+
+.test-block .first_col .link {
+    font-size: 12px;
+    text-decoration: underline;
+    color: #fff;
+    line-height: 12px;
+    padding: 20px;
+    text-align: left
+}
+
+.test-block .input-group input {
+    color: #fff;
+    width: 100%;
+    min-width: 200px;
+    background-color: rgba(255, 255, 255, .1);
+    border-radius: 3px !important;
+    border: 1px solid rgba(255, 255, 255, .5)
+}
+
+.test-block .input-group {
+    color: #fff;
+    width: 100%
+}
+
+.test-block .form-group {
+    margin-bottom: 15px
+}
+
+.test-block input:focus, .test-block input:hover {
+    border: 1px solid rgba(255, 255, 255, 1);
+    box-shadow: none
+}
+
+.test-block .radio-group {
+    display: inline-block
+}
+
+.test-block .radio-group.disp-block {
+    display: block
+}
+
+.test-block .radio:hover {
+    cursor: pointer
+}
+
+.test-block .radio {
+    margin-bottom: 0
+}
+
+.test-block .radio:before {
+    font-family: FontAwesome;
+    content: "\f1db";
+    font-size: 14px;
+    position: absolute;
+    left: 0
+}
+
+.test-block .radio-group input:checked ~ .radio:before {
+    content: "\f192"
+}
+
+.test-block .form-group .ttl {
+    font-family: roboto-bold, Helvetica, Arial, sans-serif
+}
+
+.test-block .input-group .subttl {
+    margin-left: 10px;
+    line-height: 34px;
+    font-size: 12px
+}
+
+.test-block .error {
+    font-size: 12px;
+    color: #ebebeb
+}
+
+.test-block .btn {
+    padding: 8px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    color: #000;
+    background-color: #fedc2b;
+    max-width: 200px;
+    height: 35px
+}
+
+.test-block .btn:not(disabled):hover {
+    background-color: #feca16
+}
+
+.test-block hr {
+    border: none;
+    color: #fff;
+    background-color: #fff;
+    height: 1px;
+    opacity: .8
+}
+
+/*.test-block #test_sum {
+    width: 79% !important
+}*/
+
+.w-auto {
+    width: auto !important
+}
+
+.test-block input::-webkit-input-placeholder {
+    opacity: 1;
+    color: rgba(255, 255, 255, .7)
+}
+
+.test-block input::-moz-placeholder {
+    opacity: 1;
+    color: rgba(255, 255, 255, .7)
+}
+
+.test-block input:-moz-placeholder {
+    opacity: 1;
+    color: rgba(255, 255, 255, .7)
+}
+
+.test-block input:-ms-input-placeholder {
+    opacity: 1;
+    color: rgba(255, 255, 255, .7)
+}
+
+.test-block input:focus::-webkit-input-placeholder {
+    opacity: 0
+}
+
+.test-block input:focus::-moz-placeholder {
+    opacity: 0
+}
+
+.test-block input:focus:-moz-placeholder {
+    opacity: 0
+}
+
+.test-block input:focus:-ms-input-placeholder {
+    opacity: 0
+}
+
+.mr-2 {
+    margin-right: 20px
+}
+
+.test-block .result h3 {
+    margin-top: 0
+}
+
+@media (max-width: 767px) {
+    .test-block #test_sum, .test-block .w-auto {
+        width: 100% !important
+    }
+
+    .test-block .first_col {
+        border-bottom: 1px solid #ed645b;
+        border-right: none
+    }
+
+    .interview-cont .inner {
+        padding: 20px
+    }
+
+    .test-block .form-group .ttl {
+        margin-bottom: 10px;
+        display: inline-block
+    }
+
+    .test-block .radio-group {
+        display: block;
+        margin-bottom: 10px
+    }
+
+    .test-block .form-group .subttl {
+        position: absolute;
+        right: 10px
+    }
+
+    .test-block .gender .disp-block:first-child {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px
+    }
+
+    .test-block .gender .disp-block:last-child {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px
+    }
+
+    .test-block .gender .disp-block {
+        display: inline-block !important;
+        width: 50%;
+        float: left;
+        border: 1px solid rgba(255, 255, 255, .5);
+        text-align: center;
+        margin-bottom: 25px
+    }
+
+    .test-block .gender .radio:before {
+        display: none
+    }
+
+    .test-block .gender input:checked ~ .radio {
+        background-color: #fff;
+        color: #000
+    }
+
+    .test-block .gender .radio {
+        padding: 8px;
+        width: 100%;
+        margin: 0
+    }
+
+    .test-block .btn-block {
+        text-align: center
+    }
+}
+
+.menu_bt_hover_inside {
+    background: url(/images/skoring/button.png) left top no-repeat;
+    cursor: pointer;
+    width: 190px;
+    height: 38px;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 5px
+}
+
+.menu_bt_hover_inside:hover {
+    background: url(/images/skoring/button.png) left bottom no-repeat
+}
+
+.skoring_bottom_banner {
+    background: url(/images/skoring/bnnr_refinance_882x140.jpg) left bottom no-repeat;
+    height: 140px;
+    display: block
+}
+
+.skoring_sidebar_banner {
+    background: url(/images/skoring/alfa_300x750.jpg) left bottom no-repeat;
+    background-size: contain;
+    height: 720px;
+    display: block
+}
+
+@media (max-width: 1050px) {
+    .skoring_sidebar_banner {
+        background-size: auto;
+        height: 750px
+    }
+}
+
+input::-webkit-inner-spin-button, input::-webkit-outer-spin-button {
+    -webkit-appearance: none
+}
+
+input[type=number] {
+    -moz-appearance: textfield
+}
+
+.skoring-i {
+    font-size: 20px !important;
+    margin-right: 7px
+}
+
+.credit-test-modal .modal-footer {
+    background: url(/images/skoring/a-mail.png) 30px 20px no-repeat #eb3228;
+    padding-left: 130px;
+    text-align: left;
+    color: #fff
+}
+
+.credit-test-modal .social a {
+    height: 35px;
+    width: 35px;
+    border: 1px solid #fff;
+    -webkit-border-radius: 3px;
+    border-radius: 3px
+}
+
+.credit-test-modal .social {
+    margin-bottom: 0;
+    margin-top: 10px
+}
+
+.credit-test-modal .social a:before {
+    font-size: 20px;
+    padding: 7px;
+    display: block;
+    background-color: transparent
+}
+
+.credit-test-modal .social a:hover {
+    background-color: #fff
+}
+
+.credit-test-modal .social a:hover:before {
+    color: #eb3228
+}
+
+.credit-test-modal .fa-facebook:before {
+    padding-left: 10px !important
+}
+
+@media (max-width: 360px) {
+    .credit-test-modal .modal-footer {
+        text-align: center;
+        padding-left: 25px;
+        padding-top: 100px;
+        background-position: center 20px
+    }
+}
+
+.menu_bt_5_let {
+    background: url(/images/myfin_5_btn.png) left top no-repeat;
+    cursor: pointer;
+    width: 171px;
+    height: 39px;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 5px
+}
+
+@media (min-width: 991px) {
+    .hor-nav .item_1 > a, .hor-nav .item_1 > span {
+        font-size: 18px;
+        padding: 0 15px
+    }
+
+    .hor-nav .item_1.arrow a {
+        padding-right: 20px
+    }
+}
+
+#crypto_currency {
+    padding: 0 !important
+}
+
+.calc_zhile {
+    background: url(/images/banners/calc-branding.jpg) left top no-repeat
+}
+
+.calc_zhile .city_selector, .calc_zhile input {
+    position: relative
+}
+
+@media (max-width: 1280px) {
+    .calc_zhile .checkbox_w {
+        margin-right: 67px
+    }
+
+    .calc_zhile.credit-calc .btn {
+        display: inline-block;
+        margin-top: 24px
+    }
+}
+
+.calc_zhile_link {
+    display: none;
+    width: 100%;
+    height: 144px;
+    position: absolute;
+    top: 36px;
+    left: 0
+}
+
+.g-wrapper .calc_zhile_link {
+    display: block
+}
+
+.mapobjects_menu {
+    width: 400px !important;
+    column-count: 2
+}
+
+@media (max-width: 1023px) {
+    .mapobjects_menu {
+        column-count: 1;
+        width: 100% !important
+    }
+}
+
+.ic-ok:before {
+    font-family: FontAwesome;
+    content: "\f263";
+    background-color: transparent !important;
+    font-size: 20px !important;
+    position: absolute;
+    top: 6px;
+    right: 9px
+}
+
+.ic-ok {
+    position: relative;
+    background-color: #ff851b;
+    border-radius: 4px;
+    height: 34px !important;
+    margin-top: -1px;
+    cursor: pointer
+}
+
+.close_ad_wp, .close_ad_wp .ad_open {
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    left: 0
+}
+
+.ic-ok:hover {
+    background-color: #ce671b
+}
+
+.best-rates-nbrb table, .shop_address .map {
+    margin-bottom: 0
+}
+
+.min-width-350 {
+    min-width: 350px
+}
+
+.rates-table .rates-table-sort.russian .table-head tr:first-child th {
+    font-size: 15px;
+    font-weight: 700
+}
+
+.close_ad_wp {
+    display: none;
+    font-family: roboto-regular;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0 -10px 50px 0 rgba(0, 0, 0, .3)
+}
+
+.close_ad_wp .cat {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 10000
+}
+
+.close_ad_wp .ad_open {
+    overflow-x: hidden;
+    position: absolute;
+    background-color: #edebeb;
+    text-align: center
+}
+
+.close_ad_wp .ad_open .wp {
+    text-align: center;
+    display: inline-block
+}
+
+.close_ad_wp .ad_open .wp .logo {
+    text-align: left;
+    position: relative;
+    top: 5px;
+    left: -22px;
+    width: 90px;
+    z-index: 10000
+}
+
+.close_ad_wp .ad_open .wp .text {
+    position: relative;
+    z-index: 10000;
+    text-align: center;
+    color: #303d41;
+    font-family: roboto-bold;
+    font-size: 18px;
+    font-weight: 900;
+    top: 10px
+}
+
+.close_ad_wp .button {
+    animation: open_animation 3.101s linear 1s infinite normal forwards;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background-color: #ff7d2f;
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #fff;
+    text-align: center
+}
+
+.open_ad, .open_ad .bottom_text br:first-child {
+    display: none
+}
+
+.close_ad_wp .button i {
+    font-size: 40px;
+    position: relative;
+    top: -3px
+}
+
+.open_ad_animation {
+    transition: opacity .3s linear, transform .3s linear;
+    opacity: 1 !important
+}
+
+.open_ad {
+    opacity: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: roboto-regular;
+    width: 100%;
+    height: 100%;
+    background-image: url(/images/banners/bottom_ban/second_bg.jpg);
+    position: fixed;
+    left: 0;
+    top: 100%;
+    background-size: cover;
+    background-position: left center;
+    z-index: 999
+}
+
+.open_ad .exit {
+    float: right;
+    font-size: 35px;
+    margin: 10px 10px 0 0;
+    color: #726d68;
+    position: relative;
+    z-index: 1000000000000
+}
+
+.close_ad_wp .button .fa, .open_ad .exit .fa {
+    color: #fff
+}
+
+.open_ad .logo_white {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding: 0 20px;
+    top: 5%
+}
+
+.open_ad .logo_white img {
+    width: 200px;
+    height: 65px
+}
+
+.open_ad .keys, .open_ad .top_text {
+    width: 100%;
+    padding: 0 20px;
+    text-align: center
+}
+
+.open_ad .top_text {
+    font-family: roboto-bold;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0 auto;
+    position: absolute;
+    top: 15%
+}
+
+.open_ad .bottom_text, .open_ad button {
+    font-size: 20px;
+    color: #fff;
+    position: absolute
+}
+
+.open_ad .keys img {
+    height: 50px;
+    width: 50px
+}
+
+.open_ad .bottom_text {
+    font-family: roboto-light;
+    text-align: center;
+    width: 100%;
+    padding: 0 20px;
+    bottom: 15%
+}
+
+.open_ad .bottom_text span:last-child {
+    font-family: roboto-bold;
+    font-weight: 900
+}
+
+.open_ad button {
+    display: block;
+    background-color: #ff7d2f;
+    border-radius: 5px;
+    border: 0;
+    height: 50px;
+    width: 200px;
+    font-weight: 600;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+@media only screen and (max-width: 768px) {
+    .close_ad_wp, .open_ad {
+        display: block
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .open_ad {
+        background-position: center center
+    }
+
+    .open_ad .bottom_text br:first-child {
+        display: block
+    }
+}
+
+@media only screen and (max-height: 650px) and (max-width: 768px) {
+    .open_ad .top_text {
+        top: 20%
+    }
+
+    .open_ad .bottom_text {
+        bottom: 20%
+    }
+}
+
+@media only screen and (max-height: 380px) and (max-width: 768px) {
+    .open_ad .top_text {
+        display: none
+    }
+
+    .open_ad .bottom_text {
+        bottom: 40%
+    }
+}
+
+@media only screen and (max-height: 750px) and (max-width: 430px) {
+    .open_ad .top_text {
+        top: 20%;
+        font-size: 30px
+    }
+
+    .open_ad .keys {
+        bottom: 40%
+    }
+}
+
+@media only screen and (max-height: 525px) and (max-width: 330px) {
+    .open_ad .keys {
+        display: none
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .close_ad_wp .ad_open {
+        left: 12%
+    }
+}
+
+@media only screen and (max-height: 450px) {
+    .open_ad .keys {
+        display: none
+    }
+}
+
+@keyframes open_animation {
+    25% {
+        transform: translate3d(0, 5px, 0)
+    }
+    100%, 50% {
+        transform: translate3d(0, 0, 0)
+    }
+    75% {
+        transform: translate3d(0, -5px, 0)
+    }
+}
+
+.vip_currency {
+    background: #fffdc5 !important
+}
+
+.vip_currency td:first-child {
+    position: relative !important;
+    width: 28% !important;
+    padding-left: 50px !important;
+    color: #14509c !important
+}
+
+.vip_currency td {
+    font-size: 15px !important;
+    border-top: 1px solid #afc6e0 !important;
+    border-bottom: 1px solid #afc6e0 !important;
+    color: #000 !important;
+    padding: 11px 16px 11px 0 !important
+}
+
+.vip_currency .link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1
+}
+
+.banner-aside #banner img {
+    max-width: 240px
+}
+
+.first_letter {
+    font-size: 28px
+}
+
+.blockquote.quotes_red:after, .blockquote.quotes_red:before, .red {
+    color: red
+}
+
+.bg-gray {
+    background-color: #f5f5f5
+}
+
+.best-rates-nbrb table tr > * {
+    text-align: center;
+    vertical-align: middle
+}
+
+.best-rates-nbrb .value, .best-rates-nbrb table tr > td:nth-child(1) {
+    font-size: 20px;
+    font-family: roboto-bold, roboto-regular, Helvetica, Arial, sans-serif
+}
+
+.best-rates-nbrb .subttl, .best-rates-nbrb .ttl {
+    font-size: 12px;
+    color: #999;
+    display: block
+}
+
+.best-rates-nbrb .subttl a {
+    display: block
+}
+
+.best-rates-nbrb table tr > :nth-child(2) {
+    background-color: #f5f5f5;
+    width: 20%
+}
+
+.best-rates-nbrb table tr:hover {
+    background: 0 0
+}
+
+.dropdown-cur-list .dropdown-toggle {
+    background: 0 0;
+    border: none;
+    color: #14509c;
+    border-bottom: 1px dashed #14509c;
+    font-size: 20px;
+    font-family: roboto-bold, Helvetica, Arial, sans-serif
+}
+
+.dropdown-cur-list {
+    position: relative
+}
+
+.dropdown-cur-list .dropdown-menu {
+    position: absolute !important;
+    right: 0;
+    padding: 10px;
+    max-height: 200px;
+    overflow: auto
+}
+
+.dropdown-cur-list .dropdown-menu a {
+    display: block;
+    padding-bottom: 5px
+}
+
+.dropdown-cur-list .fa-caret-down {
+    -o-transition: transform .1s linear;
+    -ms-transition: transform .1s linear;
+    -moz-transition: transform .1s linear;
+    -webkit-transition: transform .1s linear;
+    transition: transform .1s linear
+}
+
+.dropdown-cur-list.open .fa-caret-down {
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -webkit-transform: rotate(-180deg);
+    transform: rotate(-180deg)
+}
+
+.amcharts-chart-div {
+    height: 400px
+}
+
+.nbrb-cur-rate .subttl {
+    line-height: 14px;
+    color: #999
+}
+
+.nbrb-cur-rate {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e1e1e1
+}
+
+.caption-date {
+    position: relative
+}
+
+.caption-date > * {
+    margin: 0;
+    display: inline
+}
+
+.caption-date .date {
+    position: static
+}
+
+.standard-table .table-head {
+    background: #f2f9fd
+}
+
+.standard-table .table-head tr:last-child {
+    border-bottom: 1px solid #afc6e0
+}
+
+.standard-table .table-head tr th {
+    font-size: 15px;
+    font-family: roboto-medium, roboto-regular, Helvetica, Arial, sans-serif;
+    line-height: 1
+}
+
+.standard-table .table-head tr {
+    border-bottom: 1px solid #e6e6e6
+}
+
+.standard-table table tr > :first-child {
+    padding-left: 30px
+}
+
+.standard-table table tr > :last-child {
+    padding-right: 30px
+}
+
+@media (max-width: 810px) {
+    .nbrb-cur-rate .subttl {
+        font-size: 12px
+    }
+}
+
+@media (max-width: 767px) {
+    .standard-table table tr > :first-child {
+        padding-left: 15px
+    }
+
+    .standard-table table tr > :last-child {
+        padding-right: 15px
+    }
+
+    .nbrb-cur-rate .value {
+        max-width: 100px
+    }
+
+    .best-rates-nbrb .value, .best-rates-nbrb table tr > td:nth-child(1) {
+        font-size: 16px
+    }
+
+    .best-rates-nbrb .value {
+        font-family: roboto-regular, Helvetica, Arial, sans-serif
+    }
+
+    .best-rates-nbrb .subttl {
+        display: none
+    }
+
+    .best-rates-nbrb .ttl {
+        font-size: 10px
+    }
+
+    .best-rates-nbrb table tr > * {
+        padding-left: 5px;
+        padding-right: 5px
+    }
+}
+
+.interview-cont .inner.travel {
+    background: url(/images/travel_bg.jpg) no-repeat !important
+}
+
+#content_container {
+    background: #ebebeb
+}
+
+.wiki_mobile_ban {
+    width: 320px;
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    margin-left: -160px;
+    left: 50%;
+    z-index: 99
+}
+
+.orphus_style {
+    margin-top: 15px
+}
+
+.checkbox-text h3 {
+    color: #14509c;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: roboto-regular, Helvetica, Arial, sans-serif
+}
+
+.g-footer .soc {
+    margin-bottom: 10px
+}
+
+.ic-rss {
+    background-color: #f78f1e;
+    position: relative;
+    border-radius: 4px;
+    height: 34px !important;
+    margin-top: -1px;
+    cursor: pointer
+}
+
+.ic-rss:hover {
+    background-color: #d57d1c
+}
+
+.ic-rss:before {
+    font-family: FontAwesome;
+    content: "\f09e";
+    background-color: transparent !important;
+    font-size: 24px !important;
+    position: absolute;
+    top: 7px;
+    right: 6px
+}
+
+.p-20 {
+    padding: 20px
+}
+
+.bg_cream {
+    background-color: #EFEDD5
+}
+
+.bg_white {
+    background-color: #fff
+}
+
+.crypto_converter_inp {
+    height: 35px;
+    width: 100%;
+    padding: 10px
+}
+
+.crypto_converter_sign {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    width: 80px
+}
+
+.crypto_converter_sign img {
+    width: 25px;
+    float: right
+}
+
+.crypto_converter_iname {
+    float: right;
+    line-height: 25px;
+    padding-right: 8px
+}
+
+.crypto_converter_flag {
+    float: left;
+    top: 7px;
+    right: 10px;
+    width: 60px
+}
+
+.crypto_converter_flag .flag {
+    margin-right: 0;
+    margin-left: 10px
+}
+
+.h-m-0 h1, .h-m-0 h2 {
+    margin: 0
+}
+
+.mb-20 {
+    margin-bottom: 20px
+}
+
+.p-10-20 {
+    padding: 10px 20px
+}
+
+.p-0-20 {
+    padding: 0 20px 20px
+}
+
+.ml_15{
+    margin-left: 15px;
+}
+
+.credit-list.other-banks table th:first-child{
+    padding-left: 14px;
+}
+
+@media (max-width: 767px) {
+    .credit-list.other-banks table{
+        max-width: 100%;
+        min-width: 100%;
+    }
+    .credit-list.other-banks table tr > *{
+
+        max-width: 100% !important;
+        min-width: 100%;
+    }
+
+    .credit-list.other-banks table td:last-child{
+        text-align: left;
+    }
+}
+
+.mtb-test__header .inner, .mtb-test__illustration.default {
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f8fcff', endColorstr='#ffffff', GradientType=0)
+}
+
+/*Скоринг мтб*/
+.content_i.interview-cont{
+    padding-left: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+}
+.interview-cont .breadcrumb-simple{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 0;
+}
+
+.row-flex {
+    display: flex;
+    flex-flow: row wrap;
+}
+.col-flex {
+    display: flex;
+    flex-direction: column;
+}
+
+.interview-cont .inner.mtb-test{
+    background-color: #eef7ff;
+    background-image: none;
+    padding: 0;
+}
+.mtb-test__header .inner{
+    position: relative;
+    z-index: 10;
+
+    padding: 30px 0;
+    text-align: center;
+
+    border-bottom: 1px solid #f4f4f4;
+
+    background: rgba(248,252,255,1);
+    background: -moz-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,252,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(248,252,255,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8fcff', endColorstr='#ffffff', GradientType=0 );
+}
+.mtb-test__header .logo, .mtb-test__footer .logo{
+    max-height: 50px;
+    display: inline-block;
+}
+.mtb-test__header .shadow{
+    z-index: 1;
+    height: 10px;
+    background-color: #feca16;
+    border-radius: 50%;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+    top: -10px;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.2);
+}
+.mtb-test__body{
+    width: 80%;
+    margin: -10px auto;
+    margin-bottom: 0;
+    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+}
+.mtb-test__footer{
+    background-color: #ffffff;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 12px;
+}
+.mtb-test__footer .logo{
+    margin-bottom: 20px;
+}
+.mtb-test__illustration{
+    padding: 30px 20px;
+    min-height: 370px;
+    border-bottom: 2px solid #edeaea;
+    position: relative;
+}
+.mtb-test__illustration .img-block{
+    width: 100%;
+    height: 100%;
+    top: 15px;
+    left: 0;
+    position: absolute;
+
+}
+.mtb-test__illustration.default .text {
+    display: none;
+}
+
+.mtb-test__illustration.default{
+    background: rgba(248,252,255,1);
+    background: -moz-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,252,255,1)), color-stop(100%, rgba(255,255,255,1)));
+    background: -webkit-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to bottom, rgba(248,252,255,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8fcff', endColorstr='#ffffff', GradientType=0 );
+}
+.mtb-test__illustration.default .img-block{
+    background: url("/images/skoring/illustration_default.png") center no-repeat;
+}
+
+.mtb-test__illustration.high{
+    background: rgba(248,252,255,1);
+    background: -moz-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(237, 249, 247, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,252,255,1)), color-stop(100%, rgba(237, 249, 247, 1)));
+    background: -webkit-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(237, 249, 247, 1) 100%);
+    background: -o-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(237, 249, 247, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(237, 249, 247, 1) 100%);
+    background: linear-gradient(to bottom, rgba(248,252,255,1) 0%, rgba(237, 249, 247, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8fcff', endColorstr='#EDF9F7', GradientType=0 );
+}
+.mtb-test__illustration.high .img-block{
+
+    background: url("/images/skoring/illustration_high.png") center no-repeat;
+}
+.mtb-test__illustration.medium{
+    background: rgba(248,252,255,1);
+    background: -moz-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(248, 245, 245, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,252,255,1)), color-stop(100%, rgba(248, 245, 245, 1)));
+    background: -webkit-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(248, 245, 245, 1) 100%);
+    background: -o-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(248, 245, 245, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(248, 245, 245, 1) 100%);
+    background: linear-gradient(to bottom, rgba(248,252,255,1) 0%, rgba(248, 245, 245, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8fcff', endColorstr='#f8f5f5', GradientType=0 );
+}
+.mtb-test__illustration.medium .img-block{
+    background: url("/images/skoring/illustration_medium.png") center no-repeat;
+}
+.mtb-test__illustration.low{
+    background: rgba(248,252,255,1);
+    background: -moz-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(246, 240, 243, 1) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,252,255,1)), color-stop(100%, rgba(246, 240, 243, 1)));
+    background: -webkit-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(246, 240, 243, 1) 100%);
+    background: -o-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(246, 240, 243, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(248,252,255,1) 0%, rgba(246, 240, 243, 1) 100%);
+    background: linear-gradient(to bottom, rgba(248,252,255,1) 0%, rgba(246, 240, 243, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8fcff', endColorstr='#f6f0f3', GradientType=0 );
+}
+.mtb-test__illustration.low .img-block{
+    background: url("/images/skoring/illustration_low.png") center no-repeat;
+}
+.mtb-test__illustration .text{
+    font-family: roboto-bold, roboto-regular, Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+}
+.mtb-test__illustration.high .text{
+    color: #76bf73;
+}
+.mtb-test__illustration.medium .text{
+    color: #ff9600;
+}
+.mtb-test__illustration.low .text{
+    color: #d42e2e;
+}
+.mtb-test__info{
+    padding: 30px 60px;
+}
+
+.mtb-test__info .test-wrap{
+    background-color: #ffffff;
+    padding: 30px;
+}
+
+.mtb-test .test-block{
+    margin: 0 auto;
+    max-width: 400px;
+}
+.mtb-test .test-block .radio-group{
+    display: inline-block;
+}
+
+.mtb-test .test-block .radio-group.disp-block{
+    display: block;
+}
+.mtb-test .test-block .radio:hover{
+    cursor: pointer;
+}
+.mtb-test .test-block .radio{
+    margin-bottom: 5px;
+    padding-left: 25px;
+    margin-right: 15px;
+}
+.mtb-test .test-block .radio:before{
+    font-family: FontAwesome;
+    content: "\f1db";
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    color: #d6d9db;
+
+}
+.mtb-test .test-block .radio-group input:checked~.radio:before{
+    content: "\f192";
+    color: #04509d;
+}
+.mtb-test .test-block .ttl{
+    font-family: roboto-bold, roboto-regular, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.mtb-test .form-group{
+    margin-bottom: 15px;
+}
+.mtb-test .input-group{
+    width: 100%;
+}
+.mtb-test .test-block .input-group input{
+    height: 50px;
+    border-radius: 10px !important;
+    border-color: #d6d9db;
+    box-shadow: none;
+    width: 100% !important;
+    padding: 10px 15px;
+    color: #000;
+    z-index: 2;
+}
+.mtb-test .input-group .subttl{
+    position: absolute;
+    right: 15px;
+    color: #c2c2c2;
+    z-index: 4;
+    line-height: 50px;
+}
+.mtb-test .btn{
+    height: 50px;
+    border-radius: 10px;
+    min-width: 300px;
+    margin: 0 auto;
+
+    transition: 0.3s;
+}
+.mtb-test .btn.btn-orange{
+    background-color: #f78f1e;
+}
+.mtb-test .btn.btn-orange:hover{
+    background-color: #e86809;
+}
+.mtb-test .btn.btn-green{
+    background-color: #1fba5d;
+}
+.mtb-test .btn.btn-green:hover{
+    background-color: #1ba151;
+}
+
+
+.mtb-test .btn-block{
+    margin-top: 20px;
+    text-align: center;
+}
+.mtb-test .btn-block .btn{
+    color: #fff;
+}
+.mtb-test .error{
+    margin-left: 15px;
+    display: none;
+    position: relative;
+    font-size: 12px;
+    font-family: roboto-bold, Arial, Helvetica, sans-serif;
+    color: #ff363d;
+    padding-left: 10px
+}
+.mtb-test .error:before{
+    font-family: FontAwesome;
+    position: absolute;
+    content: "\f111";
+    left: 0;
+    top: 7px;
+    font-size: 5px;
+}
+.mtb-test .error [style="display:block"]{
+    display: inline-block;
+}
+.mtb-test .info-text{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+.mtb-test input.inp_tel + .fixed{
+    margin-top: 13px;
+    margin-left: 15px;
+}
+.mtb-test input.inp_tel:focus, input.inp_tel:valid{
+    padding-left: 55px;
+}
+
+.mtb-test__info .ttl-result{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.mtb-test__info .ttl-result .ttl{
+    font-size: 26px;
+    display: block;
+    color: #004f9f;
+    font-family: roboto-bold, roboto-regular, Helvetica, Arial, sans-serif;
+}
+.mtb-test__info .ttl-result .subttl{
+    font-size: 18px;
+    font-family: roboto-light, roboto-regular, Helvetica, Arial, sans-serif;
+}
+
+.mtb-test .test-wrap.result{
+    min-height: 380px;
+}
+.mtb-test .test-wrap.result-cr-card{
+    background: url("/images/skoring/crcard_result_bg.jpg") left bottom no-repeat #ffffff;
+}
+.mtb-test .test-wrap.result-halva{
+    min-height: 400px;
+    background: url("/images/skoring/halva_result_bg.jpg") left bottom no-repeat #ffffff;
+}
+.mtb-test .test-wrap.result-auto-card{
+    min-height: 400px;
+    background: url("/images/skoring/autocard_result_bg.jpg") top left no-repeat #ffffff;
+    background-size: contain;
+}
+.mtb-test .result .test-block{
+    width: 280px;
+    margin: 0;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    padding: 5px;
+}
+.mtb-test .test-wrap.result-cr-card input{
+    box-shadow: 0 0 20px 8px #1286c3;
+}
+.mtb-test .test-wrap.result-halva input{
+    box-shadow: 0 0 20px 8px #42318a;
+}
+.mtb-test .result-auto-card .test-block{
+    position: absolute;
+    right: auto;
+    left: 20px;
+}
+
+.mtb-test.inner h1, .mtb-test.inner h3, .mtb-test.inner p {
+    color: #000
+}
+
+.mtb-test .form-control:focus{
+    outline: 0!important;
+    border-color: #a3b8c2!important;
+    -webkit-box-shadow: inset 0 1px 3px rgba(77, 131, 158, .5)!important;
+    box-shadow: inset 0 1px 3px rgba(77, 131, 158, .5)!important;
+}
+
+@media (max-width: 900px) {
+    .mtb-test__body{
+        width: 90%;
+    }
+    .mtb-test__info{
+        padding: 20px 30px;
+    }
+    .mtb-test .test-wrap.result{
+        min-height: 580px;
+        background-position: top left;
+    }
+    .mtb-test .test-wrap.result-halva .test-block{
+        padding: 400px 0 0 0;
+    }
+
+    .mtb-test .result .test-block{
+        text-align: center;
+        position: static;
+        padding: 360px 0 0 0;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .mtb-test .test-wrap.result input{
+        box-shadow: none;
+    }
+    .mtb-test .test-wrap.result-auto-card{
+        background-position: top right;
+        background-size: auto;
+    }
+
+}
+@media (max-width: 767px){
+    .mtb-test__body{
+        width: 100%;
+        box-shadow: none;
+    }
+    .mtb-test .test-block .ttl{
+        padding-bottom: 10px;
+    }
+}
+@media (max-width: 450px){
+
+    .mtb-test .test-wrap.result-auto-card{
+        background-position: top right;
+        min-height: 300px;
+        background-size: contain;
+    }
+    .mtb-test .test-wrap.result-auto-card .test-block{
+        padding-top: 120px;
+    }
+
+    .mtb-test__header .inner{
+        padding: 15px 0;
+    }
+    .mtb-test__info .test-wrap{
+        padding: 20px 15px;
+    }
+    .mtb-test__info{
+        padding: 20px 15px;
+    }
+    .mtb-test .btn{
+        width: 100%;
+        min-width: 100%;
+    }
+    .mtb-test__info .ttl-result .ttl{
+        font-size: 22px;
+        line-height: normal;
+    }
+    .mtb-test__info .ttl-result .subttl{
+        font-size: 16px;
+    }
+    .mtb-test .test-wrap.result-cr-card{
+        background-position: -35px 0;
+    }
+    .mtb-test__illustration .text{
+        font-size: 16px;
+    }
+}
+
+.mtb-test .test-block input::-webkit-input-placeholder {
+    opacity: 1;
+    color: #c2c2c2;
+}
+
+.mtb-test .test-block input::-moz-placeholder {
+    opacity: 1;
+    color: #c2c2c2;
+}
+
+.mtb-test .test-block input:-moz-placeholder {
+    opacity: 1;
+    color: #c2c2c2;
+}
+
+.mtb-test .test-block input:-ms-input-placeholder {
+    opacity: 1;
+    color: #c2c2c2;
+}
+
+.mtb-test .test-block input:focus::-webkit-input-placeholder {
+    opacity: 0
+}
+
+.mtb-test .test-block input:focus::-moz-placeholder {
+    opacity: 0
+}
+
+.mtb-test .test-block input:focus:-moz-placeholder {
+    opacity: 0
+}
+
+.mtb-test .test-block input:focus:-ms-input-placeholder {
+    opacity: 0
+}
+
+.mtb-test .test_error{
+    color: #f14545;
+}
+
+.mtb-test-modal .btn{
+    height: 50px;
+    border-radius: 10px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-top: 13px;
+    transition: 0.3s;
+}
+.mtb-test-modal .btn.btn-green{
+    background-color: #1fba5d;
+}
+.mtb-test-modal .btn.btn-green:hover{
+    background-color: #1ba151;
+}
+.mtb-test-modal .modal-dialog{
+    margin-top: 10%;
+}
+.mtb-test-modal .modal-content{
+    border-radius: 10px;
+    border: none;
+}
+
+#result_tel{
+    padding-left: 50px;
+}
+
+.mtb-test #name .fixed{
+    color: #c2c2c2;
+}
+
+.inner.mtb-test {
+    margin-top: 10px;
+}
+
+.result-auto-card .fixed{
+    color: #c2c2c2;
+}

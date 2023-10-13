@@ -1,0 +1,30 @@
+.mikki-on-rope__container.animated-1 {
+  animation: mikki-on-rope__container--an-1 1s ease-in-out both;
+  transform-origin: center top;
+}
+
+
+.mikki-on-rope__container.animated-2 {
+  animation: mikki-on-rope__container--an-2 4s ease-in-out infinite;
+  transform-origin: center top;
+}
+
+.mikki-on-rope__img-gift.animated {
+  animation: mikki-on-rope__img-gift--an 2s ease-in-out infinite;
+  transform-origin: center center;
+}
+
+@keyframes mikki-on-rope__container--an-1  {
+  0% {transform: rotate(0)}
+  100%{transform: rotate(10deg)}
+}
+
+@keyframes mikki-on-rope__container--an-2  {
+  0%,100% {transform: rotate(10deg)}
+  50%{transform: rotate(-10deg)}
+}
+
+@keyframes mikki-on-rope__img-gift--an  {
+  0%,50%,100% {transform: scale(0.8)}
+  25%,75% {transform: scale(0.88)}
+}

@@ -1,0 +1,55 @@
+.alfa_vklad-modal .modal-dialog {
+    width: 800px;
+}
+
+.alfa_vklad_wrap {
+    background: url(./alfa-vklad800х500.jpg);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 500px;
+    box-shadow: 0 0 6px #333;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+
+.alfa_vklad_wrap a{
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.alfa_vklad-modal .close {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    margin-top: 0;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+}
+.alfa_vklad-modal .close:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 45%;
+}
+.alfa_vklad-modal .close:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 45%;
+}
+.alfa_vklad-modal .close:after, .alfa_vklad-modal .close:before {
+    content: '';
+    background: #7F7F7F;
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+}

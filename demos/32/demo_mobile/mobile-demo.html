@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../../newFiles/css/mobile-demo-styles.css">
+    <link rel="stylesheet" href="../iframe/index_files/app.min.css">
+    <script type="text/javascript" src="../iframe/index_files/jquery.min.js"></script>
+    <title>Mobile-demo</title>
+</head>
+<body>
+    <div class="mob-demo__wrapper">
+        <div class="somecl">
+            <div class="mob-demo__right-container">
+                   
+                <div class=" mob-demo__phone-img ">
+                        <iframe  src="../iframe/index.html"></iframe>
+                        <div class="mob-demo__btn-wrapper" id="historyback" onclick="window.close()">
+
+                            </div>
+                </div>
+            </div>
+            <div class="mob-demo__left-container">
+                <div>
+                    <a href="https://myfin.by/">
+                        <img class ="mob-demo__logotype logo" src="../../../newFiles/img/logo-myfin.svg" alt="">
+                    </a>
+                </div>
+
+                <h1>Баннер перед выдачей результатов в разделе</h1>
+
+                <p>
+                    Узкий графический элемент, располагающийся перед списком выдачи услуг, с возможностью выбора раздела для отображения. Размещение перед первой позицией позволяет гарантированно обратить на себя внимание пользователя.
+                </p>
+                <img src="../../../newFiles/img/qr-codes/32.svg" alt="qr-code" class="qr-code__image">
+                
+                <div class="mob-demo__links-wrapper">
+                    <a class="mob-demo__link"  href="/">Все форматы</a>
+                   <a class="formats__item-link" href="#" onclick="window.close()">Закрыть это окно</a>
+                </div>
+            </div>
+        </div>
+        <footer class="mob-demo__footer">
+                <span>© 2012-2017, Myfin.by</span>
+        </footer>
+
+    </div>
+        
+    <script>
+
+        $('#history-back__link').click(function() {
+            event.preventDefault();
+            history.back(1);
+        });
+
+    </script>
+</body>
+</html>

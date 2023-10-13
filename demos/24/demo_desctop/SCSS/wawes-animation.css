@@ -1,0 +1,49 @@
+.balls-stretch__button:before,
+.balls-stretch__button:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  width: 0;
+  height: 0;
+  z-index: -1;
+}
+
+@keyframes pinBeforeWave {
+  0% {
+    width: 90%;
+    height: 90%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 120%;
+    height: 165%;
+    opacity: 0;
+  }
+}
+@keyframes pinAfterWave {
+  0% {
+    width: 90%;
+    height: 90%;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    width: 110%;
+    height: 140%;
+    opacity: 0;
+  }
+}
+.balls-stretch__button:hover:before {
+  animation: pinBeforeWave 1.2s  infinite;
+}
+.balls-stretch__button:hover:after {
+  animation: pinAfterWave 1.2s  infinite;
+}

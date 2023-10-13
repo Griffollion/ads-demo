@@ -1,0 +1,156 @@
+@media (max-width: 1800px) {
+  .balls-stretch__close-btn {
+    right: 20px;
+  }
+}
+@media (max-width: 1620px) {
+  .balls-stretch__close-btn {
+    right: 5%;
+    bottom: 250px;
+  }
+
+  .balls-stretch__ball img {
+    height: 280px;
+  }
+  .balls-stretch__ball.ball-sm img {
+    height: 240px;
+  }
+  .balls-stretch__ball.ball-md img {
+    height: 260px;
+  }
+}
+@media (max-width: 1500px) {
+  .balls-stretch__ball img {
+    height: 260px;
+  }
+  .balls-stretch__ball.ball-sm img {
+    height: 220px;
+  }
+  .balls-stretch__ball.ball-md img {
+    height: 240px;
+  }
+  .balls-stretch__ball.balls-stretch__ball_6 {
+    bottom: 27%;
+  }
+  .balls-stretch__ball.balls-stretch__ball_7 {
+    bottom: 86%;
+  }
+  .balls-stretch__ball.balls-stretch__ball_8 {
+    bottom: 90%;
+  }
+
+  .balls-stretch__image-block_1 img {
+    height: 280px;
+  }
+
+  .balls-stretch__image-block_2 img {
+    height: 255px;
+  }
+
+  .balls-stretch__buttons-block-img {
+    top: 20px;
+  }
+  .balls-stretch__buttons-block-img img {
+    height: 130px;
+  }
+
+  .balls-stretch__close-btn {
+    bottom: 230px;
+  }
+}
+@media (max-width: 1250px) {
+  .balls-stretch__close-btn {
+    bottom: 190px;
+  }
+
+  .balls-stretch__image-block_1 img {
+    height: 247px;
+  }
+
+  .balls-stretch__image-block_2 img {
+    height: 215px;
+  }
+
+  .balls-stretch__buttons-block-img {
+    top: 10px;
+  }
+  .balls-stretch__buttons-block-img img {
+    height: 100px;
+  }
+
+  .balls-stretch__buttons-block {
+    margin-bottom: 60px;
+  }
+
+  .balls-stretch__ball img {
+    height: 230px;
+  }
+  .balls-stretch__ball.ball-sm img {
+    height: 190px;
+  }
+  .balls-stretch__ball.ball-md img {
+    height: 210px;
+  }
+  .balls-stretch__ball.balls-stretch__ball_9 {
+    bottom: 40%;
+  }
+
+  .balls-stretch__button {
+    width: 230px;
+    height: 55px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 1090px) {
+  .balls-stretch__button {
+    width: 200px;
+    height: 53px;
+    font-size: 16px;
+  }
+}
+@media (max-width: 1024px) {
+  .balls-stretch__main-content-wrapper {
+    justify-content: space-between;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+  .balls-stretch__ball {
+    opacity: 1;
+  }
+  .balls-stretch__ball.balls-stretch__ball_1 {
+    display: none;
+  }
+  .balls-stretch__ball.balls-stretch__ball_4 {
+    bottom: 20%;
+  }
+
+  .balls-stretch__buttons-block {
+    z-index: 3;
+    position: absolute;
+    margin-bottom: 0;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+  }
+}
+@media (max-width: 890px) {
+  .balls-stretch__close-btn {
+    bottom: 170px;
+  }
+
+  .balls-stretch__image-block_1 img {
+    height: 227px;
+  }
+
+  .balls-stretch__image-block_2 img {
+    height: 195px;
+  }
+
+  .balls-stretch__button {
+    width: 205px;
+    height: 50px;
+    font-size: 16px;
+  }
+}

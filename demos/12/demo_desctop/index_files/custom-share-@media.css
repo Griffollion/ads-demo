@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px){
+    .custom-share__list {
+        padding: 0;
+        flex-direction: column;
+    }
+
+    .custom-share__list-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 40px;
+        height: 40px;
+    }
+}

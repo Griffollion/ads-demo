@@ -1,0 +1,29 @@
+.best-courses_button {
+    background: #FFDE00;
+    color: #000;
+    text-transform: uppercase;
+    display: inline-block;
+    height: 37px;
+}
+
+
+
+.credit-calc.noui-style.card_calc {
+    position: relative;
+}
+
+.superpower__wrapper {
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+    left: 0;
+}
+
+
+
+.superpower__img {
+    width: 100%;
+    height: auto;
+}

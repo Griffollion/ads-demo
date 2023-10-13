@@ -1,0 +1,121 @@
+/*custom-share*/
+.custom-share {
+    z-index: 10;
+    width: 100%;
+    max-width: 100%;
+}
+
+.custom-share__list {
+    display: flex;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+.custom-share__list-item {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-right: 8px;
+    flex-shrink: 0;
+}
+
+.custom-share__list-item:last-child {
+    margin-right: 0
+}
+
+.custom-share__list-item:before {
+    font-family: MyFIn;
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    z-index: 2
+}
+
+.custom-share__list-item:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-filter .25s;
+    transition: -webkit-filter .25s;
+    -o-transition: filter .25s;
+    transition: filter .25s;
+    transition: filter .25s,-webkit-filter .25s
+}
+
+.custom-share__list-item:hover:after {
+    -webkit-filter: brightness(1.20);
+    filter: brightness(1.20)
+}
+
+.custom-share__list-item:active:after,.custom-share__list-item:focus:after {
+    -webkit-filter: brightness(.8);
+    filter: brightness(.8)
+}
+
+.custom-share__list-item.custom-share__list-item--tg:before {
+    content: '\e914'
+}
+
+.custom-share__list-item.custom-share__list-item--tg:after {
+    background-color: #4faef7
+}
+
+
+.custom-share__list-item.custom-share__list-item--vk:before {
+    content: '\e936'
+}
+
+.custom-share__list-item.custom-share__list-item--vk:after {
+    background-color: #45668e
+}
+
+.custom-share__list-item.custom-share__list-item--fb:before {
+    content: '\e935'
+}
+
+.custom-share__list-item.custom-share__list-item--fb:after {
+    background-color: #3b5998
+}
+
+
+.custom-share__list-item.custom-share__list-item--tw:before {
+    content: '\e939'
+}
+
+.custom-share__list-item.custom-share__list-item--tw:after {
+    background-color: #55acee
+}
+
+.custom-share__list-item.custom-share__list-item--ok:before {
+    content: '\e938'
+}
+
+.custom-share__list-item.custom-share__list-item--ok:after {
+    background-color: #ff851b
+}
+
+.custom-share__list-item.custom-share__list-item--vb:before {
+    content: '\e915'
+}
+
+.custom-share__list-item.custom-share__list-item--vb:after {
+    background-color: #6f4a8e
+}
+
+/*custom-share end*/

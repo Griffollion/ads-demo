@@ -1,0 +1,373 @@
+/* html5 banner v 1.0.6 */
+(function(URLs) {
+	for (var i = 0; i < URLs.length && URLs[i]; i++) {
+		if (!URLs[i].match(/adfox\.ru\/transparent\.gif$/)) {
+			(function(url, img) {
+				img.src = url;
+			})(URLs[i], new Image());
+		}
+	}
+})('https://banners.adfox.ru/transparent.gif'.split('|'));
+
+(function() {
+	var data = {
+		reference: {
+			value: 'https://www.belinvestbank.by/corporate-clients/acquiring_commercial_and_service/internet_acvaring.php',
+			type: 'reference'
+		},
+		html5Creative: {
+			value: decodeURIComponent('%3C%21DOCTYPE%20html%3E%20%3C%21--%20%09NOTES%3A%20%091.%20All%20tokens%20are%20represented%20by%20%27%24%27%20sign%20in%20the%20template.%20%092.%20You%20can%20write%20your%20code%20only%20wherever%20mentioned.%20%093.%20All%20occurrences%20of%20existing%20tokens%20will%20be%20replaced%20by%20their%20appropriate%20values.%20%094.%20Blank%20lines%20will%20be%20removed%20automatically.%20%095.%20Remove%20unnecessary%20comments%20before%20creating%20your%20template.%20--%3E%20%3Chtml%3E%20%3Chead%3E%20%3Cmeta%20charset%3D%22UTF-8%22%3E%20%3Cmeta%20name%3D%22authoring-tool%22%20content%3D%22Adobe_Animate_CC%22%3E%20%3Ctitle%3E240x400%3C%2Ftitle%3E%20%3C%21--%20write%20your%20code%20here%20--%3E%20%3Cscript%20src%3D%22https%3A%2F%2Fcode.createjs.com%2Fcreatejs-2015.11.26.min.js%22%3E%3C%2Fscript%3E%20%3Cscript%20src%3D%22%2F%2Fbanners.adfox.ru%2F170830%2Fadfox%2F711279%2F2195901%2F240x400.js%22%3E%3C%2Fscript%3E%20%3Cscript%3E%0D%0Avar%20canvas%2C%20stage%2C%20exportRoot%3B%0D%0Afunction%20init%28%29%20%7B%0D%0A%09canvas%20%3D%20document.getElementById%28%22canvas%22%29%3B%0D%0A%09images%20%3D%20images%7C%7C%7B%7D%3B%0D%0A%09var%20loader%20%3D%20new%20createjs.LoadQueue%28false%2Cnull%2Ctrue%29%3B%0D%0A%09loader.addEventListener%28%22fileload%22%2C%20handleFileLoad%29%3B%0D%0A%09loader.addEventListener%28%22complete%22%2C%20handleComplete%29%3B%0D%0A%09loader.loadManifest%28lib.properties.manifest%29%3B%0D%0A%7D%0D%0Afunction%20handleFileLoad%28evt%29%20%7B%09%0D%0A%09if%20%28evt.item.type%20%3D%3D%20%22image%22%29%20%7B%20images%5Bevt.item.id%5D%20%3D%20evt.result%3B%20%7D%09%0D%0A%7D%0D%0Afunction%20handleComplete%28evt%29%20%7B%0D%0A%09%2F%2FThis%20function%20is%20always%20called%2C%20irrespective%20of%20the%20content.%20You%20can%20use%20the%20variable%20%22stage%22%20after%20it%20is%20created%20in%20token%20create_stage.%0D%0A%09var%20queue%20%3D%20evt.target%3B%0D%0A%09var%20ssMetadata%20%3D%20lib.ssMetadata%3B%0D%0A%09for%28i%3D0%3B%20i%3CssMetadata.length%3B%20i%2B%2B%29%20%7B%0D%0A%09%09ss%5BssMetadata%5Bi%5D.name%5D%20%3D%20new%20createjs.SpriteSheet%28%20%7B%22images%22%3A%20%5Bqueue.getResult%28ssMetadata%5Bi%5D.name%29%5D%2C%20%22frames%22%3A%20ssMetadata%5Bi%5D.frames%7D%20%29%0D%0A%09%7D%0D%0A%09exportRoot%20%3D%20new%20lib._240x400%28%29%3B%0D%0A%09stage%20%3D%20new%20createjs.Stage%28canvas%29%3B%0D%0A%09stage.addChild%28exportRoot%29%3B%09%0D%0A%09%2F%2FRegisters%20the%20%22tick%22%20event%20listener.%0D%0A%09createjs.Ticker.setFPS%28lib.properties.fps%29%3B%0D%0A%09createjs.Ticker.addEventListener%28%22tick%22%2C%20stage%29%3B%09%20%20%20%20%0D%0A%09%2F%2FCode%20to%20support%20hidpi%20screens%20and%20responsive%20scaling.%0D%0A%09%28function%28isResp%2C%20respDim%2C%20isScale%2C%20scaleType%29%20%7B%09%09%0D%0A%09%09var%20lastW%2C%20lastH%2C%20lastS%3D1%3B%09%09%0D%0A%09%09window.addEventListener%28%27resize%27%2C%20resizeCanvas%29%3B%09%09%0D%0A%09%09resizeCanvas%28%29%3B%09%09%0D%0A%09%09function%20resizeCanvas%28%29%20%7B%09%09%09%0D%0A%09%09%09var%20w%20%3D%20lib.properties.width%2C%20h%20%3D%20lib.properties.height%3B%09%09%09%0D%0A%09%09%09var%20iw%20%3D%20window.innerWidth%2C%20ih%3Dwindow.innerHeight%3B%09%09%09%0D%0A%09%09%09var%20pRatio%20%3D%20window.devicePixelRatio%20%7C%7C%201%2C%20xRatio%3Diw%2Fw%2C%20yRatio%3Dih%2Fh%2C%20sRatio%3D1%3B%09%09%09%0D%0A%09%09%09if%28isResp%29%20%7B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0D%0A%09%09%09%09if%28%28respDim%3D%3D%27width%27%26%26lastW%3D%3Diw%29%20%7C%7C%20%28respDim%3D%3D%27height%27%26%26lastH%3D%3Dih%29%29%20%7B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0D%0A%09%09%09%09%09sRatio%20%3D%20lastS%3B%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%0D%0A%09%09%09%09%7D%09%09%09%09%0D%0A%09%09%09%09else%20if%28%21isScale%29%20%7B%09%09%09%09%09%0D%0A%09%09%09%09%09if%28iw%3Cw%20%7C%7C%20ih%3Ch%29%09%09%09%09%09%09%0D%0A%09%09%09%09%09%09sRatio%20%3D%20Math.min%28xRatio%2C%20yRatio%29%3B%09%09%09%09%0D%0A%09%09%09%09%7D%09%09%09%09%0D%0A%09%09%09%09else%20if%28scaleType%3D%3D1%29%20%7B%09%09%09%09%09%0D%0A%09%09%09%09%09sRatio%20%3D%20Math.min%28xRatio%2C%20yRatio%29%3B%09%09%09%09%0D%0A%09%09%09%09%7D%09%09%09%09%0D%0A%09%09%09%09else%20if%28scaleType%3D%3D2%29%20%7B%09%09%09%09%09%0D%0A%09%09%09%09%09sRatio%20%3D%20Math.max%28xRatio%2C%20yRatio%29%3B%09%09%09%09%0D%0A%09%09%09%09%7D%09%09%09%0D%0A%09%09%09%7D%09%09%09%0D%0A%09%09%09canvas.width%20%3D%20w%2ApRatio%2AsRatio%3B%09%09%09%0D%0A%09%09%09canvas.height%20%3D%20h%2ApRatio%2AsRatio%3B%0D%0A%09%09%09canvas.style.width%20%3D%20w%2AsRatio%2B%27px%27%3B%09%09%09%0D%0A%09%09%09canvas.style.height%20%3D%20h%2AsRatio%2B%27px%27%3B%0D%0A%09%09%09stage.scaleX%20%3D%20pRatio%2AsRatio%3B%09%09%09%0D%0A%09%09%09stage.scaleY%20%3D%20pRatio%2AsRatio%3B%09%09%09%0D%0A%09%09%09lastW%20%3D%20iw%3B%20lastH%20%3D%20ih%3B%20lastS%20%3D%20sRatio%3B%09%09%0D%0A%09%09%7D%0D%0A%09%7D%29%28false%2C%27both%27%2Cfalse%2C1%29%3B%09%0D%0A%7D%0D%0A%3C%2Fscript%3E%20%3C%21--%20write%20your%20code%20here%20--%3E%20%3C%2Fhead%3E%20%3Cbody%20onload%3D%22init%28%29%3B%22%20style%3D%22margin%3A0px%3B%22%3E%20%09%3Ca%20href%3D%22https%3A%2F%2Fads.adfox.ru%2F239538%2FgoLink%3Fhash%3Dab1213565bc8235e%26rqs%3DI6USFhEAAABC-ahZLB7EaTw6sbckrHTs%26pr%3Dckatgrd%26p5%3Deuyjt%26rand%3Dgudyfpr%26p1%3Dbuoxq%26p2%3Dfgou%40https%3A%2F%2Fwww.belinvestbank.by%2Fcorporate-clients%2Facquiring_commercial_and_service%2Finternet_acvaring.php%20%22%20target%3D%22_blank%22%3E%3Ccanvas%20id%3D%22canvas%22%20width%3D%22240%22%20height%3D%22400%22%20style%3D%22display%3A%20block%3B%20background-color%3Argba%28255%2C%20255%2C%20255%2C%201.00%29%22%3E%3C%2Fcanvas%3E%3C%2Fa%3E%20%3C%2Fbody%3E%20%3C%2Fhtml%3E').replace(/\\\`/gm, '`')
+		},
+		imageCreative: {
+			value: ''
+		},
+		widthBanner: {
+			value: '240',
+			type: 'size'
+		},
+		heightBanner: {
+			value: '400',
+			type: 'size'
+		},
+		styleWrapper: {
+			value: ''
+		},
+		functionCallback: {
+			value: '',
+			type: 'func'
+		},
+		altTextImage: {
+			value: ''
+		},
+		target: {
+			value: '_blank'
+		}
+	};
+
+	var Banner = function() {
+	/* global.banners v1.0.1 */
+	var undoList = [];
+
+	Banner.prototype.setUndo = function(undo) {
+		undoList.push(undo);
+	};
+
+	Banner.prototype.init = function() {
+		var async = !!2800760612;
+		var win = ( async ? parent : window );
+		var doc = win.document;
+		var rnd = 2800760612 || 1241186375;
+
+		if (async) {
+			setTimeout(function() {
+				document.close();
+			}, 100);
+			self.adfoxRemoveBanner = function() {
+				banner.remove();
+				win.eval(''+
+					'(function() {\n'+
+					'	var _iframe = document.getElementById(\'AdFox_iframe_' + rnd + '\'),\n'+
+					'		_parent = _iframe.parentNode;\n'+
+					'		_parent.removeChild(_iframe);\n'+
+					'		_parent.appendChild(_iframe);\n'+
+					'})()'+
+				'');
+			};
+			this.setUndo({
+				func: function() {
+					var wrapper = CreateParams.prototype.wrapper;
+					wrapper.innerHTML = '';
+					wrapper.style.cssText = '';
+				}
+			});
+		} else {
+			doc.write('<div id="AdFox_banner_' + rnd + '"></div>');
+			this.setUndo({
+				func: function() {
+					CreateParams.prototype.wrapper.removeChild(this.wrapper);
+				}
+			});
+		}
+
+		CreateParams.prototype = {
+			async: async,
+			win: win,
+			rnd: rnd,
+			doc: doc,
+			wrapper: doc.getElementById('AdFox_banner_' + rnd),
+			bannerId: 2195901,
+			validityErr: []
+		};
+	};
+
+	this.remove = function() {
+		for (var i = 0; i < undoList.length; i++) {
+			undoList[i].func();
+		}
+		undoList = [];
+	}
+};
+	var CreateParams = function(data) {
+	/* global.createParams v1.0.1 */
+	function validity(v, mask) {
+		var 
+			masks = {
+				size: [
+					/^\d+$/,
+					/^\d+px$/,
+					/^100%$/
+				],
+				bool: [
+					/^(?:yes|no)$/,
+					/^(?:true|false)$/,
+					/^(?:1|0)$/
+				]
+			};
+
+		if (typeof(mask) === 'string') {
+			mask = masks[mask];
+		} else {
+			mask = mask || [];
+		}
+
+		return mask.some(function(m) {
+			return v.match(m);
+		});
+	}
+
+	var setParams = {
+		manualy: function(v, mask, func) {
+			if (validity(v, mask)) {
+				if (func) {
+					return func(v);
+				} else {
+					return v;
+				}
+			} else {
+				CreateParams.prototype.validityErr.push('Указано не валидное значение размера: "' + v + '"');
+			}
+		},
+		reference: function(v) {
+			if (!v) {
+				return false;
+			} else if (v === 'https://ads.adfox.ru/239538/goLink?hash=ab1213565bc8235e&rqs=I6USFhEAAABC-ahZLB7EaTw6sbckrHTs&pr=ckatgrd&p5=euyjt&rand=gudyfpr&p1=buoxq&p2=fgou') {
+				return {
+					url: 'https://ads.adfox.ru/239538/goLink?hash=ab1213565bc8235e&rqs=I6USFhEAAABC-ahZLB7EaTw6sbckrHTs&pr=ckatgrd&p5=euyjt&rand=gudyfpr&p1=buoxq&p2=fgou',
+					urlEnc: 'https%3A%2F%2Fads.adfox.ru%2F239538%2FgoLink%3Fhash%3Dab1213565bc8235e%26rqs%3DI6USFhEAAABC-ahZLB7EaTw6sbckrHTs%26pr%3Dckatgrd%26p5%3Deuyjt%26rand%3Dgudyfpr%26p1%3Dbuoxq%26p2%3Dfgou'
+				}
+			} else {
+				return {
+					url: 'https://ads.adfox.ru/239538/goLink?hash=ab1213565bc8235e&rqs=I6USFhEAAABC-ahZLB7EaTw6sbckrHTs&pr=ckatgrd&p5=euyjt&rand=gudyfpr&p1=buoxq&p2=fgou@' + v,
+					urlEnc: 'https%3A%2F%2Fads.adfox.ru%2F239538%2FgoLink%3Fhash%3Dab1213565bc8235e%26rqs%3DI6USFhEAAABC-ahZLB7EaTw6sbckrHTs%26pr%3Dckatgrd%26p5%3Deuyjt%26rand%3Dgudyfpr%26p1%3Dbuoxq%26p2%3Dfgou@' + encodeURIComponent(v)
+				}
+			}
+		},
+		size: function(v) {
+			if (validity(v, 'size')) {
+				return {
+					style: ( v.indexOf('%') != -1 ? v : parseInt(v)+'px' ),
+					attribute: ( v.indexOf('%') != -1 ? v : parseInt(v) )
+				};
+			} else {
+				CreateParams.prototype.validityErr.push('Указано не валидное значение размера: "' + v + '"');
+			}
+		},
+		bool: function(v) {
+			if (validity(v, 'bool')) {
+				if (v.indexOf('yes') != -1 || v.indexOf('true') != -1 || v.indexOf('1') != -1) {
+					return true;
+				} else {
+					return false;
+				}
+			} else {
+				CreateParams.prototype.validityErr.push('Указано не валидное значение размера: "' + v + '"');
+			}
+		},
+		func: function(v) {
+			if (v && typeof(CreateParams.prototype.win[v]) !== 'undefined') {
+				return CreateParams.prototype.win[v];
+			} else {
+				return function(){};
+			}
+		}
+	};
+
+	for (var i in data) {
+		if (typeof(data[i].type) !== 'undefined') {
+			this[i] = setParams[data[i].type](data[i].value);
+		} else if (typeof(data[i].validity) !== 'undefined') {
+			this[i] = setParams.manual(data[i].value, data[i].validity, data[i].func);
+		} else {
+			this[i] = data[i].value;
+		}
+	}
+};
+	var Tools = function() {
+	/* global.tools v1.1.2 */
+	this.getNewValuesFaces = function(fromX, fromY, toX, toY) {
+		var
+			p = parseInt,
+			ratio = Math.min(
+				fromX === '100%' || p(toX)/p(fromX),
+				fromY === '100%' || p(toY)/p(fromY),
+				1
+			),
+			res = [fromX, fromY].map(function (value) {
+				return value === '100%' ? value : Math.ceil(p(value)*ratio) + 'px';
+			});
+
+		return {
+			w: res[0],
+			h: res[1]
+		}
+
+	};
+
+	this.addEvent = function(elem, eventType, eventHandler) {
+		if (typeof(eventType) === 'object') {
+			eventType.map(setEvent);
+		} else {
+			setEvent(eventType);
+		}
+
+		function setEvent(v) {
+			if(elem.addEventListener) {
+				elem.addEventListener(v, eventHandler, false);
+			} else if(elem.attachEvent)	{
+				elem.attachEvent('on' + v, eventHandler);
+			}
+		}
+
+	};
+
+	this.removeEvent = function(elem, eventType, eventHandler) {
+		if (typeof(eventType) === 'object') {
+			eventType.map(delEvent);
+		} else {
+			delEvent(eventType);
+		}
+
+		function delEvent(v) {
+			if(elem.removeEventListener) {
+				elem.removeEventListener(v, eventHandler, false);
+			} else if(elem.detachEvent)	{
+				elem.detachEvent('on' + v, eventHandler);
+			}
+		}
+
+	};
+
+	this.checkSupportHTML5 = function() {
+		return !!document.createElement('canvas').getContext && !(navigator.userAgent.indexOf('MSIE 9.0')+1) && !(navigator.userAgent.indexOf('Presto')+1);
+
+	};
+
+	this.cl = function(message) {
+		var div = document.createElement('div');
+		div.innerHTML = message;
+		console.log(div.innerHTML);
+
+	};
+
+	this.preventAction = function(evnt) {
+		var 
+			e = evnt || _win.event;
+
+		e.preventDefault();
+	}
+};
+	var FrameUtils = function(p) {
+	/* global.frameUtils v1.0.2 */
+	var _win;
+	var _doc;
+	var _html = p.html5Creative;
+	var _interval;
+
+	function checkRemoveFrame() {
+		var checkWin = false;
+		try {
+			checkWin = FrameUtils.prototype.getWindow('adfoxHtml5_iframe_' + p.rnd).win;
+		} catch (e) {}
+
+		if (checkWin == _win || checkWin === false) {
+			return;
+		}
+
+		p.win.eval('(new Image()).src = \'https://ads.adfox.ru/239538/event?hash=4866fb9aa4e5640c&pm=be&utg=oxum&lts=ewptgco&rqs=I6USFhEAAABC-ahZLB7EaTw6sbckrHTs&pr=ckatgrd&p5=euyjt&rand=fcpoamu&p1=buoxq&p2=fgou&htmlRnd=\' + Math.random();');
+		FrameUtils.prototype.writeHTML();
+	}
+
+	FrameUtils.prototype.getWindow = function(id) {
+		var element = p.doc.getElementById(id);
+
+		return {
+			element: element,
+			win: element.contentWindow
+		}
+	};
+
+	FrameUtils.prototype.writeHTML = function() {
+		_win = FrameUtils.prototype.getWindow('adfoxHtml5_iframe_' + p.rnd).win;
+		_doc = _win.document;
+		var _this = this;
+
+		if (_doc.readyState !== 'complete' && _doc.readyState !== 'interactive') {
+			setTimeout(function() {
+                _this.writeHTML();
+			}, 50);
+			return;
+		}
+
+		_doc.write(_html);
+		setTimeout(function() {_doc.close()}, 10);
+		clearInterval(_interval);
+		_interval = setInterval(checkRemoveFrame, 150);
+	};
+};
+
+	var banner = new Banner();
+	var tools = new Tools();
+	banner.init();
+	var params = new CreateParams(data);
+	if (params.validityErr.length) {
+		params.validityErr.map(function(v, div) {
+			tools.cl(v);
+		});
+		return;
+	}
+	params.supportHTML5 = tools.checkSupportHTML5() && params.html5Creative;
+	if (params.supportHTML5) {
+		var frameUtils = new FrameUtils(params);
+	}
+	banner.html = createHTML(params);
+	if (!banner.html) {
+		return;
+	}
+	runBanner(params);
+	params.functionCallback(banner);
+
+	function createHTML(p) {
+		var html = false;
+
+		if (p.supportHTML5) {
+			html = '<iframe id="adfoxHtml5_iframe_' + p.rnd + '" style="width: 1px; min-width: 100%; height: ' + p.heightBanner.style + ';" marginwidth="0" marginheight="0" scrolling="no" frameborder="0"></iframe>';
+		} else if (p.imageCreative) {
+			html = '<img src="' + p.imageCreative + '" alt="' + p.altTextImage + '" style="width: ' + p.widthBanner.style + '; height: ' + p.heightBanner.style + '; vertical-align: middle; border: 0px;">';
+
+			if (p.reference) {
+				html = '<a href="' + p.reference.url + '" target="' + p.target + '">' + html + '</a>';
+			}
+		}
+
+		return html;
+	}
+
+	function runBanner(p) {
+		p.wrapper.style.cssText = p.styleWrapper + 'width: ' + p.widthBanner.style + '; height: ' + p.heightBanner.style + ';';
+		p.wrapper.innerHTML = banner.html;
+
+		if (p.supportHTML5) {
+			frameUtils.writeHTML();
+		}
+	}
+})();

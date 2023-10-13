@@ -1,0 +1,37 @@
+@media (max-width: 1024px) {
+  .balls-stretch__ball.ball-left {
+    animation: ball-moves-left 2s linear infinite;
+  }
+
+  .balls-stretch__ball.ball-right {
+    animation: ball-moves-right 2s linear infinite;
+  }
+
+  .balls-stretch__ball.ball-middle {
+    animation: ball-moves-middle 2s linear infinite;
+  }
+}
+@keyframes ball-moves-left {
+  0%, 100% {
+    transform: rotate(50deg);
+  }
+  50% {
+    transform: rotate(70deg);
+  }
+}
+@keyframes ball-moves-right {
+  0%, 100% {
+    transform: rotate(-50deg);
+  }
+  50% {
+    transform: rotate(-70deg);
+  }
+}
+@keyframes ball-moves-middle {
+  0%, 100% {
+    transform: rotate(-5deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+}

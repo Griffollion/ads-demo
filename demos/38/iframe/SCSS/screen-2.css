@@ -1,0 +1,94 @@
+.disney-screen-2 {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(200%);
+  background-color: #0258f6;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+.disney-screen-2.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: transform 1s;
+}
+.disney-screen-2__static-back, .disney-screen-2__dynamic-back {
+  width: 100%;
+}
+.disney-screen-2__main-text {
+  color: #fff;
+  font-size: 32px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  position: absolute;
+  left: 0;
+  top: 5%;
+  text-align: center;
+  width: 100%;
+  z-index: 11;
+}
+.disney-screen-2__puti-text {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 130px;
+  z-index: 11;
+}
+.disney-screen-2__finger {
+  position: absolute;
+  top: 85px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  z-index: 11;
+}
+.disney-screen-2__backs-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.disney-screen-2__backs-wrapper:before {
+  content: '';
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: -moz-linear-gradient(top, #0258f6 0%, rgba(2, 88, 246, 0) 100%);
+  background: -webkit-linear-gradient(top, #0258f6 0%, rgba(2, 88, 246, 0) 100%);
+  background: linear-gradient(to bottom, #0258f6 0%, rgba(2, 88, 246, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0258f6', endColorstr='#000258f6',GradientType=0 );
+  z-index: 10;
+}
+.disney-screen-2__dynamic-back {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 3;
+}
+.disney-screen-2__dynamic-back.visible {
+  opacity: 1;
+}
+
+.disney-screen-2__finger {
+  animation: disney-screen-2__finger--an 2s ease-out infinite;
+  transform-origin: center bottom;
+}
+
+@keyframes disney-screen-2__finger--an {
+  0%,100% {
+    transform: rotate(0);
+  }
+  30%,80% {
+    transform: rotate(-35deg);
+  }
+}

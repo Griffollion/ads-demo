@@ -1,0 +1,150 @@
+.upd-menu {
+  &__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+  &__logo {
+    width: 30%;
+    max-width: 180px;
+    padding-right: 30px;
+    display: inline-block;
+    margin-right: 30px;
+    border-right: 1px solid #ebebeb;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+  }
+
+  &__contact {
+    font-size: 14px;
+    color: #000;
+    margin-right: 40px;
+    white-space: nowrap;
+    &--wrapped {
+      white-space: normal;
+    }
+    a {
+     color: inherit;
+    }
+    span {
+      font-family: 'roboto-bold';
+    }
+    .fa {
+      margin-right: 6px;
+      font-size: inherit;
+      color: #9A9A9A
+    }
+    &:hover {
+      color: #e86809;
+      .fa {
+        color: #e86809;
+
+      }
+    }
+
+    &__contact--1:hover {
+      color: #000;
+    }
+
+  }
+
+  &__avatar {
+    min-width: 47px;
+  }
+}
+
+
+
+@media (max-width: 920px) {
+  .upd-menu {
+    &__contact {
+      margin-right: 25px;
+    }
+  }
+}
+
+@media (max-width: 850px) {
+  .upd-menu__avatar {
+    display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .upd-menu {
+    &__contacts {
+      flex-wrap: wrap;
+    }
+    &__contact {
+      padding-bottom: 10px;
+      width: 165px;
+      color: #14509c;
+      &--1 {
+        order: 0;
+        white-space: nowrap;
+        color: #000;
+      }
+      &--2 {
+        order: 1;
+        margin-right: 0;
+      }
+      &--3{
+        order: 3;
+        margin-right: 0;
+      }
+      &--4{
+        order: 2;
+      }
+    }
+    &__logo {
+      padding-bottom: 10px;
+      img {
+        min-width: 90px;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 600px) {
+  .upd-menu {
+    &__logo {
+      padding-right: 20px;
+      margin-right: 20px;
+    }
+    &__contact {
+      width: 150px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .upd-menu {
+    &__contact {
+      &--1, &--2 {
+        display: none;
+      }
+
+      &--3 {
+        order: 0;
+        margin-right: 0;
+        padding-bottom: 3px;
+      }
+
+      &--4 {
+        margin-right: 0;
+      }
+    }
+    &__logo {
+      width: 40%;
+      padding-top: 10px;
+    }
+  }
+}

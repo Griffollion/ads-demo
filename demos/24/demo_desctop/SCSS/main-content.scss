@@ -1,0 +1,18 @@
+.balls-stretch__main-content {
+  position: absolute;
+  left: 0;
+  bottom: -13px;
+  z-index: 2;
+  width: 100%;
+}
+
+.balls-stretch__main-content-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.balls-stretch__image-block {
+    filter: drop-shadow(0 0 6px rgba(0,0,0, .5));
+}

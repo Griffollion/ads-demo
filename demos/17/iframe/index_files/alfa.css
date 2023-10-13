@@ -1,0 +1,23 @@
+#plashka-container {
+    display: block;
+    z-index: 100;
+    width: 100%;
+    bottom: -1px;
+    left: 0;
+    position: fixed;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+
+.plashka-domovita__wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    height: 60px;
+    width: 100%;
+    background-color: #ffed00;
+}
+
+.plashka-domovita__wrapper img {
+    position: relative;
+    top: -10px;
+}

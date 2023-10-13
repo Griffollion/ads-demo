@@ -1,0 +1,20 @@
+.logo-menu {
+    display: block !important;
+}
+
+.menu-button-reklama {
+    width: 270px;
+    height: 48px;
+    display: inline-block !important;
+   
+}
+
+#menu-button-rekl {
+    text-align: center;
+    display: block;
+    margin-left: 0px;
+    width: 100%;
+}
+
+
+

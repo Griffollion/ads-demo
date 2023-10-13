@@ -1,0 +1,877 @@
+.disney {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1002;
+    width: 100%;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+.disney.visible {
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+    visibility: visible;
+}
+
+.disney-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none !important;
+    background-color: transparent;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    z-index: 999;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.disney-close:before, .disney-close:after {
+    content: '';
+    position: absolute;
+    left: 24px;
+    top: 12px;
+    width: 2px;
+    height: 25px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.disney-close:before {
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.15);
+}
+
+.disney-close:after {
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+/*screen-1*/
+.disney-screen-1 {
+    position: relative;
+    display: block;
+    text-align: right;
+}
+
+.disney-screen-1:before {
+    content: '';
+    background-color: #FF1C3A;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 59px;
+    width: 100%;
+    z-index: 1;
+}
+
+.disney-screen-1__info-wrapper {
+    position: relative;
+    z-index: 3;
+}
+
+.disney-screen-1__mouse {
+    position: absolute;
+    left: -10px;
+    bottom: 0;
+}
+
+.disney-screen-1__back-img {
+    height: 134px;
+    position: relative;
+    z-index: 2; /*filter: drop-shadow(0 -2px 5px rgba(0,0,0, .3));*/
+}
+
+.disney-screen-1__mikki {
+    height: 90px;
+    position: relative;
+    z-index: 2;
+}
+
+.disney-screen-1__mikki-hand {
+    height: 44px;
+    position: relative;
+    left: -30px;
+    top: -10px;
+}
+
+.disney-screen-1__text {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    position: absolute;
+    right: 70px;
+    bottom: 8px;
+    -webkit-transform-origin: 100% 100%;
+    -ms-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    text-align: left;
+    line-height: 22px;
+}
+
+.disney-screen-1__arrow {
+    position: absolute;
+    right: 33px;
+    bottom: 30px;
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.disney-screen-1__arrow i {
+    font-size: 30px !important;
+    color: #fff !important;
+    line-height: 1 !important;
+    position: relative;
+    top: -2px;
+}
+
+.disney-screen-1__mikki-hand {
+    -webkit-animation: mikki-hand-an 2s linear infinite;
+    animation: mikki-hand-an 2s linear infinite;
+    -webkit-transform-origin: left bottom;
+    -ms-transform-origin: left bottom;
+    transform-origin: left bottom;
+}
+
+.disney-screen-1__arrow {
+    -webkit-animation: disney-screen-1__arrow--an 3s linear infinite;
+    animation: disney-screen-1__arrow--an 3s linear infinite;
+}
+
+@-webkit-keyframes mikki-hand-an {
+    0%, 50%, 100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    25% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    75% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes mikki-hand-an {
+    0%, 50%, 100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    25% {
+        -webkit-transform: rotate(10deg);
+        transform: rotate(10deg);
+    }
+    75% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+}
+
+@-webkit-keyframes disney-screen-1__arrow--an {
+    0%, 35%, 65%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+}
+
+@keyframes disney-screen-1__arrow--an {
+    0%, 35%, 65%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    50% {
+        -webkit-transform: translateY(-6px);
+        transform: translateY(-6px);
+    }
+}
+
+/*screen-1 end*/
+.disney-screen-2 {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    transform: translateY(200%);
+    background-color: #0258f6;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.disney-screen-2.visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+}
+
+.disney-screen-2__static-back, .disney-screen-2__dynamic-back {
+    width: 100%;
+}
+
+.disney-screen-2__main-text {
+    color: #fff;
+    font-size: 32px;
+    text-transform: uppercase;
+    padding: 0 20px;
+    position: absolute;
+    left: 0;
+    top: 5%;
+    text-align: center;
+    width: 100%;
+    z-index: 11;
+}
+
+.disney-screen-2__puti-text {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 130px;
+    z-index: 11;
+}
+
+.disney-screen-2__finger {
+    position: absolute;
+    top: 85px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    z-index: 11;
+}
+
+.disney-screen-2__backs-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.disney-screen-2__backs-wrapper:before {
+    content: '';
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: -webkit-linear-gradient(top, #0258f6 0%, rgba(2, 88, 246, 0) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#0258f6), to(rgba(2, 88, 246, 0)));
+    background: -o-linear-gradient(top, #0258f6 0%, rgba(2, 88, 246, 0) 100%);
+    background: linear-gradient(to bottom, #0258f6 0%, rgba(2, 88, 246, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#0258f6', endColorstr='#000258f6', GradientType=0);
+    z-index: 10;
+}
+
+.disney-screen-2__dynamic-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    z-index: 3;
+}
+
+.disney-screen-2__dynamic-back.visible {
+    opacity: 1;
+}
+
+.disney-screen-2__finger {
+    -webkit-animation: disney-screen-2__finger--an 2s ease-out infinite;
+    animation: disney-screen-2__finger--an 2s ease-out infinite;
+    -webkit-transform-origin: center bottom;
+    -ms-transform-origin: center bottom;
+    transform-origin: center bottom;
+}
+
+@-webkit-keyframes disney-screen-2__finger--an {
+    0%, 100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    30%, 80% {
+        -webkit-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+    }
+}
+
+@keyframes disney-screen-2__finger--an {
+    0%, 100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+    30%, 80% {
+        -webkit-transform: rotate(-35deg);
+        transform: rotate(-35deg);
+    }
+}
+
+.disney-screen-3 {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transform: translateY(200%);
+    -ms-transform: translateY(200%);
+    transform: translateY(200%);
+    background-color: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    background-color: transparent;
+}
+
+.disney-screen-3__default-screen {
+    width: 100%;
+    height: 100%;
+    background: url('../disney-card.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-position: top left;
+}
+
+.disney-screen-3__default-screen-link {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.disney-screen-3__infoblock {
+    background-color: #efeae0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 52%;
+}
+
+.disney-screen-3__infoblock.in-camera {
+    height: auto;
+    background-color: transparent;
+    height: 230px;
+    z-index: 3;
+}
+
+.disney-screen-3__infoblock-back {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.disney-screen-3__infoblock-back:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -245px;
+    width: 100%;
+    height: 100%;
+    background-color: #E1253D;
+}
+
+.disney-screen-3__infoblock-back img {
+    height: 100%;
+    width: auto;
+    position: relative;
+    left: -65px;
+}
+
+.disney-screen-3__infoblock-wrapper {
+    position: relative;
+    height: 100%;
+    padding: 0 20px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: end;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.disney-screen-3__duga {
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    transform: translateY(-100%);
+    width: 100%;
+}
+
+.disney-screen-3__duga img {
+    width: -webkit-calc(100% + 4px);
+    width: calc(100% + 4px);
+    position: relative;
+    top: 1px;
+    left: -2px;
+}
+
+.disney-screen-3__infoblock-partners {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.disney-screen-3__infoblock-img-1 {
+    height: 122px;
+    width: auto;
+}
+
+.disney-screen-3__infoblock-img-2 {
+    height: auto;
+    width: 90px;
+    position: relative;
+    bottom: -33px;
+    left: -25px;
+}
+
+.disney-screen-3__infoblock-texts {
+    text-align: right;
+    position: relative;
+    z-index: 2;
+}
+
+.disney-screen-3__infoblock-btn {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    background: #c91139;
+    height: 44px;
+    padding: 0 15px;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.disney-screen-3__infoblock-btn.disney-screen-3__infoblock-btn--white {
+    background-color: #fff;
+    color: #000;
+}
+
+.disney-screen-3__infoblock-text-1 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #696969;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+.disney-screen-3__infoblock-text-1.text-white {
+    color: #fff;
+}
+
+.disney-screen-3__infoblock-text-2 {
+    font-size: 14px;
+    color: #696969;
+    text-align: right;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.disney-screen-3__infoblock-text-2.text-white {
+    color: #fff;
+}
+
+.disney-screen-3__camera {
+    display: none;
+    height: 100%;
+    position: relative;
+}
+
+.disney-screen-3__camera.visible {
+    display: block;
+}
+
+.disney-screen-3.visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    -webkit-transition: -webkit-transform 1s;
+    transition: -webkit-transform 1s;
+    -o-transition: transform 1s;
+    transition: transform 1s;
+    transition: transform 1s, -webkit-transform 1s;
+}
+
+.disney-screen-3 #ears {
+    position: absolute;
+    top: -80px;
+    left: -80px;
+    z-index: 20;
+}
+
+.disney-screen-3 #ears img {
+    width: 90vw;
+    height: auto;
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.disney-screen-3 #nose {
+    position: absolute;
+    top: 110px;
+    left: 66px;
+    z-index: 20;
+}
+
+.disney-screen-3 #nose img {
+    width: 16vw;
+    height: auto;
+    -webkit-transform: scale(-1, 1);
+    -ms-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+.disney-screen-3__help-block {
+    position: absolute;
+    top: 181px;
+    left: 67px;
+    z-index: 20;
+}
+
+.disney-screen-3__help-block-wrapper {
+    position: relative;
+}
+
+.disney-screen-3__help-block-arrows {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: -21px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.disney-screen-3__help-block-text {
+    width: 150px;
+}
+
+.disney-screen-3 #video {
+    z-index: 1;
+    width: auto;
+    height: 100%;
+}
+
+.disney-screen-3 #canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.disney-screen-3 #canvas.visible {
+    opacity: 1;
+}
+
+.disney-screen-3 #image_for_share {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    z-index: -1;
+}
+
+.disney-screen-3__buttons-container {
+    position: absolute;
+    left: 10px;
+    top: 20%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.disney-screen-3 .disney-btn__text {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    color: #fff;
+    z-index: 1000;
+    position: relative;
+    text-align: center;
+    text-shadow: 0 0 12px black;
+}
+
+.disney-screen-3 .disney-btn__text.disney-btn--invisible {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.disney-screen-3 .disney-btn__text.disney-btn--invisible.animated {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -o-transition: transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
+}
+
+.disney-screen-3 .disney-btn__text.disney-btn--invisible.inv {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -o-transition: transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
+}
+
+.disney-screen-3 .disney-btn {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    z-index: 1000;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    padding: 0;
+    line-height: 1;
+    margin: 0 0 15px 0;
+}
+
+.disney-screen-3 .disney-btn:last-child {
+    margin-bottom: 0;
+}
+
+.disney-screen-3 .disney-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.disney-screen-3 .disney-btn.ic-vk {
+    background-color: #5a749a;
+}
+
+.disney-screen-3 .disney-btn.ic-fb {
+    background-color: #3a518b;
+}
+
+.disney-screen-3 .disney-btn.fa-instagram {
+    font-size: 30px;
+    background: #6326ca;
+    background: -webkit-linear-gradient(top, #6326ca 0%, #af1784 33%, #ef5531 66%, #f8d26d 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#6326ca), color-stop(33%, #af1784), color-stop(66%, #ef5531), to(#f8d26d));
+    background: -o-linear-gradient(top, #6326ca 0%, #af1784 33%, #ef5531 66%, #f8d26d 100%);
+    background: linear-gradient(to bottom, #6326ca 0%, #af1784 33%, #ef5531 66%, #f8d26d 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6326ca', endColorstr='#f8d26d', GradientType=0);
+}
+
+.disney-screen-3 .disney-btn.disney-btn--invisible {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+}
+
+.disney-screen-3 .disney-btn.disney-btn--invisible.animated {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -o-transition: transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
+}
+
+.disney-screen-3 .disney-btn.disney-btn--invisible.inv {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -o-transition: transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
+}
+
+.disney-screen-3 #snap {
+    position: absolute;
+    left: 10px;
+    top: 40%;
+    background-color: #e1253d;
+}
+
+.disney-screen-3 #snap.animated {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -o-transition: transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
+}
+
+.disney-screen-3 #snap.inv {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -o-transition: transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
+}
+
+.disney-screen-3 #reset {
+    position: absolute;
+    right: 10px;
+    top: 20%;
+    margin-top: 20px;
+    background-color: #e1253d;
+}
+
+.disney-screen-3 #reset.animated {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -o-transition: transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
+}
+
+.disney-screen-3 #reset.inv {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition: -webkit-transform .4s;
+    transition: -webkit-transform .4s;
+    -o-transition: transform .4s;
+    transition: transform .4s;
+    transition: transform .4s, -webkit-transform .4s;
+}
+
+@media screen and (max-width: 335px) {
+    .disney-screen-3__infoblock-text-1 {
+        font-size: 14px;
+    }
+
+    .disney-screen-3__buttons-container, .disney-screen-3 #reset {
+        top: 10%;
+    }
+
+    .disney-screen-3 #reset {
+        margin-top: 41px;
+    }
+
+    .disney-screen-3__infoblock-back {
+        top: 35px;
+    }
+}
+
+.off-scroll {
+    position: relative !important;
+    overflow: hidden !important;
+    height: 100% !important;
+}

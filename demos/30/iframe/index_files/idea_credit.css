@@ -1,0 +1,127 @@
+.idea_credit_cont .error{
+    color: #fff;
+    font-size: 11px;
+    line-height: 14px;
+    padding-left: 15px;
+    position: absolute;
+    top: 40px;
+    width: 245px;
+}
+
+.idea_credit_cont .item {
+    position: relative;
+}
+
+.idea_credit_wrap {
+    background: url(//myfin.by/images/popup/idea/myfin-600х455_27pr.jpg);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 450px;
+    box-shadow: 0 0 6px #333;
+    border-radius: 8px;
+}
+
+.idea_credit_wrap {
+    font-family: 'Open Sans', sans-serif;
+    float: left;
+}
+
+.idea_credit_cont {
+    background: #53aade;
+    border-radius: 5px;
+    margin: 88px 0 0 330px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 255px;
+}
+
+.idea_credit_cont img {
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+.idea_credit_cont .form-header {
+    color: #0f1d38;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.idea_credit_cont input{
+    width:200px;
+    box-shadow: 0px 0px 20px -7px;
+    padding: 0px 7px;
+    height: 40px;
+    background: url(//myfin.by/images/popup/idea/input-background.jpg) repeat;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    color: #303030;
+    font-size: 14px;
+}
+
+.idea_credit-send {
+    background:url("//myfin.by/images/popup/idea/button-background.jpg") repeat;
+    border-radius: 5px;
+    border-top: 1px solid #ffffff;
+    box-shadow: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    height: 40px;
+    width: 200px;
+    display: block;
+    color: #000000;
+    margin: 0 auto;
+    line-height: 40px;
+}
+
+
+.idea_credit_cont input:invalid {
+    border: 0;
+    outline: none;
+}
+
+.idea_credit_cont input::-webkit-input-placeholder {color:#000000;}
+.idea_credit_cont input::-moz-placeholder {color:#000000;}
+.idea_credit_cont input:-moz-placeholder {color:#000000;}
+.idea_credit_cont input:-ms-input-placeholder {color:#000000;}
+
+.idea_credit-modal .close {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    margin-top: 0;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+}
+.idea_credit-modal .close:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 45%;
+}
+.idea_credit-modal .close:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 45%;
+}
+.idea_credit-modal .close:after, .idea_credit-modal .close:before {
+    content: '';
+    background: #7F7F7F;
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+}

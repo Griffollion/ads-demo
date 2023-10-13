@@ -1,0 +1,59 @@
+.inpage_video{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: auto;
+    transform: translateY(-50%);
+}
+
+.inpage_background {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    z-index: 1;
+    width: calc(100vw - 20px);
+    height: 100vh;
+}
+
+.inpage_background.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+.inpage_background.visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.inpage_volume {
+    float: right;
+    background: 0 0;
+    border: none;
+    font-size: 28px;
+    color: #000;
+    margin-top: -41px;
+    padding: 0 5px 0 20px;
+    outline: transparent !important;
+
+}
+
+.inpage_volume .fa.volume-line:after {
+    content: '';
+    position: absolute;
+    right: 16px;
+    bottom: 6px;
+    height: 29px;
+    width: 2px;
+    background-color: #000;
+    transform: rotate(45deg);
+}
+
+.inpage_volume .fa {
+    color: #000;
+}
+
+.enjoyhint_close_btn {
+    right: auto !important;
+    left: 50%;
+    transform: translateX(-50%);
+}

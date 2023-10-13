@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<!-- saved from url=(0097)https://2.myfin.by/stati/view/v-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="authoring-tool" content="Adobe_Animate_CC">
+<meta name="description" content="adfox_template">
+<title>body</title>
+<!-- write your code here -->
+<script src="./adobe.js"></script>
+<script src="./body.min.js"></script>
+<script>
+var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+function init() {
+	canvas = document.getElementById("canvas");
+	anim_container = document.getElementById("animation_container");
+	dom_overlay_container = document.getElementById("dom_overlay_container");
+	var comp=AdobeAn.getComposition("095ADAE411664356AF4BDED5554ED993");
+	var lib=comp.getLibrary();
+	var loader = new createjs.LoadQueue(false,null,true);
+	loader.addEventListener("fileload", function(evt){handleFileLoad(evt,comp)});
+	loader.addEventListener("complete", function(evt){handleComplete(evt,comp)});
+	var lib=comp.getLibrary();
+	loader.loadManifest(lib.properties.manifest);
+}
+    var flashVars = {
+      reference: "https://ads.adfox.ru/239538/goLink?ad-session-id=265721590061232040&hash=ff93129ba061fb9a&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&rand=csymkqq&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC&pr=jujgvac&p1=cjmqd&ytt=378232004675605&p5=hzzpp&ybv=0.1712&p2=fgou&ylv=0.1713",
+      link: "https://www.paritetbank.by/business/credit/?utm_source=desktop_eav&utm_medium=cpm&utm_campaign=wunder_business_credit_desktop_eav_interests&utm_content=myfin",
+      target: "_blank",
+      rnd: parseInt("422324135") || parseInt("83199269"),
+      events: [
+            "",
+            "https://ads.adfox.ru/239538/event?hash=21b7f62e53950d03&pm=b&rand=jdsanqo&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=b908f8f484c413c4&pm=c&rand=gqkrhqg&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=e467baf93421f141&pm=d&rand=gfdsuvx&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=9fd866f2070e4648&pm=e&rand=kjnkxjs&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=e6838e577a3ff0a5&pm=f&rand=lrrhzle&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=a818b92786b0db50&pm=g&rand=ipxuhki&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=360907d2c47ee7cb&pm=h&rand=lsguiji&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=2f77a937bd4cbf11&pm=i&rand=lsdslgl&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=7b9991ff1868258c&pm=j&rand=jasascu&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=cf1382686b262b77&pm=k&rand=kocxekm&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=d794684f2de6dbbc&pm=l&rand=ncolmvn&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=d16cc570af98e97f&pm=m&rand=lwwuxxp&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=2b58c3e9d0108c45&pm=n&rand=ibpcenv&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=c2ba33a5eb3f2ad0&pm=o&rand=ghtemdd&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=668c890f3298205a&pm=p&rand=ktlevew&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=b13933a355d6b8b2&pm=q&rand=cksbwhj&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=fd20251c7e781fac&pm=r&rand=lenfrce&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=b31d3ee2f8121ea6&pm=s&rand=clqdnnd&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=5875286927d1f982&pm=t&rand=jluhgmn&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=d422a8f376ea16b9&pm=u&rand=kudhhps&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=c41f4420fda6251f&pm=v&rand=guvgtbh&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=438281f31f699474&pm=w&rand=dyzrjca&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=8a615b5dd8758239&pm=x&rand=iwbsutx&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=5946fb32400270fd&pm=y&rand=juvtqcq&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=8e49d2026ce96646&pm=z&rand=sgwbdu&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=cfa648b52b640043&pm=ba&rand=jwpdblf&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=3c0fa80b2cd2e151&pm=bb&rand=fvyiol&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=0d92187d1855944a&pm=bc&rand=ejsnvrb&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=c5dca94f480d4aca&pm=bd&rand=dvdaycq&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC",
+            "https://ads.adfox.ru/239538/event?hash=c1e521eacafb0243&pm=be&rand=klavqwy&sj=dwIyBkfJfrKz4_RcXyF7OErwaslVjyngfmSW-T4SC2qGekJ3PedO2or4zDwGbaI6PpytpzbE2J6i0xbnm6aUOvz5GwrPWvmZwIZuD3an&ad-session-id=265721590061232040&utg=wpztrc&lts=fdvntpf&ytt=378232004675605&p2=fgou&rtb-si=b&ylv=0.1713&dl=https%3A%2F%2F2.myfin.by%2Fstati%2Fview%2Fv-belarusi-vypustili-syrki-v-glazuri-so-vkusami-klubniki-i-plombira&ybv=0.1712&p5=hzzpp&pr=jujgvac&p1=cjmqd&rqs=RF8bSErPyAevaMZeH2vG54eHl-JVP1jC"
+      ]
+    };
+function callClick(n) {
+      var link = ( n ? flashVars.events[n] : flashVars.link );
+      window.open(flashVars.reference + "@" + link, flashVars.target);
+}
+function callEvent(n) {
+      (new Image()).src = flashVars.events[n]; 
+}
+function handleFileLoad(evt, comp) {
+	var images=comp.getImages();	
+	if (evt && (evt.item.type == "image")) { images[evt.item.id] = evt.result; }	
+}
+function handleComplete(evt,comp) {
+	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+	var lib=comp.getLibrary();
+	var ss=comp.getSpriteSheet();
+	var queue = evt.target;
+	var ssMetadata = lib.ssMetadata;
+	for(i=0; i<ssMetadata.length; i++) {
+		ss[ssMetadata[i].name] = new createjs.SpriteSheet( {"images": [queue.getResult(ssMetadata[i].name)], "frames": ssMetadata[i].frames} )
+	}
+	exportRoot = new lib.body();
+	stage = new lib.Stage(canvas);	
+	//Registers the "tick" event listener.
+	fnStartAnimation = function() {
+		stage.addChild(exportRoot);
+		createjs.Ticker.setFPS(lib.properties.fps);
+		createjs.Ticker.addEventListener("tick", stage);
+	}	    
+	//Code to support hidpi screens and responsive scaling.
+	function makeResponsive(isResp, respDim, isScale, scaleType) {		
+		var lastW, lastH, lastS=1;		
+		window.addEventListener('resize', resizeCanvas);		
+		resizeCanvas();		
+		function resizeCanvas() {			
+			var w = lib.properties.width, h = lib.properties.height;			
+			var iw = window.innerWidth, ih=window.innerHeight;			
+			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;			
+			if(isResp) {                
+				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {                    
+					sRatio = lastS;                
+				}				
+				else if(!isScale) {					
+					if(iw<w || ih<h)						
+						sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==1) {					
+					sRatio = Math.min(xRatio, yRatio);				
+				}				
+				else if(scaleType==2) {					
+					sRatio = Math.max(xRatio, yRatio);				
+				}			
+			}			
+			canvas.width = w*pRatio*sRatio;			
+			canvas.height = h*pRatio*sRatio;
+			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';				
+			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+			stage.scaleX = pRatio*sRatio;			
+			stage.scaleY = pRatio*sRatio;			
+			lastW = iw; lastH = ih; lastS = sRatio;            
+			stage.tickOnUpdate = false;            
+			stage.update();            
+			stage.tickOnUpdate = true;		
+		}
+	}
+	makeResponsive(false,'both',false,1);	
+	AdobeAn.compositionLoaded(lib.properties.id);
+	fnStartAnimation();
+}
+</script>
+<!-- write your code here -->
+</head>
+<body onload="init();" style="margin:0px;" marginwidth="0" marginheight="0">
+	<div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:240px; height:400px">
+		<canvas id="canvas" width="240" height="400" style="position: absolute; display: block; background-color: rgb(255, 255, 255); cursor: pointer; width: 240px; height: 400px;"></canvas>
+		<div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:240px; height:400px; position: absolute; left: 0px; top: 0px; display: block;">
+		</div>
+	</div>
+  <script type="text/javascript">
+      var elem = document.getElementsByTagName("canvas")[0];
+      elem.style.cursor = "pointer";
+      elem.addEventListener("click", function(){
+        callClick();
+      }, false);
+  </script>
+
+<script>if(window.onCodeLoad){window.onCodeLoad();}</script></body></html>

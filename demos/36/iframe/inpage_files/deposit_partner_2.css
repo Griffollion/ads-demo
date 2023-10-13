@@ -1,0 +1,68 @@
+.deposit_partner_2-modal .modal-dialog {
+    width: 800px;
+}
+.deposit_partner_2_wrap {
+    background: url(/images/showcase/idea/partner/popup_desktop.jpg);
+    background-repeat: no-repeat;
+    width: 800px;
+    height: 500px;
+    box-shadow: 0 0 6px #333;
+    border-radius: 8px;
+}
+
+@media (max-width:800px){
+    .deposit_partner_2_wrap {
+        background: url(/images/showcase/idea/partner/popup_mobile.jpg);
+        background-repeat: no-repeat;
+        width: 300px;
+        height: 460px;
+        box-shadow: 0 0 6px #333;
+        border-radius: 8px;
+    }
+
+    .deposit_partner_2-modal .modal-dialog {
+        width: 305px;
+        margin: 0 auto;
+    }
+}
+
+.deposit_partner_2_wrap a{
+    display: block;
+    width: 100%;
+    height: 500px;
+}
+
+.deposit_partner_2-modal .close {
+    position: absolute;
+    top: 11px;
+    right: 11px;
+    margin-top: 0;
+    width: 18px;
+    height: 18px;
+    opacity: 1;
+}
+.deposit_partner_2-modal .close:before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    top: 45%;
+}
+.deposit_partner_2-modal .close:after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 45%;
+}
+.deposit_partner_2-modal .close:after, .deposit_partner_2-modal .close:before {
+    content: '';
+    background: #000;
+    display: block;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    left: 0;
+}

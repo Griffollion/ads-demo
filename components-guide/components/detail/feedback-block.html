@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en-gb" dir="ltr" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    window.frctl = {
+        env: 'static'
+    };
+    </script>
+    <script>var cl = document.querySelector('html').classList; cl.remove('no-js'); cl.add('has-js');</script>
+    <link rel="shortcut icon" href="../../assets/icons/icon.ico" type="image/ico">
+
+<link rel="stylesheet" href="../../fractal/css/default.css?cachebust=1.2.0" type="text/css">
+
+<link rel="stylesheet" href="../../assets/styles/theme.css?cachebust=1.2.0" type="text/css">
+
+
+<title>Блок отзыва | RUM Components Guide</title>
+
+</head>
+<body>
+
+
+
+<div class="Frame" id="frame">
+
+    <div class="Frame-header">
+        <div class="Header">
+    <button class="Header-button Header-navToggle" data-action="toggle-sidebar">
+        <svg class="Header-navToggleIcon Header-navToggleIcon--open" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 6.4L17.6 5 12 10.6 6.4 5 5 6.4 10.6 12 5 17.6 6.4 19 12 13.4 17.6 19 19 17.6 13.4 12z"/>
+</svg>
+
+        <svg class="Header-navToggleIcon Header-navToggleIcon--closed" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+</svg>
+
+    </button>
+    <a href="../../.." class="Header-title" data-pjax>RUM Components Guide</a>
+</div>
+
+    </div>
+
+    <div class="Frame-body" data-role="body">
+
+        <div class="Frame-panel Frame-panel--main" data-role="main">
+            <div class="Frame-inner" id="pjax-container">
+            
+
+
+    
+    
+
+<div class="Pen" data-behaviour="pen" id="pen-1f2d07e1220250583fcfd59f939b0082">
+
+    
+
+    <div class="Pen-panel Pen-header">
+    <h1 class="Pen-title">
+        <a class="Pen-previewLink" href="../preview/feedback-block" title="Component preview">
+            Блок отзыва
+            <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+
+        </a>
+    </h1>
+    
+
+
+</div>
+
+
+    <div class="Pen-panel Pen-preview Preview" data-behaviour="preview" id="preview-1f2d07e1220250583fcfd59f939b0082">
+    <div class="Preview-wrapper" data-role="resizer">
+        <div class="Preview-resizer">
+            
+             <iframe
+                class="Preview-iframe"
+                data-role="window"
+                src="../preview/feedback-block"
+                sandbox="allow-same-origin allow-scripts allow-forms"
+                 style=""
+                marginwidth="0" marginheight="0" frameborder="0" vspace="0" hspace="0" scrolling="yes">
+            </iframe>
+        </div>
+        <div class="Preview-handle" data-role="resize-handle"></div>
+        <div class="Preview-overlay"></div>
+    </div>
+</div>
+
+
+    <div class="Pen-handle Pen-handle--browser" data-role="resize-handle"></div>
+
+    <div class="Pen-panel Pen-info" data-role="info">
+    <div class="Browser" data-behaviour="browser" id="browser-1f2d07e1220250583fcfd59f939b0082">
+
+    
+
+<div class="Browser-controls">
+    <ul class="Browser-tabs">
+        
+        
+        <li class="Browser-tab Browser-tab--html is-active " data-role="tab">
+            <a href="#browser-1f2d07e1220250583fcfd59f939b0082-panel-html">HTML</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--view" data-role="tab">
+            <a href="#browser-1f2d07e1220250583fcfd59f939b0082-panel-view">View</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--context" data-role="tab">
+            <a href="#browser-1f2d07e1220250583fcfd59f939b0082-panel-context">Context</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--resources" data-role="tab">
+            <a href="#browser-1f2d07e1220250583fcfd59f939b0082-panel-assets">Assets</a>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Browser-tab Browser-tab--info" data-role="tab">
+            <a href="#browser-1f2d07e1220250583fcfd59f939b0082-panel-info">Info</a>
+        </li>
+        
+        
+        
+        <li class="Browser-tab Browser-tab--notes" data-role="tab">
+            <a href="#browser-1f2d07e1220250583fcfd59f939b0082-panel-notes">Notes</a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+
+    
+    
+<div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-1f2d07e1220250583fcfd59f939b0082-panel-html">
+    <code class="Code Code--lang-html">
+        
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__head"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__head-left"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-author"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-author__avatar"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ru.myfin.by/images/bank/otzyvy/user.svg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"user"</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-author__right"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-author__name"</span>&gt;</span>Денис<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-author__city"</span>&gt;</span>Минск<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__head-right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating star-rating--3"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__text"</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__stars"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__body"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Странный банк<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__text"</span>&gt;</span>
+            19 декабря 2019 года подала заявку на рефинансирование кредитов в сбербанке и на выдачу дополнительной суммы на руки. Сказали, рассмотрят в течение 3 рабочих дней, позвонили только на 5 день, сказали, что не прохожу по платежу. Странный банк... Не учитывают,
+            что я вообще то замужем и муж тоже зарабатывает неплохо... Также имею дополнительный неофициальный доход, которого вполне хватило бы на оплату нового кредита, зарплата даже бы и не затронулась....
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__footer"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__left"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__product"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/bank/rshb/otzyvy/kredity"</span>&gt;</span>Кредиты<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__center"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__date"</span>&gt;</span>
+                    27.12.2019
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__rating"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__rating-text"</span>&gt;</span>Отзыв полезен?:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__rating-block review-info__rating-block--up"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"like"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"js-update-counter"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"like"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__rating-block review-info__rating-block--down"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"dislike"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"js-update-counter"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"dislike"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+        
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-1f2d07e1220250583fcfd59f939b0082-panel-view">
+    <code class="Code Code--lang-html">
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block"</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__head"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__head-left"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-author"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-author__avatar"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"https://ru.myfin.by/images/bank/otzyvy/user.svg"</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">"user"</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-author__right"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-author__name"</span>&gt;</span>{{authorName}}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-author__city"</span>&gt;</span>{{authorCity}}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__head-right"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating star-rating--{{rating}}"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__text"</span>&gt;</span>{{rating}}<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__stars"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"star-rating__star"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__body"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>{{title}}<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__text"</span>&gt;</span>
+            {{feedBackText}}
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"feedback-block__footer"</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info"</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__left"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__product"</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">a</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"/bank/rshb/otzyvy/kredity"</span>&gt;</span>{{productType}}<span class="hljs-tag">&lt;/<span class="hljs-name">a</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__center"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__date"</span>&gt;</span>
+                    {{date}}
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__right"</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__rating"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__rating-text"</span>&gt;</span>Отзыв полезен?:<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__rating-block review-info__rating-block--up"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"like"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"js-update-counter"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"like"</span>&gt;</span>2<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"review-info__rating-block review-info__rating-block--down"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"dislike"</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"js-update-counter"</span> <span class="hljs-attr">data-type</span>=<span class="hljs-string">"dislike"</span>&gt;</span>0<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></pre>
+    </code>
+</div>
+
+    
+    <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-1f2d07e1220250583fcfd59f939b0082-panel-context">
+    <code class="Code Code--lang-json">
+        
+            
+            <pre>{
+  <span class="hljs-attr">"authorName"</span>: <span class="hljs-string">"Денис"</span>,
+  <span class="hljs-attr">"authorCity"</span>: <span class="hljs-string">"Минск"</span>,
+  <span class="hljs-attr">"rating"</span>: <span class="hljs-string">"3"</span>,
+  <span class="hljs-attr">"title"</span>: <span class="hljs-string">"Странный банк"</span>,
+  <span class="hljs-attr">"feedBackText"</span>: <span class="hljs-string">"19 декабря 2019 года подала заявку на рефинансирование кредитов в сбербанке и на выдачу дополнительной суммы на руки. Сказали, рассмотрят в течение 3 рабочих дней, позвонили только на 5 день, сказали, что не прохожу по платежу. Странный банк... Не учитывают, что я вообще то замужем и муж тоже зарабатывает неплохо... Также имею дополнительный неофициальный доход, которого вполне хватило бы на оплату нового кредита, зарплата даже бы и не затронулась...."</span>,
+  <span class="hljs-attr">"productType"</span>: <span class="hljs-string">"Кредиты"</span>,
+  <span class="hljs-attr">"date"</span>: <span class="hljs-string">"27.12.2019"</span>,
+  <span class="hljs-attr">"likes"</span>: <span class="hljs-string">"2"</span>,
+  <span class="hljs-attr">"dislikes"</span>: <span class="hljs-string">"0"</span>
+}</pre>
+            
+        
+    </code>
+</div>
+
+    
+    
+
+
+<div class="Browser-panel Browser-resources" data-role="tab-panel" id="browser-1f2d07e1220250583fcfd59f939b0082-panel-assets">
+    <div class="FileBrowser">
+
+        <div class="FileBrowser-selectWrapper">
+            <label class="FileBrowser-select-label" for="filebrowser-select">File:</label>
+            <select class="FileBrowser-select" id="filebrowser-select">
+                
+                <option value="file-2149da5ad23279ae56b76d3e606ddc11">feedback-block.css</option>
+                
+                <option value="file-0effe05a0a8d380ba27383146c4b62eb">review-author.css</option>
+                
+                <option value="file-a51de604dc2a791be639a2306f75444e">review-info.css</option>
+                
+                <option value="file-98a0f14e1e88760d7f742c29641a67cd">star-rating.css</option>
+                
+            </select>
+        </div>
+
+        
+        <div class="FileBrowser-item is-active" id="file-2149da5ad23279ae56b76d3e606ddc11" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre><span class="hljs-comment">/*feedback-block */</span>
+<span class="hljs-selector-class">.feedback-block__head</span> {
+    <span class="hljs-attribute">display</span>: -webkit-box;
+    <span class="hljs-attribute">display</span>: -ms-flexbox;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">-webkit-box-pack</span>: justify;
+    <span class="hljs-attribute">-ms-flex-pack</span>: justify;
+    <span class="hljs-attribute">justify-content</span>: space-between;
+    <span class="hljs-attribute">-webkit-box-align</span>: center;
+    <span class="hljs-attribute">-ms-flex-align</span>: center;
+    <span class="hljs-attribute">align-items</span>: center;
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">15px</span>;
+    <span class="hljs-attribute">padding-top</span>: <span class="hljs-number">15px</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#EBEBEB</span>;
+    <span class="hljs-attribute">border-top</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#EBEBEB</span>;
+  }
+  
+  <span class="hljs-selector-class">.feedback-block__body</span> {
+    <span class="hljs-attribute">padding-bottom</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">10px</span>;
+    <span class="hljs-attribute">border-bottom</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#EBEBEB</span>;
+  }
+  
+  <span class="hljs-selector-class">.feedback-block__title</span>, <span class="hljs-selector-class">.feedback-block__body</span> <span class="hljs-selector-tag">h1</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">25px</span>;
+    <span class="hljs-attribute">font-family</span>: roboto-bold;
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">15px</span>;
+  }
+  
+  <span class="hljs-selector-class">.feedback-block__text</span> <span class="hljs-selector-tag">p</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">24px</span>;
+  }
+  
+  <span class="hljs-selector-class">.feedback-block__text</span> <span class="hljs-selector-tag">p</span><span class="hljs-selector-pseudo">:last-child</span> {
+    <span class="hljs-attribute">margin</span>: <span class="hljs-number">0</span>;
+  }
+  
+  <span class="hljs-comment">/*feedback-block  end*/</span></pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/feedback-block/feedback-block.css"><span>/components/raw/feedback-block/feedback-block.css</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src\components\feedback-block\feedback-block.css</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">910 Bytes</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-0effe05a0a8d380ba27383146c4b62eb" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre><span class="hljs-selector-class">.review-author</span> {
+  <span class="hljs-attribute">display</span>: -webkit-box;
+  <span class="hljs-attribute">display</span>: -ms-flexbox;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">-webkit-box-align</span>: center;
+  <span class="hljs-attribute">-ms-flex-align</span>: center;
+  <span class="hljs-attribute">align-items</span>: center;
+}
+
+<span class="hljs-selector-class">.review-author__avatar</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">20px</span>;
+  <span class="hljs-attribute">-ms-flex-negative</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">flex-shrink</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-selector-class">.review-author__avatar</span> <span class="hljs-selector-tag">img</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: auto;
+  <span class="hljs-attribute">-o-object-fit</span>: cover;
+  <span class="hljs-attribute">object-fit</span>: cover;
+}
+
+<span class="hljs-selector-class">.review-author__right</span> {
+  <span class="hljs-attribute">display</span>: -webkit-box;
+  <span class="hljs-attribute">display</span>: -ms-flexbox;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">-webkit-box-orient</span>: vertical;
+  <span class="hljs-attribute">-webkit-box-direction</span>: normal;
+  <span class="hljs-attribute">-ms-flex-direction</span>: column;
+  <span class="hljs-attribute">flex-direction</span>: column;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+}
+
+<span class="hljs-selector-class">.review-author__name</span> {
+  <span class="hljs-attribute">font-size</span>: inherit;
+  <span class="hljs-attribute">font-family</span>: roboto-bold;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#0E1829</span>;
+  <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">2px</span>;
+}
+
+<span class="hljs-selector-class">.review-author__city</span> {
+  <span class="hljs-attribute">font-size</span>: inherit;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#999</span>;
+}
+
+@<span class="hljs-keyword">media</span> screen and (min-width: <span class="hljs-number">768px</span>) {
+  <span class="hljs-selector-class">.review-author__right</span> {
+    <span class="hljs-attribute">-webkit-box-orient</span>: horizontal;
+    <span class="hljs-attribute">-webkit-box-direction</span>: normal;
+    <span class="hljs-attribute">-ms-flex-direction</span>: row;
+    <span class="hljs-attribute">flex-direction</span>: row;
+  }
+  <span class="hljs-selector-class">.review-author__name</span> {
+    <span class="hljs-attribute">margin-bottom</span>: <span class="hljs-number">0</span>;
+  }
+  <span class="hljs-selector-class">.review-author__city</span> {
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">5px</span>;
+  }
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/feedback-block/review-author.css"><span>/components/raw/feedback-block/review-author.css</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src\components\feedback-block\review-author.css</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">1.2 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-a51de604dc2a791be639a2306f75444e" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre>@<span class="hljs-keyword">charset</span> <span class="hljs-string">"UTF-8"</span>;
+<span class="hljs-selector-class">.review-info</span> {
+  <span class="hljs-attribute">display</span>: -webkit-box;
+  <span class="hljs-attribute">display</span>: -ms-flexbox;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">-ms-flex-wrap</span>: wrap;
+  <span class="hljs-attribute">flex-wrap</span>: wrap;
+  <span class="hljs-attribute">-webkit-box-pack</span>: justify;
+  <span class="hljs-attribute">-ms-flex-pack</span>: justify;
+  <span class="hljs-attribute">justify-content</span>: space-between;
+  <span class="hljs-attribute">-webkit-box-align</span>: center;
+  <span class="hljs-attribute">-ms-flex-align</span>: center;
+  <span class="hljs-attribute">align-items</span>: center;
+}
+
+<span class="hljs-selector-class">.review-info__product</span> {
+  <span class="hljs-attribute">min-height</span>: <span class="hljs-number">30px</span>;
+  <span class="hljs-attribute">text-align</span>: center;
+  <span class="hljs-attribute">display</span>: -webkit-inline-box;
+  <span class="hljs-attribute">display</span>: -ms-inline-flexbox;
+  <span class="hljs-attribute">display</span>: inline-flex;
+  <span class="hljs-attribute">-webkit-box-align</span>: center;
+  <span class="hljs-attribute">-ms-flex-align</span>: center;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">-webkit-box-pack</span>: center;
+  <span class="hljs-attribute">-ms-flex-pack</span>: center;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">12px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#000</span>;
+  <span class="hljs-attribute">background-color</span>: <span class="hljs-number">#F5F5F5</span>;
+  <span class="hljs-attribute">border</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#EBEBEB</span>;
+  <span class="hljs-attribute">border-radius</span>: <span class="hljs-number">2px</span>;
+}
+
+<span class="hljs-selector-class">.review-info__product</span> <span class="hljs-selector-tag">a</span>,
+<span class="hljs-selector-class">.review-info__product</span> <span class="hljs-selector-tag">span</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">height</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">align-items</span>: center;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">padding</span>: <span class="hljs-number">5px</span> <span class="hljs-number">15px</span>;
+}
+
+<span class="hljs-selector-class">.review-info__product</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:not(</span><span class="hljs-selector-pseudo">:hover)</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#373737</span>;
+}
+
+
+<span class="hljs-selector-class">.review-info__answer</span> {
+  <span class="hljs-attribute">display</span>: none;
+}
+
+<span class="hljs-selector-class">.review-info__date</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#999999</span>;
+}
+
+<span class="hljs-selector-class">.review-info__left</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">40%</span>;
+}
+
+<span class="hljs-selector-class">.review-info__center</span> {
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">60%</span>;
+  <span class="hljs-attribute">display</span>: -webkit-box;
+  <span class="hljs-attribute">display</span>: -ms-flexbox;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">-webkit-box-pack</span>: end;
+  <span class="hljs-attribute">-ms-flex-pack</span>: end;
+  <span class="hljs-attribute">justify-content</span>: flex-end;
+}
+
+<span class="hljs-selector-class">.review-info__right</span> {
+  <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">15px</span>;
+  <span class="hljs-attribute">width</span>: <span class="hljs-number">100%</span>;
+  <span class="hljs-attribute">display</span>: -webkit-box;
+  <span class="hljs-attribute">display</span>: -ms-flexbox;
+  <span class="hljs-attribute">display</span>: flex;
+}
+
+<span class="hljs-selector-class">.review-info__rating</span> {
+  <span class="hljs-attribute">display</span>: -webkit-box;
+  <span class="hljs-attribute">display</span>: -ms-flexbox;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">-webkit-box-pack</span>: center;
+  <span class="hljs-attribute">-ms-flex-pack</span>: center;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">-webkit-box-align</span>: end;
+  <span class="hljs-attribute">-ms-flex-align</span>: end;
+  <span class="hljs-attribute">align-items</span>: flex-end;
+}
+
+<span class="hljs-selector-class">.review-info__rating-text</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#999</span>;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block</span> {
+  <span class="hljs-attribute">display</span>: -webkit-box;
+  <span class="hljs-attribute">display</span>: -ms-flexbox;
+  <span class="hljs-attribute">display</span>: flex;
+  <span class="hljs-attribute">-webkit-box-align</span>: end;
+  <span class="hljs-attribute">-ms-flex-align</span>: end;
+  <span class="hljs-attribute">align-items</span>: flex-end;
+  <span class="hljs-attribute">-webkit-box-pack</span>: center;
+  <span class="hljs-attribute">-ms-flex-pack</span>: center;
+  <span class="hljs-attribute">justify-content</span>: center;
+  <span class="hljs-attribute">cursor</span>: pointer;
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">10px</span>;
+  <span class="hljs-attribute">border-right</span>: <span class="hljs-number">1px</span> solid <span class="hljs-number">#EBEBEB</span>;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">10px</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block</span><span class="hljs-selector-pseudo">:before</span> {
+  <span class="hljs-attribute">font-family</span>: Flaticon;
+  <span class="hljs-attribute">display</span>: -webkit-inline-box;
+  <span class="hljs-attribute">display</span>: -ms-inline-flexbox;
+  <span class="hljs-attribute">display</span>: inline-flex;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">-webkit-box-ordinal-group</span>: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">-ms-flex-order</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">order</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block</span><span class="hljs-selector-pseudo">:after</span> {
+  <span class="hljs-attribute">-webkit-transition</span>: color .<span class="hljs-number">25s</span> ease;
+  <span class="hljs-attribute">-o-transition</span>: color .<span class="hljs-number">25s</span> ease;
+  <span class="hljs-attribute">transition</span>: color .<span class="hljs-number">25s</span> ease;
+  <span class="hljs-attribute">-webkit-box-ordinal-group</span>: <span class="hljs-number">2</span>;
+  <span class="hljs-attribute">-ms-flex-order</span>: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">order</span>: <span class="hljs-number">1</span>;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">5px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#14509C</span>;
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block--up</span><span class="hljs-selector-pseudo">:before</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e907'</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#63BC0A</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block--up</span><span class="hljs-selector-pseudo">:after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">'да'</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block--up</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:before</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e913'</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block--up</span><span class="hljs-selector-class">.active</span><span class="hljs-selector-pseudo">:before</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e913'</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block--down</span><span class="hljs-selector-pseudo">:before</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e911'</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#E00707</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block--down</span><span class="hljs-selector-pseudo">:after</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">'нет'</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block--down</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:before</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e912'</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block--down</span><span class="hljs-selector-class">.active</span><span class="hljs-selector-pseudo">:before</span> {
+  <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e912'</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block</span> <span class="hljs-selector-tag">span</span> {
+  <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#999999</span>;
+  <span class="hljs-attribute">-webkit-box-ordinal-group</span>: <span class="hljs-number">4</span>;
+  <span class="hljs-attribute">-ms-flex-order</span>: <span class="hljs-number">3</span>;
+  <span class="hljs-attribute">order</span>: <span class="hljs-number">3</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block</span><span class="hljs-selector-pseudo">:last-child</span> {
+  <span class="hljs-attribute">border-right</span>: none;
+  <span class="hljs-attribute">padding-right</span>: <span class="hljs-number">0</span>;
+  <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-selector-class">.review-info__rating-block</span><span class="hljs-selector-pseudo">:hover</span><span class="hljs-selector-pseudo">:after</span> {
+  <span class="hljs-attribute">color</span>: <span class="hljs-number">#e86809</span>;
+}
+
+@<span class="hljs-keyword">media</span> screen and (min-width: <span class="hljs-number">768px</span>) {
+  <span class="hljs-selector-class">.review-info</span> {
+    <span class="hljs-attribute">-ms-flex-wrap</span>: nowrap;
+    <span class="hljs-attribute">flex-wrap</span>: nowrap;
+  }
+  <span class="hljs-selector-class">.review-info__answer</span> {
+    <span class="hljs-attribute">margin-left</span>: <span class="hljs-number">30px</span>;
+  }
+  <span class="hljs-selector-class">.review-info__answer</span><span class="hljs-selector-class">.active</span> {
+    <span class="hljs-attribute">display</span>: block;
+  }
+  <span class="hljs-selector-class">.review-info__answer</span> <span class="hljs-selector-tag">a</span> {
+    <span class="hljs-attribute">display</span>: -webkit-box;
+    <span class="hljs-attribute">display</span>: -ms-flexbox;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">-webkit-box-align</span>: center;
+    <span class="hljs-attribute">-ms-flex-align</span>: center;
+    <span class="hljs-attribute">align-items</span>: center;
+  }
+  <span class="hljs-selector-class">.review-info__answer</span> <span class="hljs-selector-tag">a</span> <span class="hljs-selector-tag">span</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">13px</span>;
+  }
+  <span class="hljs-selector-class">.review-info__answer</span> <span class="hljs-selector-tag">a</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">font-family</span>: Flaticon;
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\f106'</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#63BC0A</span>;
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">5px</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">16px</span>;
+  }
+  <span class="hljs-selector-class">.review-info__left</span> {
+    <span class="hljs-attribute">width</span>: auto;
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">15px</span>;
+    <span class="hljs-attribute">display</span>: -webkit-box;
+    <span class="hljs-attribute">display</span>: -ms-flexbox;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">-webkit-box-align</span>: center;
+    <span class="hljs-attribute">-ms-flex-align</span>: center;
+    <span class="hljs-attribute">align-items</span>: center;
+  }
+  <span class="hljs-selector-class">.review-info__center</span> {
+    <span class="hljs-attribute">width</span>: auto;
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">30px</span>;
+    <span class="hljs-attribute">-webkit-box-flex</span>: <span class="hljs-number">2</span>;
+    <span class="hljs-attribute">-ms-flex-positive</span>: <span class="hljs-number">2</span>;
+    <span class="hljs-attribute">flex-grow</span>: <span class="hljs-number">2</span>;
+    <span class="hljs-attribute">-webkit-box-pack</span>: end;
+    <span class="hljs-attribute">-ms-flex-pack</span>: end;
+    <span class="hljs-attribute">justify-content</span>: flex-end;
+  }
+  <span class="hljs-selector-class">.review-info__right</span> {
+    <span class="hljs-attribute">width</span>: auto;
+    <span class="hljs-attribute">margin-top</span>: <span class="hljs-number">0</span>;
+    <span class="hljs-attribute">line-height</span>: <span class="hljs-number">19px</span>;
+  }
+}
+</pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/feedback-block/review-info.css"><span>/components/raw/feedback-block/review-info.css</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src\components\feedback-block\review-info.css</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">4.9 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="FileBrowser-item" id="file-98a0f14e1e88760d7f742c29641a67cd" data-role="resource-preview">
+            <ul class="Meta">
+                <li class="Meta-item">
+                    <strong class="Meta-key">Content:</strong>
+                    <span class="Meta-value">
+                        <div class="FileBrowser-itemPreview">
+                            
+                            <code class="Code Code--lang-CSS FileBrowser-code">
+                                <pre><span class="hljs-selector-class">.star-rating</span> {
+    <span class="hljs-attribute">display</span>: -webkit-box;
+    <span class="hljs-attribute">display</span>: -ms-flexbox;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">-webkit-box-align</span>: center;
+    <span class="hljs-attribute">-ms-flex-align</span>: center;
+    <span class="hljs-attribute">align-items</span>: center;
+  }
+  
+  <span class="hljs-selector-class">.star-rating__text</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">5px</span>;
+    <span class="hljs-attribute">font-family</span>: roboto-bold;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating__stars</span> {
+    <span class="hljs-attribute">display</span>: -webkit-box;
+    <span class="hljs-attribute">display</span>: -ms-flexbox;
+    <span class="hljs-attribute">display</span>: flex;
+    <span class="hljs-attribute">-webkit-box-align</span>: center;
+    <span class="hljs-attribute">-ms-flex-align</span>: center;
+    <span class="hljs-attribute">align-items</span>: center;
+  }
+  
+  <span class="hljs-selector-class">.star-rating__star</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">3px</span>;
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">14px</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--big</span> <span class="hljs-selector-class">.star-rating__star</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">18px</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e906'</span>;
+    <span class="hljs-attribute">font-family</span>: <span class="hljs-string">'Flaticon'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:last-child</span> {
+    <span class="hljs-attribute">margin-right</span>: <span class="hljs-number">0</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--1</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--1</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e905'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--2</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span>, <span class="hljs-selector-class">.star-rating--2</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--2</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--2</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e905'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span>, <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span>, <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--3</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e905'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(4)</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--4</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(4)</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e905'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(4)</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(5)</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#F78F1E</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(1)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(2)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(3)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(4)</span><span class="hljs-selector-pseudo">:before</span>, <span class="hljs-selector-class">.star-rating--5</span> <span class="hljs-selector-class">.star-rating__star</span><span class="hljs-selector-pseudo">:nth-child(5)</span><span class="hljs-selector-pseudo">:before</span> {
+    <span class="hljs-attribute">content</span>: <span class="hljs-string">'\e905'</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--gray-border</span> <span class="hljs-selector-class">.star-rating__star</span> {
+    <span class="hljs-attribute">color</span>: <span class="hljs-number">#CCCCCC</span>;
+    <span class="hljs-attribute">cursor</span>: pointer;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--fs-30</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+  }
+  
+  <span class="hljs-selector-class">.star-rating--fs-30</span> <span class="hljs-selector-class">.star-rating__star</span> {
+    <span class="hljs-attribute">font-size</span>: <span class="hljs-number">30px</span>;
+  }
+  </pre>
+                            </code>
+                            
+                        </div>
+                    </span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">URL:</strong>
+                    <span class="Meta-value"><a data-no-pjax href="../raw/feedback-block/star-rating.css"><span>/components/raw/feedback-block/star-rating.css</span></a></span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Filesystem Path:</strong>
+                    <span class="Meta-value">src\components\feedback-block\star-rating.css</span>
+                </li>
+                <li class="Meta-item">
+                    <strong class="Meta-key">Size:</strong>
+                    <span class="Meta-value">3 KB</span>
+                </li>
+            </ul>
+        </div>
+        
+    </div>
+</div>
+
+
+
+    
+    <div class="Browser-panel" data-role="tab-panel" id="browser-1f2d07e1220250583fcfd59f939b0082-panel-info">
+    <ul class="Meta">
+        <li class="Meta-item">
+            <strong class="Meta-key">Handle:</strong>
+            <span class="Meta-value">@feedback-block</span>
+        </li>
+        
+        
+        
+        
+        
+        <li class="Meta-item">
+            <strong class="Meta-key">Preview:</strong>
+            <span class="Meta-value">
+                <ul>
+                    <li><a data-no-pjax href="../preview/feedback-block"><span>With layout</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                    <li><a data-no-pjax href="../render/feedback-block"><span>Component only</span> <svg fill="#000000" height="22" viewBox="0 0 24 24" width="22" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0 0h24v24H0z" fill="none"/>
+    <path d="M19 4H5c-1.11 0-2 .9-2 2v12c0 1.1.89 2 2 2h4v-2H5V8h14v10h-4v2h4c1.1 0 2-.9 2-2V6c0-1.1-.89-2-2-2zm-7 6l-4 4h3v6h2v-6h3l-4-4z"/>
+</svg>
+</a></li>
+                </ul>
+            </span>
+        </li>
+        <li class="Meta-item">
+            <strong class="Meta-key">Filesystem Path:</strong>
+            <span class="Meta-value">src\components\feedback-block\feedback-block.html</span>
+        </li>
+        
+        
+    </ul>
+</div>
+
+    
+    <div class="Browser-panel Browser-notes" data-role="tab-panel" id="browser-1f2d07e1220250583fcfd59f939b0082-panel-notes">
+    <div class="Prose Prose--condensed">
+        
+        <p>Блок комментария. В стандартном виде используется с компонентами “review-author”, “review-info” и “star-rating”.</p>
+
+        
+    </div>
+</div>
+
+    
+
+</div>
+
+</div>
+
+
+    
+
+</div>
+
+
+            </div>
+        </div>
+
+        <div class="Frame-handle" data-role="frame-resize-handle"></div>
+        
+        <div class="Frame-panel Frame-panel--sidebar" data-role="sidebar">
+            <nav class="Navigation">
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-components">
+    <h3 class="Tree-title">components</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="checkbox-btn" data-pjax>
+                <span>Checkbox Btn</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity is-current" data-state="current" data-role="item">
+            <a class="Tree-entityLink" href="" data-pjax>
+                <span>Feedback Block</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="review-author" data-pjax>
+                <span>Review Author</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="review-info" data-pjax>
+                <span>Review Info</span>
+                
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="star-rating" data-pjax>
+                <span>Star Rating</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+<div class="Navigation-group">
+
+<div class="Tree" data-behaviour="tree" id="tree-docs">
+    <h3 class="Tree-title">documentation</h3>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="../../docs/tokens" data-pjax>
+                <span>Основные стили проекта</span>
+                
+            </a>
+        </li>
+        
+    
+
+    </ul>
+</div>
+
+</div>
+
+
+
+    
+
+
+</nav>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<script src="../../fractal/js/mandelbrot.js?cachebust=1.2.0"></script>
+
+
+
+</body>
+</html>

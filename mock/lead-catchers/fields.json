@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "formId": 0,
+    "name": "dana",
+    "fields": [
+      {
+        "inputName": "danaText",
+        "inputType": "text",
+        "inputPlaceholder": "Введите ваше имя",
+        "class": "",
+        "requestName": "userName",
+        "label": "Ваше имя",
+        "isPhone": false
+      },
+      {
+        "inputName": "danaPhone",
+        "inputType": "text",
+        "inputPlaceholder": "Some Placeholder 2",
+        "class": "",
+        "requestName": "phone",
+        "label": "Номер телефона",
+        "isPhone": true
+      }
+    ]
+  }
+]

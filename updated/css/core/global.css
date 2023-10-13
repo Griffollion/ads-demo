@@ -1,0 +1,463 @@
+html, body {
+    font-family: roboto-regular, Helvetica, Arial, sans-serif;
+}
+html {
+    -webkit-tap-highlight-color: transparent
+}
+
+body {
+    font-size: 14px;
+    line-height: 1.5;
+    background-color: #ebebeb;
+    color: #000;
+    margin: 0;
+    display: block;
+}
+
+figure {
+    margin: 0;
+}
+
+hr, img {
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block
+}
+
+a {
+    background-color: transparent;
+    color: #14509c;
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-transition: color .25s;
+    -o-transition: color .25s;
+    transition: color .25s;
+}
+
+a:hover,
+a:active,
+a:focus {
+    color: #e86809;
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sup {
+    top: -.5em
+}
+
+*, :after, :before, input[type=checkbox], input[type=radio] {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0
+}
+
+button {
+    overflow: visible
+}
+
+button, select {
+    text-transform: none
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer
+}
+
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
+    height: auto
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+input[type='number'] {
+    -moz-appearance: textfield;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+td, th {
+    padding: 0;
+    font-weight: normal;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+p {
+    padding: 0;
+    margin:  0 0 10px 0;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, .news .title, h1, h2, h3, h4, h5, h6 {
+    font-family: roboto-bold, Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    color: #000;
+    word-wrap: break-word;
+    margin: 0;
+}
+
+.h1, h1 {
+    font-size: 30px;
+    line-height: 1.1;
+}
+
+@media (max-width: 767px) {
+    .h1, h1 {
+        font-size: 25px;
+    }
+}
+
+.h2, h2 {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+@media (max-width: 767px) {
+    .h2, h2 {
+        font-size: 18px;
+    }
+}
+
+.h3, h3 {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .h3, h3 {
+        font-size: 20px
+    }
+}
+
+@media (max-width: 767px) {
+    .h3, h3 {
+        font-size: 18px
+    }
+}
+
+.h4, h4 {
+    font-size: 16px;
+    line-height: 1.4;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.mt-5 {
+    margin-top: 5px;
+}
+.mr-5 {
+    margin-right: 5px;
+}
+.mb-5 {
+    margin-bottom: 5px;
+}
+.ml-5 {
+    margin-left: 5px;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.ml-10 {
+    margin-left: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mr-15 {
+    margin-right: 15px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.ml-15 {
+    margin-left: 15px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.mr-20 {
+    margin-right: 20px;
+}
+.mb-20 {
+    margin-bottom: 20px;
+}
+.ml-20 {
+    margin-left: 20px;
+}
+.mt-25 {
+    margin-top: 25px;
+}
+.mr-25 {
+    margin-right: 25px;
+}
+.mb-25 {
+    margin-bottom: 25px;
+}
+.ml-25 {
+    margin-left: 25px;
+}
+.mt-30 {
+    margin-top: 30px;
+}
+.mr-30 {
+    margin-right: 30px;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.ml-30 {
+    margin-left: 30px;
+}
+.mt-35 {
+    margin-top: 35px;
+}
+.mr-35 {
+    margin-right: 35px;
+}
+.mb-35 {
+    margin-bottom: 35px;
+}
+.ml-35 {
+    margin-left: 35px;
+}
+.mt-40 {
+    margin-top: 40px;
+}
+.mr-40 {
+    margin-right: 40px;
+}
+.mb-40 {
+    margin-bottom: 40px;
+}
+.ml-40 {
+    margin-left: 40px;
+}
+
+.pt-5 {
+    padding-top: 5px;
+}
+.pr-5 {
+    padding-right: 5px;
+}
+.pb-5 {
+    padding-bottom: 5px;
+}
+.pl-5 {
+    padding-left: 5px;
+}
+.pt-10 {
+    padding-top: 10px;
+}
+.pr-10 {
+    padding-right: 10px;
+}
+.pb-10 {
+    padding-bottom: 10px;
+}
+.pl-10 {
+    padding-left: 10px;
+}
+.pt-15 {
+    padding-top: 15px;
+}
+.pr-15 {
+    padding-right: 15px;
+}
+.pb-15 {
+    padding-bottom: 15px;
+}
+.pl-15 {
+    padding-left: 15px;
+}
+.pt-20 {
+    padding-top: 20px;
+}
+.pr-20 {
+    padding-right: 20px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+.pl-20 {
+    padding-left: 20px;
+}
+.pt-25 {
+    padding-top: 25px;
+}
+.pr-25 {
+    padding-right: 25px;
+}
+.pb-25 {
+    padding-bottom: 25px;
+}
+.pl-25 {
+    padding-left: 25px;
+}
+.pt-30 {
+    padding-top: 30px;
+}
+.pr-30 {
+    padding-right: 30px;
+}
+.pb-30 {
+    padding-bottom: 30px;
+}
+.pl-30 {
+    padding-left: 30px;
+}
+.pt-35 {
+    padding-top: 35px;
+}
+.pr-35 {
+    padding-right: 35px;
+}
+.pb-35 {
+    padding-bottom: 35px;
+}
+.pl-35 {
+    padding-left: 35px;
+}
+.pt-40 {
+    padding-top: 40px;
+}
+.pr-40 {
+    padding-right: 40px;
+}
+.pb-40 {
+    padding-bottom: 40px;
+}
+.pl-40 {
+    padding-left: 40px;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-26 {
+    font-size: 26px;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.accent {
+    font-family: roboto-bold;
+}
+
+.container {
+    width: 100%;
+    padding: 0 10px;
+}
+
+@media screen and (min-width: 1200px){
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+
+.content-i {
+    box-shadow: 0 8px 16px -5px rgba(0, 0, 0, .2);
+    background-color: #fff;
+}
+
+.content-i__wrapper {
+    padding: 15px;
+}
+
+
+
+
+
+
+
+

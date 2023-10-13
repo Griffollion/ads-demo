@@ -1,0 +1,257 @@
+* {
+  text-decoration: none;
+  border: 0;
+  margin: 0; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+.right-ad {
+  height: 100%;
+  width: 100%;
+  position: fixed; }
+
+.right-ad__ad-close {
+  height: 100%;
+  width: 65px;
+  background-image: url("../img/close_ad_background.png");
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-color: black;
+  position: fixed;
+  z-index: 1001;
+  right: 0;
+  -webkit-transition: -webkit-transform 800ms linear;
+  transition: -webkit-transform 800ms linear;
+  -o-transition: transform 800ms linear;
+  transition: transform 800ms linear;
+  transition: transform 800ms linear, -webkit-transform 800ms linear;
+  cursor: pointer; }
+
+.right-ad__swipe_me-top {
+  font-size: 40px;
+  color: #474749;
+  position: absolute;
+  right: 15px; }
+.right-ad__swipe_me-top i,
+ .right-ad__exit i{
+  color: #ffffff;
+  opacity: 0.5;
+}
+.right-ad__swipe_me-bottom {
+  font-size: 11px;
+  font-family: "Roboto-Thin";
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 8px;
+  left: 4px;
+  color: white; }
+
+.right-ad__close-button {
+  height: 45px;
+  width: 45px;
+  background: #f03226;
+  border-radius: 50px;
+  position: relative;
+  top: 50%;
+  right: 22.5px;
+  margin-top: -22.5px;
+  color: white !important;
+  font-size: 50px;
+  line-height: 0.1; }
+
+  .right-ad__close-button i {
+    line-height: 1.1;
+    padding-left: 10px;
+    font-size: 40px;
+  color: #ffffff!important;}
+
+.right-ad__ad-open-inherit {
+  min-height: 100%;
+  height: 600px;
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  z-index: 1000;
+  left: 100%;
+  -webkit-transition: -webkit-transform 800ms linear;
+  transition: -webkit-transform 800ms linear;
+  -o-transition: transform 800ms linear;
+  transition: transform 800ms linear;
+  transition: transform 800ms linear, -webkit-transform 800ms linear; }
+
+.right-ad__ad-open {
+  height: 570px;
+  width: 100%;
+  max-width: 320px;
+  background-image: url("../img/open_ad_background.png");
+  background-repeat: no-repeat;
+  background-position: 0 80px;
+  position: relative;
+  top: 50%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -285px; }
+
+.right-ad__content {
+  position: relative;
+  z-index: 200; }
+
+.right-ad__exit {
+  height: 27px;
+  width: 27px;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 5px;
+  right: 14px;
+  color: #474749;
+  line-height: 0.8;
+  margin-top: 0;
+  font-size: 40px; }
+
+.right-ad__logo {
+  padding-top: 20px;
+  padding-bottom: 50px; }
+
+.right-ad__party-text {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto-Regular";
+  font-size: 32px;
+  color: white;
+  padding-bottom: 118px; }
+
+.right-ad__line {
+  height: 1px;
+  width: 100px;
+  background-color: white;
+  opacity: 0.502;
+  margin: 0 auto; }
+
+.right-ad__bonus-big-text {
+  text-transform: uppercase;
+  font-size: 24px;
+  font-family: "Roboto-Light";
+  color: white; }
+
+.right-ad__bonus-small-text {
+  font-size: 14px;
+  font-family: "Roboto-Light";
+  color: white;
+  margin-top: -2px; }
+
+.right-ad__first-text-block {
+  padding-bottom: 16px; }
+
+.right-ad__second-text-block {
+  padding-top: 15px;
+  padding-bottom: 13px; }
+
+.right-ad__third-text-block {
+  padding-top: 16px;
+  padding-bottom: 35px; }
+
+.right-ad__button {
+  border-radius: 3px;
+  background-color: #f03226;
+  width: 182px;
+  height: 40px;
+  border: none;
+  font-size: 16px;
+  font-family: "Roboto-Light";
+  color: white;
+  position: relative; }
+
+.right-ad__button:hover, :active {
+  outline: none; }
+
+.right-ad__filtr {
+  height: 56.5%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+  position: absolute;
+  bottom: 0;
+  z-index: 100; }
+
+@media only screen and (max-height: 565px) {
+  .right-ad__filtr {
+    height: 380px; }
+  .right-ad__ad-open {
+    background-position: 0 40px; }
+  .right-ad__logo {
+    padding-bottom: 30px; }
+  .right-ad__party-text {
+    padding-bottom: 80px; } }
+
+@media only screen and (max-height: 520px) {
+  .right-ad__filtr {
+    height: 415px; }
+  .right-ad__ad-open {
+    background-position: 0 5px; }
+  .right-ad__logo {
+    padding-bottom: 20px; }
+  .right-ad__party-text {
+    padding-bottom: 60px;
+    font-size: 30px; }
+  .right-ad__bonus-big-text {
+    font-size: 22px; }
+  .right-ad__bonus-small-text {
+    font-size: 12px; } }
+
+@media only screen and (max-height: 465px) {
+  .right-ad__filtr {
+    height: 440px; }
+  .right-ad__ad-open {
+    background-position: 0 -20px; }
+  .right-ad__logo {
+    padding-bottom: 10px; }
+  .right-ad__party-text {
+    padding-bottom: 45px;
+    font-size: 28px; }
+  .right-ad__bonus-big-text {
+    font-size: 20px; }
+  .right-ad__bonus-small-text {
+    font-size: 10px; }
+  .right-ad__first-text-block, .right-ad__second-text-block, .right-ad__third-text-block {
+    padding: 15px 0; } }
+
+@media only screen and (max-height: 425px) {
+  .right-ad__first-text-block, .right-ad__second-text-block, .right-ad__third-text-block {
+    padding: 10px 0; }
+  .right-ad__button {
+    height: 30px;
+    font-size: 14px; } }
+
+@media only screen and (max-height: 390px) {
+  .right-ad__filtr {
+    height: 475px; }
+  .right-ad__ad-open {
+    background-position: 0 -50px; }
+  .right-ad__logo {
+    padding-bottom: 6px; }
+  .right-ad__party-text {
+    padding-bottom: 15px;
+    font-size: 22px; }
+  .right-ad__bonus-big-text {
+    font-size: 16px; }
+  .right-ad__bonus-small-text {
+    font-size: 10px; }
+  .right-ad__first-text-block, .right-ad__second-text-block, .right-ad__third-text-block {
+    padding: 9px 0; } }
+
+@media only screen and (max-height: 360px) {
+  .right-ad__filtr {
+    height: 470px; }
+  .right-ad__first-text-block, .right-ad__second-text-block, .right-ad__third-text-block, .right-ad__line {
+    display: none; }
+  .right-ad__button {
+    height: 46px;
+    width: 200px;
+    font-size: 16px; }
+  .right-ad__logo {
+    padding-bottom: 10px; }
+  .right-ad__party-text {
+    padding-bottom: 50px;
+    font-size: 22px; } }

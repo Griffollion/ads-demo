@@ -1,0 +1,48 @@
+.plashka-domovita__wrapper {
+
+   
+    /* background:linear-gradient(to right,#3e99e9 92%,#fff 92%,#fff 92%); */
+/*     background-image: url(../images/down.png) ;
+    background-repeat: no-repeat ;
+    background-position: center ; */
+    background-color: #ffed00;
+    position: relative;
+    width:100%;
+    height:45px;
+    
+}
+
+.velcome-plashka {
+    position: absolute;
+    z-index: 999;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.plashka-domovita__close-btn {
+    font-family: roboto-light;
+    color: #bfbfbf;
+    margin-right: 50px;
+    transform: rotate(45deg);
+    font-size: 60px;
+    position: absolute;
+    right: -45px;
+    z-index: 999;
+    bottom: -13px;
+}
+
+#plashka-container {
+    text-align: right;
+    position: fixed;
+    z-index: 9999999;
+    bottom: 0;
+    width: 100%;
+    cursor: pointer;
+    line-height: 0;
+
+}
+
+

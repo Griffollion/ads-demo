@@ -1,0 +1,123 @@
+.upd-menu__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+}
+.upd-menu__logo {
+  width: 30%;
+  max-width: 180px;
+  padding-right: 30px;
+  display: inline-block;
+  margin-right: 30px;
+  border-right: 1px solid #ebebeb;
+}
+.upd-menu__logo img {
+  width: 100%;
+  height: auto;
+}
+.upd-menu__contacts {
+  display: flex;
+  align-items: center;
+}
+.upd-menu__contact {
+  font-size: 14px;
+  color: #000;
+  margin-right: 40px;
+  white-space: nowrap;
+}
+.upd-menu__contact--wrapped {
+  white-space: normal;
+}
+.upd-menu__contact a {
+  color: inherit;
+}
+.upd-menu__contact span {
+  font-family: 'roboto-bold';
+}
+.upd-menu__contact .fa {
+  margin-right: 6px;
+  font-size: inherit;
+  color: #9A9A9A;
+}
+.upd-menu__contact:hover {
+  color: #e86809;
+}
+.upd-menu__contact:hover .fa {
+  color: #e86809;
+}
+.upd-menu__contact__contact--1:hover {
+  color: #000;
+}
+.upd-menu__avatar {
+  min-width: 47px;
+}
+
+@media (max-width: 920px) {
+  .upd-menu__contact {
+    margin-right: 25px;
+  }
+}
+@media (max-width: 850px) {
+  .upd-menu__avatar {
+    display: none !important;
+  }
+}
+@media (max-width: 768px) {
+  .upd-menu__contacts {
+    flex-wrap: wrap;
+  }
+  .upd-menu__contact {
+    padding-bottom: 10px;
+    width: 165px;
+    color: #14509c;
+  }
+  .upd-menu__contact--1 {
+    order: 0;
+    white-space: nowrap;
+    color: #000;
+  }
+  .upd-menu__contact--2 {
+    order: 1;
+    margin-right: 0;
+  }
+  .upd-menu__contact--3 {
+    order: 3;
+    margin-right: 0;
+  }
+  .upd-menu__contact--4 {
+    order: 2;
+  }
+  .upd-menu__logo {
+    padding-bottom: 10px;
+  }
+  .upd-menu__logo img {
+    min-width: 90px;
+  }
+}
+@media (max-width: 600px) {
+  .upd-menu__logo {
+    padding-right: 20px;
+    margin-right: 20px;
+  }
+  .upd-menu__contact {
+    width: 150px;
+  }
+}
+@media (max-width: 480px) {
+  .upd-menu__contact--1, .upd-menu__contact--2 {
+    display: none;
+  }
+  .upd-menu__contact--3 {
+    order: 0;
+    margin-right: 0;
+    padding-bottom: 3px;
+  }
+  .upd-menu__contact--4 {
+    margin-right: 0;
+  }
+  .upd-menu__logo {
+    width: 40%;
+    padding-top: 10px;
+  }
+}
